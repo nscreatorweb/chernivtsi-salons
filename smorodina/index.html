@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Смородина — манікюрний салон у Чернівцях</title>
+<meta name="description" content="Смородина: манікюр, педикюр, брови в Чернівцях. Гарантія на покриття, стерильність, синхрон у 4 руки. Шалома Алейхема, 6.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f1f4;--ink:#2a1030;--plum:#4b1d52;--berry:#8e2b6b;--rose:#e9c9db;--card:#fff;--muted:#6f5a73}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Manrope,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;line-height:1.1;overflow-wrap:anywhere}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+.demo{background:var(--ink);color:#f3e3ee;font-size:13px;text-align:center;padding:8px 12px}
+header{position:sticky;top:0;z-index:20;background:rgba(247,241,244,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6d5df}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+.logo{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;text-decoration:none;color:var(--plum)}
+nav{display:none;gap:22px;font-size:15px}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--berry)}
+.btn{display:inline-block;background:var(--berry);color:#fff;padding:13px 24px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .2s,background .2s;border:0;cursor:pointer}
+.btn:hover{background:var(--plum);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--plum);border:1.5px solid var(--plum)}
+.btn.ghost:hover{background:var(--plum);color:#fff}
+.hero{padding:40px 0 56px;display:grid;gap:32px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--berry);font-weight:700}
+.hero h1{font-size:clamp(40px,9vw,76px);color:var(--plum);margin:10px 0 16px}
+.hero p.lead{font-size:18px;color:var(--muted);max-width:520px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.arch{aspect-ratio:4/5;border-radius:200px 200px 24px 24px;background:linear-gradient(160deg,#8e2b6b,#4b1d52 60%,#2a1030);position:relative;overflow:hidden;width:min(380px,100%);justify-self:center}
+.arch img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.arch::after{content:"S";position:absolute;inset:0;display:grid;place-items:center;font:700 140px 'Cormorant Garamond',serif;color:rgba(255,255,255,.12)}
+section{padding:60px 0}
+.title{font-size:clamp(32px,6vw,48px);color:var(--plum);margin-bottom:10px}
+.sub{color:var(--muted);margin-bottom:30px;max-width:620px}
+.grid{display:grid;gap:16px}
+.card{background:var(--card);border-radius:20px;padding:26px;border:1px solid #ecdce5;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(75,29,82,.12)}
+.card .ic{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,var(--rose),#d89cc0);margin-bottom:14px}
+.card h3{font-size:26px;margin-bottom:6px}
+.price-card{background:linear-gradient(180deg,#fff,#fbf4f8)}
+.price-head{height:70px;border-radius:14px;margin-bottom:16px;background:repeating-linear-gradient(135deg,var(--rose) 0 10px,#f3dde9 10px 20px)}
+.row{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px dashed #dec7d4;font-size:15px}
+.row:last-child{border:0}
+.row b{white-space:nowrap;color:var(--berry)}
+.note{margin-top:20px;font-size:14px;color:var(--muted)}
+.steps{counter-reset:s}
+.step{position:relative;padding-left:64px}
+.step::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:46px;height:46px;border-radius:50%;background:var(--plum);color:#fff;display:grid;place-items:center;font:700 24px 'Cormorant Garamond',serif}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gal figure{aspect-ratio:1/1;border-radius:18px;overflow:hidden;background:linear-gradient(135deg,#e9c9db,#8e2b6b)}
+.gal figure:nth-child(2n){background:linear-gradient(135deg,#4b1d52,#d89cc0)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal figure:hover img{transform:scale(1.05)}
+.rate{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.rate strong{font:700 64px 'Cormorant Garamond',serif;color:var(--berry)}
+blockquote{font-size:16px}
+blockquote footer{margin-top:14px;font-size:13px;color:var(--muted)}
+details{background:#fff;border:1px solid #ecdce5;border-radius:16px;padding:16px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700;list-style:none}
+summary::-webkit-details-marker{display:none}
+details p{margin-top:10px;color:var(--muted)}
+.contacts{background:var(--plum);color:#fff;border-radius:28px;padding:34px 24px}
+.contacts h2{color:#fff}
+.contacts a{overflow-wrap:anywhere}
+.contacts .btn{background:#fff;color:var(--plum)}
+.contacts .btn.ghost{background:transparent;color:#fff;border-color:#fff}
+.clist{list-style:none;margin:18px 0 24px;display:grid;gap:8px}
+footer.f{padding:30px 0 90px;text-align:center;font-size:13px;color:var(--muted)}
+.sticky{position:fixed;left:16px;right:16px;bottom:14px;z-index:30;text-align:center;box-shadow:0 10px 30px rgba(75,29,82,.35)}
+@media(min-width:760px){
+ nav{display:flex}.hero{grid-template-columns:1.15fr .85fr;align-items:center;padding:70px 0 80px}
+ .g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+ .gal{grid-template-columns:repeat(3,1fr)}.sticky{display:none}footer.f{padding-bottom:30px}
+ .contacts{padding:48px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+.gal figure:last-child img{object-position:center 28%}.gal figure:last-child:nth-child(odd){grid-column:1/-1;aspect-ratio:16/10}@media(min-width:760px){.gal figure:last-child:nth-child(odd){grid-column:auto;aspect-ratio:1/1}}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версія сайту: фото та тексти взято з відкритих джерел салону</div>
+<header><div class="wrap bar">
+ <a class="logo" href="#top">Смородина</a>
+ <nav><a href="#perevagy">Переваги</a><a href="#poslugy">Послуги</a><a href="#roboty">Роботи</a><a href="#vidguky">Відгуки</a><a href="#faq">FAQ</a><a href="#kontakty">Контакти</a></nav>
+ <a class="btn" href="tel:+380664022123">Записатися</a>
+</div></header>
+<main id="top">
+<div class="wrap hero">
+ <div>
+  <div class="eyebrow">Манікюр · Педикюр · Брови · Чернівці</div>
+  <h1>Нігті, які тримаються й радують</h1>
+  <p class="lead">Манікюрний салон «Смородина»: гарантія на покриття, стерильність і синхрон у 4 руки, щоб манікюр і педикюр були за один візит.</p>
+  <div class="actions">
+   <a class="btn" href="tel:+380664022123">Записатися за телефоном</a>
+   <a class="btn ghost" href="https://www.instagram.com/smorodina.cv/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+ </div>
+ <div class="arch"><img src="img/work-1.jpg" alt="Робота майстра салону Смородина" onerror="this.remove()"></div>
+</div>
+
+<section id="perevagy"><div class="wrap">
+ <h2 class="title">Чому до нас повертаються</h2>
+ <p class="sub">Те, що салон сам заявляє у своєму профілі.</p>
+ <div class="grid g3">
+  <div class="card"><div class="ic"></div><h3>Гарантія на покриття</h3><p>Покриття з гарантією, деталі уточнюйте у майстра.</p></div>
+  <div class="card"><div class="ic"></div><h3>Стерильність 100%</h3><p>Салон наголошує на стерильності інструментів на кожному прийомі.</p></div>
+  <div class="card"><div class="ic"></div><h3>Синхрон у 4 руки</h3><p>Манікюр і педикюр одночасно двома майстрами, економить ваш час.</p></div>
+ </div>
+</div></section>
+
+<section id="poslugy"><div class="wrap">
+ <h2 class="title">Послуги та ціни</h2>
+ <p class="sub">Прайс-листи з Instagram салону (хайлайт price list). Остаточну вартість уточнюйте при записі.</p>
+ <div class="grid g2">
+  <div class="card price-card"><div class="price-head"></div><h3>Манікюр</h3>
+   <div class="row"><span>Гель-лак (укріплення входить), майстер</span><b>750 / 800 / 850 ₴</b></div>
+   <div class="row"><span>Гелева корекція, майстер</span><b>800 / 850 / 900 ₴</b></div>
+   <div class="row"><span>Нарощення нігтів, майстер</span><b>1100 / 1200 / 1300 ₴</b></div>
+   <div class="row"><span>Перенарощення, майстер</span><b>1200 / 1300 / 1400 ₴</b></div>
+   <div class="row"><span>Гель-лак (укріплення входить), топ майстер</span><b>900 / 950 / 1000 ₴</b></div>
+   <div class="row"><span>Гелева корекція, топ майстер</span><b>950 / 1000 / 1050 ₴</b></div>
+   <a class="btn ghost" style="margin-top:16px" href="tel:+380664022123">Записатися</a>
+  </div>
+  <div class="card price-card"><div class="price-head"></div><h3>Педикюр</h3>
+   <div class="row"><span>Повний комплекс (пальчики, стопи, п’яти, покриття), майстер</span><b>950 ₴</b></div>
+   <div class="row"><span>Педикюр без покриття, майстер</span><b>800 ₴</b></div>
+   <div class="row"><span>Комплекс чоловічий педикюр, майстер</span><b>950 ₴</b></div>
+   <div class="row"><span>Чистка пальчиків / з покриттям, майстер</span><b>600 / 750 ₴</b></div>
+   <div class="row"><span>Чистка стоп, майстер</span><b>400 ₴</b></div>
+   <div class="row"><span>Повний комплекс, топ майстер</span><b>1050 ₴</b></div>
+   <div class="row"><span>Педикюр без покриття, топ майстер</span><b>950 ₴</b></div>
+   <div class="row"><span>Комплекс чоловічий педикюр, топ майстер</span><b>1050 ₴</b></div>
+   <div class="row"><span>Чистка пальчиків та покриття / пальчиків, топ майстер</span><b>900 / 700 ₴</b></div>
+   <div class="row"><span>Чистка стоп, топ майстер</span><b>500 ₴</b></div>
+   <div class="row"><span>Зачистка оніхолізису / обробка стрижневого мозолю / глибоких тріщин</span><b>350 ₴</b></div>
+   <a class="btn ghost" style="margin-top:16px" href="tel:+380664022123">Записатися</a>
+  </div>
+  <div class="card price-card"><div class="price-head"></div><h3>Брови (майстер-бровист)</h3>
+   <div class="row"><span>Корекція брів (віск/пінцет)</span><b>300 ₴</b></div>
+   <div class="row"><span>Корекція + фарбування (фарбник Zola)</span><b>450 ₴</b></div>
+   <div class="row"><span>Ламінування брів</span><b>600 ₴</b></div>
+   <div class="row"><span>Ламінування + фарбування + корекція</span><b>700 ₴</b></div>
+   <div class="row"><span>Депіляція 1 зони</span><b>150 ₴</b></div>
+   <div class="row"><span>Комплекс депіляції обличчя (брівки, ніс, губа)</span><b>350 ₴</b></div>
+   <a class="btn ghost" style="margin-top:16px" href="tel:+380664022123">Записатися</a>
+  </div>
+  <div class="card price-card"><div class="price-head"></div><h3>Медичний педикюр</h3>
+   <div class="row"><span>Апаратний, 1 ступінь (незначні ознаки грибкового ураження, поверхневі тріщини)</span><b>1 500 ₴</b></div>
+   <div class="row"><span>Апаратний, 2 ступінь (гіперкератоз, численні тріщини, мозолі)</span><b>2 000 ₴</b></div>
+   <div class="row"><span>Врослий ніготь 1 ступеня / 2 ступеня</span><b>500 / 700 ₴</b></div>
+   <div class="row"><span>Встановлення титанової нитки</span><b>700 ₴</b></div>
+   <div class="row"><span>Тампонада бокових валиків / з лікувальним препаратом</span><b>400 / 100 ₴</b></div>
+   <div class="row"><span>Протезування 1 нігтя / 2 нігтів після травми</span><b>500 / 800 ₴</b></div>
+   <div class="row"><span>Протезування нігтя на мізинці</span><b>200 ₴</b></div>
+   <div class="row"><span>Обробка бородавки / мозолю</span><b>500 ₴</b></div>
+   <a class="btn ghost" style="margin-top:16px" href="tel:+380664022123">Записатися</a>
+  </div>
+ </div>
+ <p class="note">Для кожної послуги салон вказує кілька варіантів ціни через слеш; точну вартість уточнюйте при записі. Вихід майстра в неробочий час: 300 ₴.</p></div></section>
+
+<section><div class="wrap">
+ <h2 class="title">Як записатися</h2>
+ <div class="grid g3 steps" style="margin-top:26px">
+  <div class="step"><h3>Зателефонуйте</h3><p>Запис через Instagram (Direct) або за телефоном +38 066 402 21 23. Оберіть майстра та час.</p></div>
+  <div class="step"><h3>Передоплата 300 ₴</h3><p>Вона враховується у вартість вашої послуги.</p></div>
+  <div class="step"><h3>Приходьте</h3><p>Шалома Алейхема, 6. Скасування менш ніж за 24 год: 50% вартості.</p></div>
+ </div>
+</div></section>
+
+<section id="roboty"><div class="wrap">
+ <h2 class="title">Наші роботи</h2>
+ <div class="gal" style="margin-top:24px">
+  <figure><img src="img/work-1.jpg" alt="Червоний і молочний манікюр, робота салону Смородина" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-2.jpg" alt="Глибокий червоний манікюр, робота салону Смородина" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-3.jpg" alt="Червоний манікюр, крупний план, робота салону Смородина" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-4.jpg" alt="Манікюр з леопардовим принтом, робота салону Смородина" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-5.jpg" alt="Чорний манікюр, робота салону Смородина" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-6.jpg" alt="Яскравий червоно-рожевий манікюр, робота салону Смородина" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-7.jpg" alt="Французький манікюр, робота салону Смородина" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-8.jpg" alt="Червоний манікюр, робота салону Смородина" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-9.jpg" alt="Брови: корекція та фарбування, робота салону Смородина" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+ </div>
+ <p class="note">Більше робіт в <a href="https://www.instagram.com/smorodina.cv/" target="_blank" rel="noopener">Instagram @smorodina.cv</a></p>
+</div></section>
+
+<section id="vidguky"><div class="wrap">
+ <h2 class="title">Відгуки клієнтів</h2>
+ <div class="rate"><strong>4.3</strong><span>з 5 · 40 відгуків на top20.ua</span></div>
+ <div class="grid g2">
+  <div class="card"><blockquote>«Дуже задоволений візитом до студії! Робив чоловічий манікюр у майстра Юлі, все виконано на найвищому рівні!»<footer>Viktor · 14.04.2026</footer></blockquote></div>
+  <div class="card"><blockquote>«Дуже задоволена роботою майстра Анастасії! Все акуратно, чисто і професійно. Манікюр виглядає ідеально навіть через кілька тижнів.»<footer>Lilia Semenuk · 07.11.2025</footer></blockquote></div>
+  <div class="card"><blockquote>«Дівчата, Ви молодці! Дуже гарне обслуговування!»<footer>Ольга · 25.07.2025</footer></blockquote></div>
+  <div class="card"><blockquote>«Кожен манікюр — як свято: все акуратно, красиво, а в студії так затишно, що не хотілося йти.»<footer>Даша Арсений · 02.03.2025</footer></blockquote></div>
+ </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+ <h2 class="title">Часті питання</h2>
+ <div style="margin-top:20px">
+  <details><summary>Чи потрібна передоплата?</summary><p>Так, для бронювання діє передоплата 300 ₴. Вона враховується у вартість послуги.</p></details>
+  <details><summary>Що, якщо потрібно скасувати запис?</summary><p>Якщо скасування менш ніж за 24 години до візиту, потрібно оплатити 50% вартості послуги.</p></details>
+  <details><summary>Є чоловічий манікюр і педикюр?</summary><p>Так, у прайсі є чоловічий педикюр, а клієнти залишають відгуки про чоловічий манікюр.</p></details>
+  <details><summary>Чи є брови та медичний педикюр?</summary><p>Так: працює майстер-бровист (корекція від 300 ₴, ламінування 600 ₴) і є прайс на медичний педикюр. Усі ціни в розділі «Послуги та ціни».</p></details>
+  <details><summary>Коли ви працюєте?</summary><p>Вівторок-субота з 9:00 до 19:00.</p></details>
+ </div>
+</div></section>
+
+<section id="kontakty"><div class="wrap">
+ <div class="contacts">
+  <h2 class="title">Запишіться в Смородину</h2>
+  <ul class="clist">
+   <li>Адреса: Шалома Алейхема, 6, Чернівці</li>
+   <li>Графік: Вт-Сб, 9:00-19:00</li>
+   <li>Телефон: <a href="tel:+380664022123">+38 (066) 402 21 23</a></li>
+   <li>Instagram: <a href="https://www.instagram.com/smorodina.cv/" target="_blank" rel="noopener">@smorodina.cv</a></li>
+  </ul>
+  <div class="actions">
+   <a class="btn" href="tel:+380664022123">Записатися</a>
+   <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=%D0%A8%D0%B0%D0%BB%D0%BE%D0%BC%D0%B0+%D0%90%D0%BB%D0%B5%D0%B9%D1%85%D0%B5%D0%BC%D0%B0+6+%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96" target="_blank" rel="noopener">Відкрити на карті</a>
+  </div>
+ </div>
+</div></section>
+</main>
+<footer class="f"><div class="wrap">© Смородина, Чернівці. Демо-версія сайту.</div></footer>
+<a class="btn sticky" href="tel:+380664022123">Записатися</a>
+</body>
+</html>

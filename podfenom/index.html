@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Podfenom, Чернівці</title>
+<meta name="description" content="Podfenom: салон краси в Чернівцях. Стрижки, фарбування, манікюр, макіяж, косметологія. Руська, 228.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff7ec;--ink:#141414;--red:#ff3d2e;--yel:#ffd23f;--pink:#ffb8c9;--card:#fff;--mut:#4a4a4a;--d:'Unbounded',system-ui,sans-serif;--b:'Manrope',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--ink);font:500 1.0625rem/1.6 var(--b);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+.demo{background:var(--ink);color:var(--yel);text-align:center;font-size:.78rem;font-weight:700;padding:8px 16px}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:3px solid var(--ink)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:66px}
+.logo{font-family:var(--d);font-weight:800;font-size:1.25rem;text-decoration:none;text-transform:uppercase;letter-spacing:-.02em}
+.logo span{color:#d4281a}
+nav{display:flex;gap:24px}nav a{text-decoration:none;font-weight:700;font-size:.9rem}nav a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;border-radius:14px;font:700 1rem var(--b);text-decoration:none;border:3px solid var(--ink);transition:transform .15s,box-shadow .15s;cursor:pointer;box-shadow:4px 4px 0 var(--ink)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink)}
+.btn.p{background:var(--red);color:#fff}.btn.g{background:var(--yel)}
+.btn.s{min-height:42px;padding:0 18px;font-size:.88rem;box-shadow:3px 3px 0 var(--ink)}
+h1,h2,h3{font-family:var(--d);font-weight:800;line-height:1.02;letter-spacing:-.03em;text-transform:uppercase}
+.tag{display:inline-block;background:var(--yel);border:3px solid var(--ink);border-radius:999px;padding:5px 16px;font-weight:800;font-size:.8rem;text-transform:uppercase;margin-bottom:18px;letter-spacing:.04em}
+.hero{padding:clamp(36px,6vw,80px) 0;background:var(--pink);border-bottom:3px solid var(--ink)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(24px,5vw,64px);align-items:center}
+.hero h1{font-size:clamp(2.3rem,6.4vw,5rem);margin-bottom:22px}
+.hero h1 mark{background:var(--ink);color:var(--yel);padding:0 .12em;border-radius:10px}
+.hero p{font-size:1.15rem;max-width:44ch;margin-bottom:28px}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:26px}
+.facts{list-style:none;display:flex;flex-wrap:wrap;gap:8px 22px;font-weight:700;font-size:.92rem}
+.photo{position:relative;aspect-ratio:4/5;max-height:600px;border:3px solid var(--ink);border-radius:30px;box-shadow:10px 10px 0 var(--ink);background:repeating-linear-gradient(45deg,var(--yel) 0 18px,#ffe27a 18px 36px);overflow:hidden;transform:rotate(1.5deg)}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.sticker{position:absolute;z-index:3;right:-6px;top:-14px;background:var(--red);color:#fff;border:3px solid var(--ink);border-radius:999px;padding:10px 16px;font-family:var(--d);font-weight:800;font-size:.85rem;transform:rotate(8deg);text-align:center;line-height:1.1}
+.phwrap{position:relative}
+.marq{background:var(--ink);color:var(--yel);overflow:hidden;white-space:nowrap;padding:12px 0;font-family:var(--d);font-weight:700;text-transform:uppercase;font-size:.9rem;border-bottom:3px solid var(--ink)}
+.marq div{display:inline-block;animation:mq 28s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:clamp(52px,7vw,96px) 0}
+h2{font-size:clamp(1.9rem,4.6vw,3.2rem);margin-bottom:clamp(24px,4vw,44px)}
+.adv{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.adv div{background:var(--card);border:3px solid var(--ink);border-radius:22px;padding:24px;box-shadow:5px 5px 0 var(--ink)}
+.adv div:nth-child(2){background:var(--yel)}.adv div:nth-child(3){background:var(--pink)}
+.adv h3{font-size:1.1rem;margin-bottom:10px}.adv p{font-size:.97rem}
+.cat{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px}
+.pc{background:var(--card);border:3px solid var(--ink);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;box-shadow:5px 5px 0 var(--ink);transition:transform .2s}
+.pc:hover{transform:translateY(-4px) rotate(-.5deg)}
+.pic{height:96px;border-bottom:3px solid var(--ink);background:var(--yel);position:relative;overflow:hidden}
+.pc:nth-child(3n+2) .pic{background:var(--pink)}.pc:nth-child(3n) .pic{background:var(--red)}
+.pic::after{content:"";position:absolute;right:-20px;top:-30px;width:110px;height:110px;border-radius:50%;border:3px solid var(--ink)}
+.pic::before{content:"";position:absolute;left:20px;bottom:-26px;width:60px;height:60px;background:var(--ink);transform:rotate(20deg);border-radius:12px}
+.pc .body{padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pc h3{font-size:1.05rem}.pc p{font-size:.94rem;color:var(--mut);flex:1}
+.pc .pr{font-weight:800;font-size:.85rem;text-transform:uppercase;letter-spacing:.04em}
+.hint{display:none;font-size:.85rem;font-weight:700;margin:-24px 0 14px}
+.alt{background:var(--yel);border-block:3px solid var(--ink)}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:900px){.gal{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-inline:-16px;padding:0 16px 14px;scrollbar-width:none}.gal::-webkit-scrollbar{display:none}.gal figure{flex:0 0 68%;scroll-snap-align:start}}
+.gal figure{aspect-ratio:4/5;border:3px solid var(--ink);border-radius:22px;overflow:hidden;background:repeating-linear-gradient(45deg,var(--pink) 0 16px,#ffd0dc 16px 32px);box-shadow:5px 5px 0 var(--ink)}
+.gal img{width:100%;height:100%;object-fit:cover}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
+.steps li{counter-increment:s;background:var(--card);border:3px solid var(--ink);border-radius:22px;padding:22px;box-shadow:5px 5px 0 var(--ink)}
+.steps li::before{content:counter(s);font-family:var(--d);font-weight:800;font-size:2.6rem;color:var(--red);display:block;line-height:1;margin-bottom:8px}
+.steps b{display:block}.steps span{font-size:.95rem;color:var(--mut)}
+.trust{display:grid;grid-template-columns:.7fr 1.3fr;gap:24px;align-items:start}
+.score{background:var(--ink);color:#fff;border-radius:26px;padding:30px;text-align:center;border:3px solid var(--ink)}
+.score b{font-family:var(--d);font-size:4.4rem;line-height:1;color:var(--yel);display:block}
+.score .st{color:var(--yel);letter-spacing:3px}.score small{display:block;margin-top:8px;opacity:.8}
+.revs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.rv{background:var(--card);border:3px solid var(--ink);border-radius:20px;padding:18px 20px}
+.rv cite{display:block;margin-top:8px;font-style:normal;font-weight:700;font-size:.82rem;color:var(--mut)}
+.src{font-size:.82rem;margin-top:16px;font-weight:700}
+details{background:var(--card);border:3px solid var(--ink);border-radius:18px;padding:16px 20px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:800;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";font-family:var(--d);color:var(--red);font-size:1.3rem;line-height:1}details[open] summary::after{content:"\2212"}
+details p{margin-top:8px;color:var(--mut)}
+.contact{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+.cbox{background:var(--pink);border:3px solid var(--ink);border-radius:28px;padding:clamp(24px,4vw,44px);box-shadow:8px 8px 0 var(--ink)}
+.tel{font-family:var(--d);font-weight:800;font-size:clamp(1.7rem,4.6vw,2.6rem);text-decoration:none;display:inline-block;margin:6px 0 18px;letter-spacing:-.03em}
+dl{display:grid;gap:12px}dt{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800}dd{font-weight:700}
+.links{display:flex;flex-direction:column;gap:14px;justify-content:center}
+footer{background:var(--ink);color:#fff;padding:24px 0;font-size:.86rem}
+.dock{display:none}
+@media(max-width:860px){nav,.hdr-cta{display:none}.hero .wrap,.trust,.contact,.revs,.steps{grid-template-columns:1fr}.photo{max-height:420px;aspect-ratio:5/4;transform:none;box-shadow:6px 6px 0 var(--ink)}.cta .btn{flex:1 1 100%}.sticker{right:6px}
+.hint{display:block}.cat{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-inline:-16px;padding:4px 16px 14px;scrollbar-width:none}.cat::-webkit-scrollbar{display:none}.pc{flex:0 0 78%;scroll-snap-align:start}
+.dock{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:3px solid var(--ink)}.dock .btn{width:100%}body{padding-bottom:80px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версія сайту: фото та тексти взято з відкритих джерел салону</div>
+<header><div class="wrap bar">
+<a class="logo" href="#top">Pod<span>fenom</span></a>
+<nav aria-label="Меню"><a href="#about">Про нас</a><a href="#services">Послуги</a><a href="#gallery">Роботи</a><a href="#reviews">Відгуки</a><a href="#faq">FAQ</a><a href="#contacts">Контакти</a></nav>
+<a class="btn p s hdr-cta" href="tel:+380995528982">Записатися</a>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+<div>
+<span class="tag">Салон краси · Чернівці</span>
+<h1>Ми викликаємо залежність від <mark>краси</mark></h1>
+<p>Стрижки, фарбування, манікюр, макіяж і косметологія. Щодня з 9:00 до 19:00, без вихідних.</p>
+<div class="cta"><a class="btn p" href="tel:+380995528982">Записатися</a><a class="btn g" href="https://www.instagram.com/podfenom.beautyservice/" target="_blank" rel="noopener">Instagram</a></div>
+<ul class="facts"><li>★ 4.6 · 41 відгук</li><li>Руська, 228</li><li>9:00–19:00</li></ul>
+</div>
+<div class="phwrap"><div class="sticker">без<br>вихідних</div><div class="photo"><img src="img/work-1.jpg" alt="Робота майстрів Podfenom: довге хвилясте волосся" onerror="this.remove()"></div></div>
+</div></section>
+<div class="marq" aria-hidden="true"><div>СТРИЖКИ · ФАРБУВАННЯ · МАНІКЮР · МАКІЯЖ · КОСМЕТОЛОГІЯ · ШУГАРИНГ · ЛАМІНУВАННЯ ВІЙ · БРОВИ · СТРИЖКИ · ФАРБУВАННЯ · МАНІКЮР · МАКІЯЖ · КОСМЕТОЛОГІЯ · ШУГАРИНГ · ЛАМІНУВАННЯ ВІЙ · БРОВИ · </div></div>
+
+<section id="about"><div class="wrap">
+<h2>Чому до нас</h2>
+<div class="adv">
+<div><h3>Все в одному місці</h3><p>Волосся, нігті, макіяж, брови, вії, косметологія та депіляція в одному салоні.</p></div>
+<div><h3>Працюємо щодня</h3><p>9:00–19:00 без вихідних, тож записатися можна на зручний день.</p></div>
+<div><h3>Своє затишне зонування</h3><p>У відгуках клієнти відзначають приватну зону обслуговування кожного майстра та смачну каву.</p></div>
+<div><h3>Весільні образи</h3><p>Весільний макіяж і зачіски від професійних майстрів.</p></div>
+</div></div></section>
+
+<section id="services" class="alt"><div class="wrap">
+<h2>Послуги</h2>
+<p class="hint">Гортайте картки вбік →</p>
+<div class="cat">
+<article class="pc"><div class="pic"></div><div class="body"><h3>Стрижки</h3><p>Жіночі стрижки та укладки від майстрів салону.</p><span class="pr">Ціна: за запитом</span><a class="btn g s" href="tel:+380995528982">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Фарбування та тонування</h3><p>Підбір кольору, фарбування й тонування волосся.</p><span class="pr">Ціна: за запитом</span><a class="btn g s" href="tel:+380995528982">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Манікюр і педикюр</h3><p>Акуратний манікюр та педикюр у майстрів салону.</p><span class="pr">Ціна: за запитом</span><a class="btn g s" href="tel:+380995528982">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Макіяж і зачіски</h3><p>Образи на кожен день, свята та весілля.</p><span class="pr">Ціна: за запитом</span><a class="btn g s" href="tel:+380995528982">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Косметологія</h3><p>Консультація косметолога та апаратна косметологія.</p><span class="pr">Ціна: за запитом</span><a class="btn g s" href="tel:+380995528982">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Брови, вії, шугаринг</h3><p>Ламінування вій, оформлення брів, депіляція шугарингом.</p><span class="pr">Ціна: за запитом</span><a class="btn g s" href="tel:+380995528982">Записатися</a></div></article>
+</div></div></section>
+
+<section id="gallery"><div class="wrap">
+<h2>Наші роботи</h2>
+<div class="gal">
+<figure><img src="img/work-1.jpg" alt="Робота Podfenom: довге хвилясте волосся" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+<figure><img src="img/work-2.jpg" alt="Робота Podfenom: фарбування та гладка укладка" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+<figure><img src="img/work-3.jpg" alt="Робота Podfenom: голографічний манікюр" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+<figure><img src="img/work-4.jpg" alt="Робота Podfenom: ніжний френч" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+<figure><img src="img/work-5.jpg" alt="Робота Podfenom: яскравий манікюр із лініями" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+<figure><img src="img/work-6.jpg" alt="Робота Podfenom: педикюр із золотим декором" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+</div>
+<p class="src"><a href="https://www.instagram.com/podfenom.beautyservice/" target="_blank" rel="noopener">Більше робіт в Instagram</a></p>
+</div></section>
+
+<section class="alt"><div class="wrap">
+<h2>Як записатися</h2>
+<ol class="steps">
+<li><b>Зателефонуйте</b><span>099 552 89 82 або Direct в Instagram.</span></li>
+<li><b>Оберіть послугу</b><span>Назвіть послугу та зручний час.</span></li>
+<li><b>Приходьте</b><span>Руська, 228. Щодня 9:00–19:00.</span></li>
+</ol></div></section>
+
+<section id="reviews"><div class="wrap">
+<h2>Відгуки клієнтів</h2>
+<div class="trust">
+<div class="score"><b>4.6</b><span class="st">★★★★★</span><small>41 відгук на top20.ua</small></div>
+<div class="revs">
+<div class="rv"><p>Чудовий салон краси з професійними майстрами та затишною атмосферою! Завжди дуже задоволена результатом!</p><cite>Ольга Литвин, 14 травня 2026</cite></div>
+<div class="rv"><p>Обслуговуємось всією сім'єю в цьому салоні і довіряємо всім майстрам. Завжди привітні і гарно виконують свою роботу!</p><cite>Гена Чукля, 30 квітня 2026</cite></div>
+<div class="rv"><p>Майстриня чарівниця, за 2 години зробила зі мною красу після невдалої домашньої стрижки.</p><cite>Ucucc7c, 4 травня 2026</cite></div>
+<div class="rv"><p>Декілька років поспіль не маю бажання зраджувати професійним фахівцям!</p><cite>Елена Журавская, 30 квітня 2026</cite></div>
+</div></div>
+<p class="src">Відгуки з відкритої сторінки салону на top20.ua.</p>
+</div></section>
+
+<section id="faq" class="alt"><div class="wrap">
+<h2>FAQ</h2>
+<details><summary>Як дізнатися ціни?</summary><p>Вартість залежить від майстра та послуги. Уточніть за телефоном 099 552 89 82 або в Direct.</p></details>
+<details><summary>Чи працюєте ви у вихідні?</summary><p>Так, салон працює без вихідних, щодня з 9:00 до 19:00.</p></details>
+<details><summary>Де ви знаходитесь?</summary><p>Чернівці, вул. Руська, 228.</p></details>
+<details><summary>Чи є весільні зачіски та макіяж?</summary><p>Так, салон пропонує весільний макіяж і зачіски. Деталі за телефоном.</p></details>
+</div></section>
+
+<section id="contacts"><div class="wrap">
+<h2>Контакти</h2>
+<div class="contact">
+<div class="cbox"><span class="tag">Podfenom</span><br><a class="tel" href="tel:+380995528982">099 552 89 82</a>
+<dl><div><dt>Адреса</dt><dd>м. Чернівці, вул. Руська, 228</dd></div><div><dt>Графік</dt><dd>Щодня, 9:00–19:00, без вихідних</dd></div><div><dt>Instagram</dt><dd><a href="https://www.instagram.com/podfenom.beautyservice/" target="_blank" rel="noopener">@podfenom.beautyservice</a></dd></div></dl></div>
+<div class="links"><a class="btn p" href="tel:+380995528982">Записатися</a><a class="btn g" href="https://www.google.com/maps/search/?api=1&query=%D0%A0%D1%83%D1%81%D1%8C%D0%BA%D0%B0+228+%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96" target="_blank" rel="noopener">Відкрити на Google Maps</a><a class="btn g" href="https://www.instagram.com/podfenom.beautyservice/" target="_blank" rel="noopener">Написати в Instagram</a></div>
+</div></div></section>
+</main>
+<footer><div class="wrap">© Podfenom, Чернівці · Демо-версія сайту</div></footer>
+<div class="dock"><a class="btn p" href="tel:+380995528982">Записатися: 099 552 89 82</a></div>
+</body>
+</html>

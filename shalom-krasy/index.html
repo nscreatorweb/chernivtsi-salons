@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Shalom Краси: перукарня та барбер у Чернівцях</title>
+<meta name="description" content="Shalom Краси: чоловічі та жіночі стрижки, барбер, фарбування, SPA для волосся, подолог. Українська, 32/1, Чернівці.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1ece2;--ink:#111;--red:#e4472b;--paper:#fff;--mut:#55514a;--disp:'Oswald',Impact,sans-serif;--body:'Manrope',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 var(--body);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.w{max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+.demo{background:var(--ink);color:#e9e3d6;text-align:center;font-size:.78rem;padding:8px 14px}
+header{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:3px solid var(--ink)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{font:700 1.7rem/1 var(--disp);text-transform:uppercase;letter-spacing:.02em;text-decoration:none}
+.logo b{color:var(--red)}
+nav{display:flex;gap:26px}
+nav a{font:500 .95rem var(--disp);text-transform:uppercase;letter-spacing:.08em;text-decoration:none}
+nav a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;font:600 1rem var(--disp);text-transform:uppercase;letter-spacing:.08em;text-decoration:none;border:3px solid var(--ink);background:var(--paper);box-shadow:5px 5px 0 var(--ink);transition:transform .15s,box-shadow .15s;cursor:pointer}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--ink)}
+.btn.p{background:var(--red);color:#fff}
+.btn.s{min-height:42px;padding:0 18px;font-size:.88rem;box-shadow:3px 3px 0 var(--ink)}
+.hero{padding:clamp(36px,6vw,80px) 0 clamp(48px,7vw,96px)}
+.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,72px);align-items:center}
+.hg>*{min-width:0}
+.tag{display:inline-block;background:var(--ink);color:var(--bg);font:500 .85rem var(--disp);letter-spacing:.16em;text-transform:uppercase;padding:6px 12px;margin-bottom:20px}
+h1,h2,h3{font-family:var(--disp);text-transform:uppercase;line-height:.98;font-weight:700}
+h1{font-size:clamp(3rem,9vw,6.6rem);letter-spacing:-.01em;margin-bottom:22px}
+h1 span{color:var(--red)}
+.lead{font-size:1.15rem;max-width:44ch;margin-bottom:30px;color:#2c2a26}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px}
+.mini{display:flex;gap:8px 22px;flex-wrap:wrap;font-weight:700;font-size:.92rem;list-style:none}
+.shot{position:relative;max-width:440px;margin-left:auto;aspect-ratio:4/5;border:4px solid var(--ink);box-shadow:14px 14px 0 var(--red);background:var(--ink)}
+.shot img{width:100%;height:100%;object-fit:cover}
+.stk{position:absolute;right:-12px;top:-20px;background:var(--ink);color:#fff;font:700 1.8rem/1 var(--disp);padding:14px 18px;transform:rotate(6deg);text-align:center}
+.stk small{display:block;font:500 .75rem var(--body);letter-spacing:.06em;margin-top:4px}
+.strip{background:var(--ink);color:var(--bg);overflow:hidden;white-space:nowrap;padding:14px 0;font:600 1.3rem var(--disp);text-transform:uppercase;letter-spacing:.1em}
+.strip span{display:inline-block;padding-right:40px}
+.strip i{color:var(--red);font-style:normal;padding-left:40px}
+section{padding:clamp(56px,8vw,104px) 0}
+h2{font-size:clamp(2.2rem,5.4vw,4rem);margin-bottom:clamp(28px,5vw,48px)}
+h2 small{display:block;font:500 .9rem var(--body);letter-spacing:.2em;color:var(--red);margin-bottom:10px}
+.adv{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.adv div{background:var(--paper);border:3px solid var(--ink);padding:24px}
+.adv b{display:block;font:700 1.5rem/1.1 var(--disp);text-transform:uppercase;margin-bottom:8px}
+.adv span{color:var(--mut)}
+.sv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--paper);border:3px solid var(--ink);display:flex;flex-direction:column;transition:.2s}
+.card:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--ink)}
+.ico{height:130px;border-bottom:3px solid var(--ink);display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,var(--bg),var(--bg) 14px,#e5ddcc 14px,#e5ddcc 28px)}
+.card:nth-child(2n) .ico{background:repeating-linear-gradient(-45deg,#ffd9cf,#ffd9cf 14px,#ffc7b8 14px,#ffc7b8 28px)}
+.ico svg{width:56px;height:56px;stroke:var(--ink);stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;background:var(--paper);border:3px solid var(--ink);padding:10px;width:74px;height:74px}
+.cb{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cb h3{font-size:1.7rem}
+.cb p{color:var(--mut);flex:1}
+.pr{display:flex;justify-content:space-between;align-items:center;border-top:2px dashed var(--ink);padding-top:12px;gap:10px}
+.pr b{font:600 1.05rem var(--disp);text-transform:uppercase;letter-spacing:.04em}
+.note{margin-top:22px;font-size:.92rem;color:var(--mut)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;background:var(--ink);color:var(--bg);padding:26px}
+.steps li::before{content:counter(s);display:block;font:700 4rem/1 var(--disp);color:var(--red)}
+.steps b{display:block;font:600 1.4rem var(--disp);text-transform:uppercase;margin:6px 0}
+.dark{background:var(--ink);color:var(--bg)}
+.gal{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.gal figure{aspect-ratio:4/5;border:3px solid var(--bg);overflow:hidden;grid-column:span 2}
+.gal figure:nth-child(1){grid-column:span 3;aspect-ratio:auto;grid-row:span 1}
+.gal figure:nth-child(2){grid-column:span 3}
+.gal img{width:100%;height:100%;object-fit:cover}
+.nophoto{background:repeating-linear-gradient(45deg,#22201c,#22201c 14px,#2c2924 14px,#2c2924 28px)}
+.gal figure:nth-child(1) img{aspect-ratio:4/5}
+.tr{display:grid;grid-template-columns:.7fr 1.3fr;gap:22px;align-items:start}
+.tr>*{min-width:0}
+.score{background:var(--red);color:#fff;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink);padding:30px;text-align:center}
+.score b{display:block;font:700 5.4rem/1 var(--disp)}
+.rv{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.rv blockquote{background:var(--paper);color:var(--ink);border:3px solid var(--ink);padding:22px}
+.rv p{margin-bottom:12px}
+.rv cite{font-style:normal;font-weight:700;font-size:.9rem}
+.rv cite span{font-weight:400;color:var(--mut)}
+.faq details{background:var(--paper);border:3px solid var(--ink);margin-bottom:12px;padding:16px 20px}
+.faq summary{cursor:pointer;font:600 1.3rem var(--disp);text-transform:uppercase;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--red);font-size:1.7rem;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq p{margin-top:10px;color:var(--mut);max-width:70ch}
+.ct{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
+.ct>*{min-width:0}
+.cbx{background:var(--red);color:#fff;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink);padding:clamp(24px,4vw,44px)}
+.tel{display:inline-block;font:700 clamp(2.2rem,7vw,4rem)/1.05 var(--disp);text-decoration:none;margin-bottom:20px}
+dl{display:grid;gap:14px;margin-bottom:24px}
+dt{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;opacity:.85}
+dd a{text-decoration:underline}
+.cbx .btn{color:var(--ink)}
+.map{border:3px solid var(--ink);background:var(--paper) repeating-linear-gradient(0deg,transparent 0 33px,#e5ddcc 33px 34px),repeating-linear-gradient(90deg,transparent 0 33px,#e5ddcc 33px 34px);padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;min-height:240px}
+.map h3{font-size:1.9rem;background:var(--paper);align-self:flex-start;padding:2px 10px 2px 0}
+.map .btn{align-self:flex-start}
+footer{border-top:3px solid var(--ink);padding:24px 0;font-size:.9rem}
+footer .w{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.dock{display:none}
+@media(max-width:860px){
+ nav,.hc{display:none}.hg,.tr,.ct{grid-template-columns:1fr}
+ .shot{max-width:380px;width:calc(100% - 14px)}
+ .adv,.steps{grid-template-columns:1fr}.rv{grid-template-columns:1fr}
+ .sv{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 16px;gap:16px;margin:0 -16px;padding:0 16px 18px 16px;scrollbar-width:none}
+ .sv::-webkit-scrollbar{display:none}
+ .card{flex:0 0 80%;scroll-snap-align:start}
+ .card:hover{transform:none;box-shadow:none}
+ .gal{grid-template-columns:1fr 1fr}.gal figure,.gal figure:nth-child(1),.gal figure:nth-child(2){grid-column:span 1}
+ .gal figure:nth-child(1){aspect-ratio:4/5}
+ .gal figure:nth-child(5){grid-column:span 2;aspect-ratio:16/10}
+ .cta .btn{flex:1 1 100%}
+ .dock{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--bg);border-top:3px solid var(--ink)}
+ .dock .btn{width:100%}
+ body{padding-bottom:84px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версія сайту: фото та тексти взято з відкритих джерел салону</div>
+<header><div class="w bar">
+<a class="logo" href="#top">Shalom <b>Краси</b></a>
+<nav aria-label="Меню"><a href="#services">Послуги</a><a href="#works">Роботи</a><a href="#reviews">Відгуки</a><a href="#faq">FAQ</a><a href="#contacts">Контакти</a></nav>
+<a class="btn p s hc" href="tel:+380660193927">Записатися</a>
+</div></header>
+<main id="top">
+<div class="hero"><div class="w hg">
+<div>
+<span class="tag">Салон краси · Чернівці</span>
+<h1>Стрижка, <span>борода</span> і колір</h1>
+<p class="lead">Чоловічі стрижки та барбер, жіночі стрижки й фарбування, SPA для волосся та подолог. Українська, 32/1.</p>
+<div class="cta"><a class="btn p" href="tel:+380660193927">Записатися</a><a class="btn" href="https://www.instagram.com/shalom.krasu13/" target="_blank" rel="noopener">Instagram</a></div>
+<ul class="mini"><li>★ 4,9 · 16 відгуків (top20.ua)</li><li>Є автостоянка</li></ul>
+</div>
+<div class="shot"><div class="stk">4,9<small>16 відгуків</small></div><img src="img/work-5.jpg" alt="Чоловічий портрет з бородою, барбер Shalom Краси" width="1030" height="1285" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></div>
+</div></div>
+<div class="strip" aria-hidden="true"><span>Чоловічі стрижки <i>/</i> Борода <i>/</i> Фарбування <i>/</i> SPA для волосся <i>/</i> Подолог <i>/</i> Чоловічі стрижки <i>/</i> Борода <i>/</i> Фарбування</span></div>
+
+<section><div class="w">
+<h2><small>Чому ми</small>Безсоромно талановиті майстри</h2>
+<div class="adv">
+<div><b>Барбер</b><span>Чоловічі стрижки, стрижка бороди та її камуфлювання.</span></div>
+<div><b>Колористика</b><span>Фарбування будь-якої складності, мілірування, виправлення чужих робіт.</span></div>
+<div><b>Подолог у салоні</b><span>Допомога з тріщинами, мозолями та врослими нігтями.</span></div>
+</div></div></section>
+
+<section id="services" style="padding-top:0"><div class="w">
+<h2><small>Послуги</small>Що ми робимо</h2>
+<div class="sv">
+<article class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20 18 6M14 6l4 4M6 4l2 2M4 8l2 2"/><circle cx="6" cy="18" r="2"/></svg></div><div class="cb"><h3>Чоловічі стрижки</h3><p>Класичні та сучасні чоловічі стрижки в барбер-зоні.</p><div class="pr"><b>Ціна за запитом</b><a class="btn s" href="tel:+380660193927">Записатися</a></div></div></article>
+<article class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M5 9c0 6 3 10 7 10s7-4 7-10M5 9h14M9 12v2M15 12v2"/></svg></div><div class="cb"><h3>Борода</h3><p>Стрижка бороди, оформлення та камуфлювання бороди.</p><div class="pr"><b>Ціна за запитом</b><a class="btn s" href="tel:+380660193927">Записатися</a></div></div></article>
+<article class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></div><div class="cb"><h3>Фарбування</h3><p>Складне фарбування, мілірування та виправлення чужих робіт.</p><div class="pr"><b>Ціна за запитом</b><a class="btn s" href="tel:+380660193927">Записатися</a></div></div></article>
+<article class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 8h18M6 8l2 12M18 8l-2 12M9 4h6"/></svg></div><div class="cb"><h3>Жіночі стрижки</h3><p>Стрижки для прямого та кучерявого волосся.</p><div class="pr"><b>Ціна за запитом</b><a class="btn s" href="tel:+380660193927">Записатися</a></div></div></article>
+<article class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l3 3M15 15l3 3M18 6l-3 3M9 15l-3 3"/></svg></div><div class="cb"><h3>SPA для волосся</h3><p>Відновлювальні процедури та догляд за волоссям.</p><div class="pr"><b>Ціна за запитом</b><a class="btn s" href="tel:+380660193927">Записатися</a></div></div></article>
+<article class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M7 20c-2-4-2-9 1-12s6-3 8 0 1 6-1 8-4 2-5 4z"/></svg></div><div class="cb"><h3>Подологія</h3><p>Тріщини на стопах, мозолі, врослі нігті.</p><div class="pr"><b>Ціна за запитом</b><a class="btn s" href="tel:+380660193927">Записатися</a></div></div></article>
+</div>
+<p class="note">Актуальні ціни та вільний час уточнюйте за телефоном 066 019 39 27.</p>
+</div></section>
+
+<section class="dark" id="how"><div class="w">
+<h2><small>Запис</small>Як записатися</h2>
+<ol class="steps">
+<li><b>Зателефонуйте</b>066 019 39 27 або напишіть в Instagram @shalom.krasu13.</li>
+<li><b>Оберіть послугу</b>Назвіть, що потрібно: стрижка, борода, колір чи подолог.</li>
+<li><b>Приходьте</b>Українська, 32/1, Чернівці. Поруч є автостоянка.</li>
+</ol>
+</div></section>
+
+<section id="works"><div class="w">
+<h2><small>Галерея</small>Наші роботи</h2>
+<div class="gal" style="--g:0">
+<figure><img src="img/work-1.jpg" alt="Стрижка боб, світле фарбування, Shalom Краси" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-4.jpg" alt="Світле довге волосся після фарбування, Shalom Краси" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-2.jpg" alt="Довге світле волосся, рівний зріз" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-3.jpg" alt="Світле фарбування, рівний зріз" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-5.jpg" alt="Борода та стрижка, барбер Shalom Краси" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+</div>
+</div></section>
+
+<section class="dark" id="reviews"><div class="w">
+<h2><small>Відгуки клієнтів</small>Нас радять</h2>
+<div class="tr">
+<div class="score"><b>4,9</b>16 відгуків на top20.ua<br>94% «відмінно»</div>
+<div class="rv">
+<blockquote><p>«Велике спасибі подологу Світлані за її професіональну майстерність!»</p><cite>Maria Smuk <span>· 24 березня 2024</span></cite></blockquote>
+<blockquote><p>«Всегда получите отличный результат. Стильную причёску, красивые ногти и индивидуальный подход.»</p><cite>Inna L <span>· 11 лютого 2022</span></cite></blockquote>
+<blockquote><p>«Профессиональные мастера, обслуживание на высшем уровне, очень крутой салон.»</p><cite>Thomas-James Lifewell-Fisher <span>· 29 листопада 2021</span></cite></blockquote>
+<blockquote><p>«Спасибо за прекрасную стрижку!»</p><cite>Надія Глушко <span>· 20 липня 2021</span></cite></blockquote>
+</div></div>
+</div></section>
+
+<section id="faq"><div class="w">
+<h2><small>FAQ</small>Часті питання</h2>
+<div class="faq">
+<details><summary>Як записатися?</summary><p>За телефоном 066 019 39 27 або в Instagram @shalom.krasu13.</p></details>
+<details><summary>Які послуги є в салоні?</summary><p>Чоловічі й жіночі стрижки, стрижка та камуфлювання бороди, фарбування, мілірування, SPA для волосся, подолог.</p></details>
+<details><summary>Скільки це коштує?</summary><p>Ціни залежать від послуги та майстра. Уточнюйте за телефоном під час запису.</p></details>
+<details><summary>Чи є автостоянка?</summary><p>Так, за даними top20.ua, біля студії є автостоянка.</p></details>
+<details><summary>Де знаходиться салон і коли працює?</summary><p>Українська, 32/1, Чернівці. За даними top20.ua, графік 08:00–17:00. Перед візитом уточніть час за телефоном.</p></details>
+</div>
+</div></section>
+
+<section id="contacts" style="padding-top:0"><div class="w">
+<h2><small>Контакти</small>Приходьте в гості</h2>
+<div class="ct">
+<div class="cbx"><a class="tel" href="tel:+380660193927">066 019 39 27</a>
+<dl><div><dt>Адреса</dt><dd>м. Чернівці, вул. Українська, 32/1</dd></div><div><dt>Графік</dt><dd>08:00–17:00 (за даними top20.ua)</dd></div><div><dt>Instagram</dt><dd><a href="https://www.instagram.com/shalom.krasu13/" target="_blank" rel="noopener">@shalom.krasu13</a></dd></div></dl>
+<a class="btn" href="tel:+380660193927">Записатися за телефоном</a></div>
+<div class="map"><h3>Як нас знайти</h3><a class="btn" href="https://www.google.com/maps/search/?api=1&query=%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B0+32%2F1" target="_blank" rel="noopener">Відкрити на Google Maps</a></div>
+</div>
+</div></section>
+</main>
+<footer><div class="w"><span>© Shalom Краси, Чернівці</span><span>Демо-сайт</span></div></footer>
+<div class="dock"><a class="btn p" href="tel:+380660193927">Записатися</a></div>
+</body>
+</html>

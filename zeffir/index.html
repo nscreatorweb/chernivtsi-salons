@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Зеффір, Чернівці</title>
+<meta name="description" content="Зеффір (Beauty Land Zefir): манікюр, педикюр, брови, вії, макіяж, зачіски в Чернівцях. Шевченка, 46 та Кордуби, 3.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff5f8;--pink:#f9d3e0;--lil:#e6dcf8;--mint:#d7f0e6;--ink:#3b2433;--mut:#7a5c6c;--ac:#d6457a;--ac2:#a82c5c;--card:#fff;--line:#f0cbd9;--d:'Fraunces',Georgia,serif;--b:'Nunito',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--b);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+.demo{background:var(--ac2);color:#fff;text-align:center;font-size:.78rem;padding:8px 16px}
+header{position:sticky;top:0;z-index:20;background:rgba(255,245,248,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.logo{font-family:var(--d);font-weight:700;font-size:1.6rem;text-decoration:none;color:var(--ac2)}
+.logo small{font:600 .76rem var(--b);display:block;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-top:-2px}
+nav{display:flex;gap:24px}nav a{text-decoration:none;font-weight:600;font-size:.92rem;color:var(--mut)}nav a:hover{color:var(--ac)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;border-radius:999px;font:700 1rem var(--b);text-decoration:none;border:2px solid transparent;transition:.25s;cursor:pointer}
+.btn.p{background:var(--ac);color:#fff;box-shadow:0 10px 24px -10px var(--ac)}.btn.p:hover{transform:translateY(-2px);background:var(--ac2)}
+.btn.g{border-color:var(--ac);color:var(--ac2);background:transparent}.btn.g:hover{background:var(--ac);color:#fff}
+.btn.s{min-height:42px;padding:0 20px;font-size:.9rem}
+h1,h2,h3{font-family:var(--d);font-weight:700;line-height:1.1;text-wrap:balance}
+.eyebrow{display:inline-block;background:var(--lil);color:var(--ac2);border-radius:999px;padding:5px 16px;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px}
+.hero{padding:clamp(36px,6vw,84px) 0;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:var(--pink);right:-140px;top:-120px;z-index:0}
+.hero::after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:var(--mint);left:-100px;bottom:-120px;z-index:0}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,5vw,64px);align-items:center}
+.hero h1{font-size:clamp(2.5rem,6vw,4.6rem);margin-bottom:20px}
+.hero h1 em{color:var(--ac);font-style:italic}
+.lead{color:var(--mut);font-size:1.15rem;max-width:44ch;margin-bottom:28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.facts{list-style:none;display:flex;flex-wrap:wrap;gap:8px 22px;font-weight:600;font-size:.92rem;color:var(--mut)}
+.collage{position:relative;aspect-ratio:1/1;max-width:520px;width:100%;margin-inline:auto}
+.collage .a,.collage .b{position:absolute;overflow:hidden;border:6px solid #fff;box-shadow:0 20px 40px -20px rgba(120,40,80,.5);background:linear-gradient(150deg,var(--pink),var(--lil))}
+.collage .a{inset:0 18% 20% 0;border-radius:44% 56% 52% 48% / 52% 44% 56% 48%}
+.collage .b{inset:42% 0 0 38%;border-radius:50%;background:linear-gradient(150deg,var(--mint),var(--lil))}
+.collage img{width:100%;height:100%;object-fit:cover}
+section{padding:clamp(52px,7vw,96px) 0}
+.alt{background:var(--lil)}
+h2{font-size:clamp(1.9rem,4.2vw,3rem);margin-bottom:clamp(24px,4vw,44px)}
+.adv{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.adv div{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:26px}
+.adv .dot{width:46px;height:46px;border-radius:50%;background:var(--pink);margin-bottom:14px}
+.adv div:nth-child(2) .dot{background:var(--mint)}.adv div:nth-child(3) .dot{background:var(--lil)}
+.adv h3{font-size:1.25rem;margin-bottom:6px}.adv p{color:var(--mut);font-size:.96rem}
+.cat{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:18px}
+.pc{background:var(--card);border-radius:28px;padding:10px;display:flex;flex-direction:column;border:1px solid var(--line);transition:.3s}
+.pc:hover{transform:translateY(-4px);box-shadow:0 24px 40px -28px var(--ac2)}
+.pic{aspect-ratio:16/8;border-radius:20px;background:linear-gradient(140deg,var(--pink),var(--lil));position:relative;overflow:hidden}
+.pc:nth-child(3n+2) .pic{background:linear-gradient(140deg,var(--lil),var(--mint))}
+.pc:nth-child(3n) .pic{background:linear-gradient(140deg,var(--mint),var(--pink))}
+.pic::after{content:"";position:absolute;width:90px;height:90px;border-radius:50%;background:rgba(255,255,255,.55);right:16px;top:-24px}
+.pic::before{content:"";position:absolute;width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,.4);left:24px;bottom:-14px}
+.pc .body{padding:16px 14px 12px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pc h3{font-size:1.3rem}.pc p{color:var(--mut);font-size:.95rem;flex:1}
+.pc .pr{font-weight:700;font-size:.88rem;color:var(--ac2)}
+.hint{display:none;font-size:.85rem;color:var(--mut);margin:-26px 0 14px}
+.gal{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}.gal figure{grid-column:span 2}.gal figure:nth-child(n+4){grid-column:span 3}
+@media(max-width:900px){.gal{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:-16px;padding:0 16px 10px;scrollbar-width:none}.gal::-webkit-scrollbar{display:none}.gal figure{flex:0 0 66%;scroll-snap-align:start}}
+.gal figure{aspect-ratio:4/5;border-radius:32px;overflow:hidden;background:linear-gradient(150deg,var(--pink),var(--lil))}
+.gal figure:nth-child(even){border-radius:32px 32px 120px 32px}
+.gal img{width:100%;height:100%;object-fit:cover}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s}
+.steps li{counter-increment:s;background:var(--card);border-radius:28px;padding:24px}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--ac);color:#fff;font-family:var(--d);font-weight:700;margin-bottom:12px}
+.steps b{display:block}.steps span{color:var(--mut);font-size:.95rem}
+.trust{display:grid;grid-template-columns:.7fr 1.3fr;gap:24px;align-items:start}
+.score{background:var(--ac);color:#fff;border-radius:32px;padding:32px;text-align:center}
+.score b{font-family:var(--d);font-size:4.6rem;line-height:1;display:block}
+.score .st{letter-spacing:3px}.score small{display:block;margin-top:8px;opacity:.9}
+.revs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rv{background:var(--card);border-radius:24px;padding:20px;border:1px solid var(--line)}
+.rv cite{display:block;margin-top:8px;font-style:normal;font-weight:700;font-size:.82rem;color:var(--mut)}
+.src{font-size:.82rem;color:var(--mut);margin-top:16px}
+details{background:var(--card);border-radius:20px;padding:16px 22px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";color:var(--ac);font-size:1.4rem;line-height:1}details[open] summary::after{content:"\2212"}
+details p{color:var(--mut);margin-top:8px}
+.contact{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+.cbox{background:var(--ink);color:#fff;border-radius:36px;padding:clamp(26px,4vw,48px)}
+.tel{font-family:var(--d);font-weight:700;font-size:clamp(2rem,5vw,3rem);text-decoration:none;display:inline-block;margin:6px 0 20px}
+dl{display:grid;gap:14px}dt{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;opacity:.7}
+.links{display:flex;flex-direction:column;gap:12px;justify-content:center}
+footer{padding:26px 0;font-size:.85rem;color:var(--mut)}
+.dock{display:none}
+@media(max-width:860px){nav,.hdr-cta{display:none}.hero .wrap,.trust,.contact,.revs,.steps{grid-template-columns:1fr}.collage{max-width:340px}.cta .btn{flex:1 1 100%}
+.hint{display:block}.cat{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-inline:-16px;padding:4px 16px 14px;scrollbar-width:none}.cat::-webkit-scrollbar{display:none}.pc{flex:0 0 80%;scroll-snap-align:start}
+.dock{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(255,245,248,.95);border-top:1px solid var(--line)}.dock .btn{width:100%}body{padding-bottom:76px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версія сайту: фото та тексти взято з відкритих джерел салону</div>
+<header><div class="wrap bar">
+<a class="logo" href="#top">Зеффір<small>Beauty Land Zefir</small></a>
+<nav aria-label="Меню"><a href="#about">Про нас</a><a href="#services">Послуги</a><a href="#gallery">Роботи</a><a href="#reviews">Відгуки</a><a href="#faq">FAQ</a><a href="#contacts">Контакти</a></nav>
+<a class="btn p s hdr-cta" href="tel:+380956126610">Записатися</a>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+<div>
+<span class="eyebrow">Салон краси · Чернівці</span>
+<h1>Тебе тут люблять, <em>як вдома</em></h1>
+<p class="lead">Манікюр, педикюр, брови, вії, макіяж і зачіски в затишних «будиночках краси» на Шевченка та Кордуби.</p>
+<div class="cta"><a class="btn p" href="tel:+380956126610">Записатися</a><a class="btn g" href="https://www.instagram.com/beauty_land_zefir_/" target="_blank" rel="noopener">Instagram</a></div>
+<ul class="facts"><li>★ 4.5 · 28 відгуків</li><li>Шевченка, 46 · Кордуби, 3</li><li>09:00–20:00</li></ul>
+</div>
+<div class="collage"><div class="a"><img src="img/work-1.jpg" alt="Робота майстрів Зеффір" onerror="this.remove()"></div><div class="b"><img src="img/work-2.jpg" alt="Робота майстрів Зеффір" onerror="this.remove()"></div></div>
+</div></section>
+
+<section id="about" class="alt"><div class="wrap">
+<h2>Чому Зеффір</h2>
+<div class="adv">
+<div><span class="dot" style="display:block"></span><h3>Дві затишні студії</h3><p>ZEFIRka на Шевченка, 46 та ZEFIRchik на Кордуби, 3, за 5 хвилин одна від одної.</p></div>
+<div><span class="dot" style="display:block"></span><h3>Манікюр, що тримається</h3><p>Клієнти відзначають акуратний манікюр та увагу до здоров'я нігтів.</p></div>
+<div><span class="dot" style="display:block"></span><h3>Стерильність і комфорт</h3><p>У відгуках пишуть про чистоту, привітний персонал і затишну атмосферу.</p></div>
+<div><span class="dot" style="display:block"></span><h3>Запис онлайн</h3><p>Можна записатися за телефоном, в Direct або онлайн через сторінку запису.</p></div>
+</div></div></section>
+
+<section id="services"><div class="wrap">
+<h2>Послуги</h2>
+<p class="hint">Гортайте картки вбік →</p>
+<div class="cat">
+<article class="pc"><div class="pic"></div><div class="body"><h3>Манікюр</h3><p>Акуратний манікюр і покриття, догляд за нігтьовою пластиною.</p><span class="pr">Манікюр (чистка) 400 ₴<br>Гель-лак (манікюр + покриття) 800 ₴<br>Нарощування від 1000 ₴</span><a class="btn g s" href="tel:+380956126610">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Педикюр</h3><p>Педикюр у затишній студії.</p><span class="pr">Апаратний + гель-лак 850 ₴<br>Кислотний + гель-лак 950 ₴<br>Пальці + гель-лак 800 ₴</span><a class="btn g s" href="tel:+380956126610">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Брови та вії</h3><p>Ламінування брів і вій, оформлення, догляд.</p><span class="pr">Ламінування брів + догляд 600 ₴<br>Нарощування вій від 750 ₴<br>Ламінування вій + Lash Botox 850 ₴</span><a class="btn g s" href="tel:+380956126610">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Макіяж</h3><p>Макіяж на кожен день і важливі події.</p><span class="pr">Денний візаж 800 ₴<br>Вечірній візаж 950 ₴<br>Весільний візаж 1100 ₴</span><a class="btn g s" href="tel:+380956126610">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Волосся та зачіски</h3><p>Стрижка, фарбування, нарощування, ламінування, зачіски.</p><span class="pr">Жіноча стрижка 550–700 ₴<br>Фарбування кореня 700 ₴<br>Укладка 550–650 ₴</span><a class="btn g s" href="tel:+380956126610">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Шугаринг і косметологія</h3><p>Депіляція шугарингом та послуги косметолога. Є дитячі послуги (розділ KIDS).</p><span class="pr">Ціна: уточнюйте за телефоном</span><a class="btn g s" href="tel:+380956126610">Записатися</a></div></article>
+</div>
+<p class="src">Ціни «від»/діапазони з прайсу, закріпленого в Instagram салону (майстер / топ-майстер). У неробочий час (до 9:00 та після 20:00) +200 ₴. Актуальність уточнюйте за телефоном.</p>
+</div></section>
+
+<section id="gallery" class="alt"><div class="wrap">
+<h2>Наші роботи</h2>
+<div class="gal">
+<figure><img src="img/work-1.jpg" alt="Робота Зеффір: вечірній макіяж і зачіска" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+<figure><img src="img/work-2.jpg" alt="Робота Зеффір: макіяж і укладка волосся" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+<figure><img src="img/work-3.jpg" alt="Робота Зеффір: макіяж у золотих тонах" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+<figure><img src="img/work-4.jpg" alt="Робота Зеффір: ламінування вій" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+<figure><img src="img/work-5.jpg" alt="Робота Зеффір: манікюр, мерехтливе покриття" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+</div>
+<p class="src"><a href="https://www.instagram.com/beauty_land_zefir_/" target="_blank" rel="noopener">Більше робіт в Instagram</a></p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Як записатися</h2>
+<ol class="steps">
+<li><b>Зателефонуйте</b><span>095 612 66 10 або Direct в Instagram.</span></li>
+<li><b>Оберіть студію</b><span>Шевченка, 46 (ZEFIRka) або Кордуби, 3 (ZEFIRchik).</span></li>
+<li><b>Приходьте</b><span>Щодня 09:00–20:00.</span></li>
+</ol></div></section>
+
+<section id="reviews" class="alt"><div class="wrap">
+<h2>Відгуки клієнтів</h2>
+<div class="trust">
+<div class="score"><b>4.5</b><span class="st">★★★★★</span><small>28 відгуків на top20.ua</small></div>
+<div class="revs">
+<div class="rv"><p>Ходжу до Віри вже другий рік і завжди дуже задоволена! Манікюр тримається довго, все акуратно і красиво.</p><cite>Ілона Шустер, 1 серпня 2025</cite></div>
+<div class="rv"><p>Була на манікюрі, і залишилась задоволеною! Манікюр було зроблено якісно і охайно. Персонал привітний, затишно.</p><cite>Lesia Lunko, 30 листопада 2024</cite></div>
+<div class="rv"><p>Дуже класний салон, затишна атмосфера, завжди задоволена послугами, які надають дівчата. Великий плюс: місце розташування і кваліфікація майстрів.</p><cite>Леся Назарук, 30 листопада 2024</cite></div>
+<div class="rv"><p>Обожнюю ходити до Алінки на макіяж. Тільки вона мене розуміє з пів слова.</p><cite>Lesia Lunko, 30 листопада 2024</cite></div>
+</div></div>
+<p class="src">Відгуки з відкритої сторінки салону на top20.ua.</p>
+</div></section>
+
+<section id="faq"><div class="wrap">
+<h2>Часті питання</h2>
+<details><summary>Як записатися?</summary><p>За телефоном 095 612 66 10, у Direct в Instagram або онлайн через сторінку запису салону.</p></details>
+<details><summary>Скільки коштують послуги?</summary><p>Орієнтири: манікюр 400 ₴, гель-лак 800 ₴, педикюр з гель-лаком 800–950 ₴, ламінування брів 600 ₴, нарощування вій від 750 ₴, денний візаж 800 ₴. Остаточну вартість уточнюйте при записі.</p></details>
+<details><summary>Чи діє націнка в неробочий час?</summary><p>За прайсом салону, у неробочий час (до 9:00 та після 20:00) +200 ₴; раніше 7:00 +400 ₴.</p></details>
+<details><summary>Чи є застосунок для запису?</summary><p>Салон пише в Instagram, що запис можна здійснити через Direct, застосунок «ZEFIR» в App Store/Google Play або за телефоном.</p></details>
+<details><summary>Які в вас адреси?</summary><p>Чернівці: Шевченка, 46 (ZEFIRka) та Мирона Кордуби, 3 (ZEFIRchik).</p></details>
+<details><summary>Чи є послуги для дітей?</summary><p>У профілі салону є розділ KIDS. Деталі уточнюйте за телефоном.</p></details>
+</div></section>
+
+<section id="contacts" class="alt"><div class="wrap">
+<h2>Контакти</h2>
+<div class="contact">
+<div class="cbox"><a class="tel" href="tel:+380956126610">095 612 66 10</a>
+<dl><div><dt>Адреси</dt><dd>Чернівці, Шевченка, 46 (ZEFIRka)<br>Чернівці, Мирона Кордуби, 3 (ZEFIRchik)</dd></div><div><dt>Графік</dt><dd>Щодня, 09:00–20:00</dd></div><div><dt>Instagram</dt><dd><a href="https://www.instagram.com/beauty_land_zefir_/" target="_blank" rel="noopener">@beauty_land_zefir_</a></dd></div></dl></div>
+<div class="links"><a class="btn p" href="tel:+380956126610">Записатися</a><a class="btn g" href="https://bookon.ua/s/beauty_land_zefir_" target="_blank" rel="noopener">Онлайн-запис</a><a class="btn g" href="https://www.google.com/maps/search/?api=1&query=%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0+46+%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96" target="_blank" rel="noopener">Відкрити на Google Maps</a><a class="btn g" href="https://www.instagram.com/beauty_land_zefir_/" target="_blank" rel="noopener">Написати в Instagram</a></div>
+</div></div></section>
+</main>
+<footer><div class="wrap">© Зеффір, Чернівці · Демо-версія сайту</div></footer>
+<div class="dock"><a class="btn p" href="tel:+380956126610">Записатися: 095 612 66 10</a></div>
+</body>
+</html>

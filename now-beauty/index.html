@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Now: салон краси в Чернівцях</title>
+<meta name="description" content="Now: чоловічі та жіночі стрижки, фарбування, манікюр, макіяж, брови. вул. Ольги Кобилянської, 12, Чернівці. Пн-сб 9:00-20:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0d10;--bg2:#17171c;--card:#1d1d23;--ink:#f6f6f2;--mut:#a3a3ad;--lime:#d6ff3d;--line:rgba(255,255,255,.12);--disp:'Syne',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.w{max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+.demo{background:var(--lime);color:#111;text-align:center;font-size:.78rem;font-weight:500;padding:8px 14px}
+header{position:sticky;top:0;z-index:50;background:rgba(13,13,16,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{font:800 1.7rem/1 var(--disp);text-decoration:none;letter-spacing:-.02em}
+.logo i{color:var(--lime);font-style:normal}
+nav{display:flex;gap:26px}
+nav a{font-size:.92rem;font-weight:500;text-decoration:none;color:var(--mut);transition:color .2s}
+nav a:hover{color:var(--lime)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:999px;font:600 1rem var(--body);text-decoration:none;border:1.5px solid var(--ink);transition:.25s;cursor:pointer}
+.btn.p{background:var(--lime);color:#111;border-color:var(--lime)}
+.btn.p:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 14px 30px -14px var(--lime)}
+.btn.g:hover{background:var(--ink);color:#111}
+.btn.s{min-height:42px;padding:0 20px;font-size:.9rem}
+.hero{padding:clamp(36px,6vw,80px) 0 clamp(48px,7vw,96px);position:relative;overflow:hidden}
+.hg{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(24px,5vw,64px);align-items:center}
+.hg>*{min-width:0}
+.big{font:800 clamp(4.5rem,12.5vw,9.5rem)/.85 var(--disp);letter-spacing:-.05em;margin-bottom:18px}
+.big i{color:var(--lime);font-style:normal}
+.tl{font:700 clamp(1.4rem,3vw,2.2rem)/1.15 var(--disp);margin-bottom:16px;max-width:20ch}
+.lead{color:var(--mut);max-width:46ch;margin-bottom:30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;list-style:none}
+.chips li{border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:.88rem;color:var(--mut)}
+.chips b{color:var(--lime);font-weight:600}
+.stack{position:relative;aspect-ratio:4/5;max-width:440px;margin-left:auto;width:100%}
+.stack figure{position:absolute;overflow:hidden;border-radius:26px;border:1px solid var(--line)}
+.stack figure:nth-child(1){inset:0 14% 12% 0;z-index:2;transform:rotate(-3deg)}
+.stack figure:nth-child(2){inset:22% 0 0 38%;z-index:1;transform:rotate(5deg)}
+.stack img{width:100%;height:100%;object-fit:cover}
+.tick{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:14px 0;background:var(--lime);color:#111;font:800 1.15rem var(--disp);text-transform:uppercase}
+.tick span{display:inline-block;padding-right:36px}
+section{padding:clamp(56px,8vw,100px) 0}
+.sh{margin-bottom:clamp(28px,5vw,48px)}
+.eb{display:block;color:var(--lime);font-weight:600;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:12px}
+h2,h3{font-family:var(--disp);line-height:1.05;letter-spacing:-.02em}
+h2{font-size:clamp(2rem,5vw,3.6rem);font-weight:800}
+.adv{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.adv div{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px}
+.adv b{display:block;font:700 1.3rem/1.15 var(--disp);margin-bottom:8px}
+.adv span{color:var(--mut);font-size:.95rem}
+.pb{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.pbox{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:clamp(20px,3vw,32px);transition:border-color .3s}
+.pbox:hover{border-color:var(--lime)}
+.pbox h3{font-size:1.7rem;margin-bottom:6px;display:flex;align-items:center;gap:12px}
+.pbox h3 svg{width:32px;height:32px;stroke:var(--lime);fill:none;stroke-width:1.6;flex:none}
+.pbox>p{color:var(--mut);font-size:.92rem;margin-bottom:14px}
+.pl{list-style:none}
+.pl li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-top:1px solid var(--line);font-size:.97rem}
+.pl li span:last-child{font-weight:600;white-space:nowrap;color:var(--lime)}
+.pl li span:first-child{min-width:0}
+.pbox .btn{margin-top:16px}
+.nailt{width:100%;border-collapse:collapse;font-size:.95rem;margin-top:4px}
+.nailt th{text-align:right;color:var(--mut);font-weight:500;font-size:.78rem;padding:6px 0}
+.nailt th:first-child{text-align:left}
+.nailt td{padding:10px 0;border-top:1px solid var(--line)}
+.nailt td:not(:first-child){text-align:right;font-weight:600;color:var(--lime);white-space:nowrap;padding-left:10px}
+.wide{grid-column:span 2}
+.more{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.more span{border:1px solid var(--line);border-radius:999px;padding:6px 16px;font-size:.92rem;color:var(--mut)}
+.note{margin-top:20px;color:var(--mut);font-size:.9rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;background:var(--lime);color:#111;border-radius:26px;padding:28px}
+.steps li::before{content:"0" counter(s);font:800 3rem/1 var(--disp)}
+.steps b{display:block;font:700 1.35rem var(--disp);margin:8px 0 4px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.nophoto{background:linear-gradient(135deg,#1d1d23,#2a2a33)}
+.gal figure{aspect-ratio:3/4;overflow:hidden;border-radius:24px;background:var(--card)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gal figure:hover img{transform:scale(1.06)}
+.tr{display:grid;grid-template-columns:.75fr 1.25fr;gap:16px;align-items:start}
+.tr>*{min-width:0}
+.score{background:var(--card);border:1px solid var(--lime);border-radius:28px;padding:32px;text-align:center}
+.score b{display:block;font:800 5.5rem/1 var(--disp);color:var(--lime)}
+.score p{color:var(--mut);font-size:.92rem}
+.rv{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rv blockquote{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:22px}
+.rv p{margin-bottom:12px;font-size:.98rem}
+.rv cite{font-style:normal;font-weight:600;font-size:.88rem}
+.rv cite span{font-weight:400;color:var(--mut)}
+.faq details{border-top:1px solid var(--line);padding:6px 0}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;padding:16px 0;font:700 1.25rem var(--disp);list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--lime);font-size:1.6rem;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq p{color:var(--mut);padding-bottom:16px;max-width:70ch}
+.ct{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}
+.ct>*{min-width:0}
+.box{background:var(--lime);color:#111;border-radius:32px;padding:clamp(26px,4vw,46px)}
+.tel{display:inline-block;font:800 clamp(2.1rem,6vw,3.4rem)/1.05 var(--disp);text-decoration:none;margin-bottom:20px;letter-spacing:-.02em}
+dl{display:grid;gap:14px;margin-bottom:24px}
+dt{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;opacity:.7;font-weight:600}
+.box .btn.p{background:#111;color:var(--lime);border-color:#111}
+.map{border:1px solid var(--line);border-radius:32px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;min-height:240px;background:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:34px 34px}
+.map h3{font-size:1.8rem;background:var(--bg);align-self:flex-start;padding:2px 10px 2px 0}
+.map .btn{align-self:flex-start;background:var(--bg)}
+footer{border-top:1px solid var(--line);padding:26px 0;font-size:.88rem;color:var(--mut)}
+footer .w{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.dock{display:none}
+@media(max-width:860px){
+ nav,.hc{display:none}.hg,.tr,.ct{grid-template-columns:1fr}
+ .stack{max-width:320px;margin:10px auto 0}
+ .adv{grid-template-columns:1fr 1fr}.pb{grid-template-columns:1fr}.wide{grid-column:auto}
+ .steps{grid-template-columns:1fr}.rv{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr}
+ .cta .btn{flex:1 1 100%}
+ .dock{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(13,13,16,.95);border-top:1px solid var(--lime)}
+ .dock .btn{width:100%}
+ body{padding-bottom:80px}
+}
+@media(max-width:520px){.adv{grid-template-columns:1fr}.nailt{font-size:.88rem}.pl li{font-size:.92rem}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версія сайту: фото та тексти взято з відкритих джерел салону</div>
+<header><div class="w bar">
+<a class="logo" href="#top">Now<i>.</i></a>
+<nav aria-label="Меню"><a href="#services">Послуги</a><a href="#works">Роботи</a><a href="#reviews">Відгуки</a><a href="#faq">Питання</a><a href="#contacts">Контакти</a></nav>
+<a class="btn p s hc" href="tel:+380665450131">Записатися</a>
+</div></header>
+<main id="top">
+<div class="hero"><div class="w hg">
+<div>
+<h1 class="big">Now<i>.</i></h1>
+<p class="tl">Твій час сяяти. Весь спектр чоловічих та жіночих послуг.</p>
+<p class="lead">Стрижки, фарбування, манікюр, брови та макіяж у центрі Чернівців. Ольги Кобилянської, 12.</p>
+<div class="cta"><a class="btn p" href="tel:+380665450131">Записатися</a><a class="btn g" href="https://www.instagram.com/salon_beauty_now/" target="_blank" rel="noopener">Instagram @salon_beauty_now</a></div>
+<ul class="chips"><li><b>4,7</b> · 27 відгуків (top20.ua)</li><li>Пн–сб 9:00–20:00</li><li>Неділя: вихідний</li></ul>
+</div>
+<div class="stack">
+<figure><img src="img/work-1.jpg" alt="Чоловіча стрижка з фейдом і борода, робота салону Now" width="1030" height="1285" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-2.jpg" alt="Білий манікюр з перлинами, робота салону Now" width="1030" height="1370" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+</div>
+</div></div>
+<div class="tick" aria-hidden="true"><span>Стрижки · Фарбування · Манікюр · Брови · Макіяж · Борода ·</span><span>Стрижки · Фарбування · Манікюр · Брови · Макіяж · Борода ·</span><span>Стрижки · Фарбування · Манікюр · Брови · Макіяж · Борода ·</span></div>
+
+<section><div class="w">
+<div class="sh"><span class="eb">Чому Now</span><h2>Все в одному місці</h2></div>
+<div class="adv">
+<div><b>Чоловічі та жіночі</b><span>Стрижки, борода, фарбування, укладки.</span></div>
+<div><b>Нігті</b><span>Манікюр, гель-лак, нарощення, дизайн, чоловічий манікюр.</span></div>
+<div><b>Макіяж і брови</b><span>Майстри візажу та брів, професійний макіяж.</span></div>
+<div><b>Консультація стиліста</b><span>Безкоштовна за попередньою домовленістю для складних фарбувань.</span></div>
+</div></div></section>
+
+<section id="services" style="background:var(--bg2)"><div class="w">
+<div class="sh"><span class="eb">Послуги та ціни</span><h2>Прайс салону</h2></div>
+<div class="pb">
+<article class="pbox"><h3><svg viewBox="0 0 32 32"><path d="M6 26L22 10M18 10l4 4M8 8l3 3M6 14l3 3"/></svg>Men's hair</h3><p>Чоловічі стрижки та борода.</p>
+<ul class="pl"><li><span>Стрижка</span><span>600 ₴</span></li><li><span>Стрижка + борода</span><span>700–800 ₴</span></li><li><span>Оформлення бороди</span><span>350–600 ₴</span></li><li><span>Укладка</span><span>від 200 ₴</span></li><li><span>Фарбування бороди</span><span>350–600 ₴</span></li><li><span>Камуфляж сивини</span><span>350–600 ₴</span></li></ul>
+<a class="btn g s" href="tel:+380665450131">Записатися</a></article>
+<article class="pbox"><h3><svg viewBox="0 0 32 32"><path d="M16 4c5 6 8 9 8 14a8 8 0 0 1-16 0c0-5 3-8 8-14z"/></svg>Hair dyeing</h3><p>Фарбування. Ціна вказана без матеріалу.</p>
+<ul class="pl"><li><span>Фарбування кореня + стрижка</span><span>1 200–1 650 ₴</span></li><li><span>Фарбування кореня + довжина</span><span>1 200 ₴</span></li><li><span>Корінь + довжина + стрижка</span><span>1 200–1 650 ₴</span></li><li><span>Тонування</span><span>1 200 ₴</span></li><li><span>Відновлення L'Oréal Absolut Molecular</span><span>1 450 ₴</span></li></ul>
+<a class="btn g s" href="tel:+380665450131">Записатися</a></article>
+<article class="pbox wide"><h3><svg viewBox="0 0 32 32"><path d="M10 28V12a3 3 0 0 1 6 0v16M16 28V8a3 3 0 0 1 6 0v20"/></svg>Nails</h3><p>Жіночий манікюр без чистки / з чисткою.</p>
+<table class="nailt"><thead><tr><th>Послуга</th><th>без чистки</th><th>з чисткою</th></tr></thead><tbody>
+<tr><td>Жіночий манікюр</td><td>–</td><td>550 ₴</td></tr>
+<tr><td>Зняття покриття</td><td>400 ₴</td><td>600 ₴</td></tr>
+<tr><td>Покриття гель-лаком</td><td>700 ₴</td><td>800 ₴</td></tr>
+<tr><td>Корекція гель-лаку</td><td>800 ₴</td><td>850 ₴</td></tr>
+<tr><td>Корекція гелю</td><td>850 ₴</td><td>900 ₴</td></tr>
+<tr><td>Нарощення від (кожна наступна довжина +50 ₴)</td><td>950 ₴</td><td>1 000 ₴</td></tr>
+<tr><td>Чоловічий манікюр</td><td>–</td><td>700 ₴</td></tr>
+</tbody></table>
+<ul class="pl" style="margin-top:14px"><li><span>Додатково: френч / втирка / градієнт</span><span>150 ₴</span></li><li><span>Ремонт нігтя</span><span>150 ₴</span></li><li><span>Нарощення нігтя</span><span>200 ₴</span></li><li><span>Реставрація нігтьової пластини</span><span>200 ₴</span></li></ul>
+<a class="btn g s" href="tel:+380665450131">Записатися</a></article>
+<article class="pbox wide"><h3><svg viewBox="0 0 32 32"><path d="M10 26c-2-5-2-10 1-13s7-3 9 0 1 7-1 9-5 2-6 5z"/></svg>Pedicure</h3><p>Педикюр без покриття / з покриттям.</p>
+<table class="nailt"><thead><tr><th>Послуга</th><th>без покриття</th><th>з покриттям</th></tr></thead><tbody>
+<tr><td>Чистка стоп</td><td>550 ₴</td><td>–</td></tr>
+<tr><td>Зняття покриття</td><td>400 ₴</td><td>–</td></tr>
+<tr><td>Чистка пальчиків</td><td>550 ₴</td><td>800 ₴</td></tr>
+<tr><td>Чистка стоп та пальчиків</td><td>800 ₴</td><td>900 ₴</td></tr>
+<tr><td>Зняття + чистка пальчиків</td><td>750 ₴</td><td>850 ₴</td></tr>
+<tr><td>Зняття + чистка пальчиків і стопи</td><td>850 ₴</td><td>950 ₴</td></tr>
+<tr><td>Чоловічий педикюр</td><td>900 ₴</td><td>–</td></tr>
+</tbody></table>
+<a class="btn g s" href="tel:+380665450131">Записатися</a></article>
+</div>
+<div class="more"><span>Складні фарбування: ціна після консультації</span><span>Брови</span><span>Макіяж</span><span>Дитячі стрижки</span><span>Нарощування волосся</span></div>
+<p class="note">Ціни за прайсом салону в Instagram (хайлайт PRICE). Для брів, макіяжу та інших послуг уточнюйте вартість за телефоном 066 545 01 31.</p>
+</div></section>
+
+<section id="how"><div class="w">
+<div class="sh"><span class="eb">Запис</span><h2>Як записатися</h2></div>
+<ol class="steps">
+<li><b>Зателефонуйте</b>066 545 01 31 або напишіть в Instagram @salon_beauty_now.</li>
+<li><b>Оберіть послугу</b>Підкажемо майстра та вільне вікно.</li>
+<li><b>Приходьте</b>Ольги Кобилянської, 12. Пн–сб 9:00–20:00.</li>
+</ol>
+</div></section>
+
+<section id="works" style="background:var(--bg2)"><div class="w">
+<div class="sh"><span class="eb">Галерея</span><h2>Наші роботи</h2></div>
+<div class="gal">
+<figure><img src="img/work-1.jpg" alt="Чоловіча стрижка з фейдом та борода" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-2.jpg" alt="Білий манікюр з перлинами" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-3.jpg" alt="Чоловіча кучерява стрижка з фейдом" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-4.jpg" alt="Жіноче довге волосся з вкладкою" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-5.jpg" alt="Червоний манікюр" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+</div>
+</div></section>
+
+<section id="reviews"><div class="w">
+<div class="sh"><span class="eb">Відгуки клієнтів</span><h2>Нас обирають</h2></div>
+<div class="tr">
+<div class="score"><b>4,7</b><p>27 відгуків на top20.ua<br>93% оцінок «відмінно»</p></div>
+<div class="rv">
+<blockquote><p>«Була в NOW на манікюрі в майстра Софії і залишилася дуже задоволена.»</p><cite>Інна Гищук <span>· 26 серпня 2026</span></cite></blockquote>
+<blockquote><p>«Круто стрижуть, мені сподобалось.»</p><cite>Максим Акаловський <span>· 31 липня 2026</span></cite></blockquote>
+<blockquote><p>«Ходжу вже не першій рік, салон пушка!»</p><cite>Нікіта Буняк <span>· 19 травня 2026</span></cite></blockquote>
+<blockquote><p>«Відвідую салон краси NOW дуже часто на протязі багатьох років. Все на вищому рівні.»</p><cite>sovushaka games <span>· 8 травня 2026</span></cite></blockquote>
+</div></div>
+</div></section>
+
+<section id="faq" style="background:var(--bg2)"><div class="w">
+<div class="sh"><span class="eb">FAQ</span><h2>Часті питання</h2></div>
+<div class="faq">
+<details><summary>Як записатися?</summary><p>За телефоном 066 545 01 31 або в Instagram @salon_beauty_now.</p></details>
+<details><summary>Коли ви працюєте?</summary><p>Понеділок–субота з 9:00 до 20:00, неділя вихідний.</p></details>
+<details><summary>Що робити, якщо потрібно перенести візит?</summary><p>Повідомте якомога раніше. За правилами салону про скасування або перенесення потрібно попередити за 10 робочих годин, інакше вартість послуги оплачується в повному розмірі.</p></details>
+<details><summary>Скільки коштує складне фарбування?</summary><p>Вартість обговорюється детально на консультації зі стилістом. Індивідуальна консультація безкоштовна за попередньою домовленістю.</p></details>
+</div>
+</div></section>
+
+<section id="contacts"><div class="w">
+<div class="sh"><span class="eb">Контакти</span><h2>Знайдіть свій час</h2></div>
+<div class="ct">
+<div class="box"><a class="tel" href="tel:+380665450131">066 545 01 31</a>
+<dl><div><dt>Адреса</dt><dd>м. Чернівці, вул. Ольги Кобилянської, 12</dd></div><div><dt>Графік</dt><dd>Пн–сб 9:00–20:00, неділя вихідний</dd></div><div><dt>Instagram</dt><dd><a href="https://www.instagram.com/salon_beauty_now/" target="_blank" rel="noopener">@salon_beauty_now</a></dd></div></dl>
+<a class="btn p" href="tel:+380665450131">Записатися за телефоном</a></div>
+<div class="map"><h3>Як нас знайти</h3><a class="btn g" href="https://www.google.com/maps/search/?api=1&query=%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96+%D0%B2%D1%83%D0%BB.+%D0%9E%D0%BB%D1%8C%D0%B3%D0%B8+%D0%9A%D0%BE%D0%B1%D0%B8%D0%BB%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%97+12" target="_blank" rel="noopener">Відкрити на Google Maps</a></div>
+</div>
+</div></section>
+</main>
+<footer><div class="w"><span>© Now, Чернівці</span><span>Демо-сайт</span></div></footer>
+<div class="dock"><a class="btn p" href="tel:+380665450131">Записатися</a></div>
+</body>
+</html>
