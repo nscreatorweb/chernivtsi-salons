@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Алхімія — салон краси в Чернівцях</title>
+<meta name="description" content="Алхімія: салон краси в Чернівцях. Стрижки, фарбування, кератин, біозавивка, манікюр, педикюр, брови. Проспект Незалежності, 106А.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f1f1b;--bg2:#15291f;--ink:#f1ebdf;--copper:#d39a6a;--gold:#e9c88d;--muted:#a9b7ad;--line:#2a4237}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Marcellus,serif;font-weight:400;line-height:1.15;overflow-wrap:anywhere}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+.demo{background:var(--copper);color:#1a120b;font-size:13px;text-align:center;padding:8px 12px;font-weight:500}
+header{position:sticky;top:0;z-index:20;background:rgba(15,31,27,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0}
+.logo{font-family:Marcellus,serif;font-size:26px;text-decoration:none;color:var(--gold);letter-spacing:.06em}
+nav{display:none;gap:22px;font-size:14px}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--gold)}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--copper));color:#1a120b;padding:14px 26px;border-radius:4px;text-decoration:none;font-weight:700;letter-spacing:.04em;transition:transform .2s,filter .2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+.btn.ghost{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+.hero{padding:48px 0 70px;display:grid;gap:36px;text-align:center}
+.eyebrow{color:var(--copper);letter-spacing:.24em;text-transform:uppercase;font-size:12px}
+.hero h1{font-size:clamp(44px,10vw,92px);margin:14px 0 18px;color:var(--gold)}
+.lead{font-size:18px;color:var(--muted);max-width:560px;margin-inline:auto}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;justify-content:center}
+.frame{aspect-ratio:3/4;width:min(100%,330px);margin-inline:auto;border:1px solid var(--copper);border-radius:200px 200px 0 0;background:radial-gradient(circle at 50% 30%,#2c5a47,#0f1f1b 70%);position:relative;overflow:hidden}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+section{padding:64px 0}
+.title{font-size:clamp(30px,5vw,46px);color:var(--gold);margin-bottom:10px;text-align:center}
+.sub{color:var(--muted);text-align:center;max-width:620px;margin:0 auto 34px}
+.grid{display:grid;gap:16px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:26px;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);border-color:var(--copper)}
+.card h3{font-size:24px;color:var(--gold);margin-bottom:8px}
+.card p{color:var(--muted)}
+.sym{font:400 34px Marcellus,serif;color:var(--copper);margin-bottom:8px}
+.price h3{border-bottom:1px solid var(--copper);padding-bottom:10px;margin-bottom:12px}
+.price .band{height:56px;border-radius:4px;margin-bottom:16px;background:repeating-linear-gradient(135deg,#1f3a2e 0 12px,#15291f 12px 24px);border:1px solid var(--line)}
+.row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line);font-size:15px}
+.row:last-of-type{border:0}
+.row b{color:var(--gold);white-space:normal;text-align:right;font-weight:500}.row span{min-width:0}
+.steps .card{text-align:center}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.gal figure:last-child:nth-child(odd){grid-column:1/-1;aspect-ratio:1/1}
+.gal figure{aspect-ratio:3/4;border-radius:6px;overflow:hidden;background:linear-gradient(160deg,#2c5a47,#0f1f1b)}
+.gal figure:nth-child(2n){background:linear-gradient(160deg,#a8714a,#2a1b10)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal figure:hover img{transform:scale(1.05)}
+.rate{text-align:center;margin-bottom:26px}
+.rate strong{font:400 64px Marcellus,serif;color:var(--gold);margin-right:10px}
+blockquote footer{margin-top:12px;font-size:13px;color:var(--copper)}
+details{background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:16px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:500;list-style:none}
+summary::-webkit-details-marker{display:none}
+details p{margin-top:8px;color:var(--muted)}
+.contact{border:1px solid var(--copper);border-radius:6px;padding:32px 22px;text-align:center;background:var(--bg2)}
+.clist{list-style:none;display:grid;gap:8px;margin:18px 0 8px}
+.clist a{overflow-wrap:anywhere}
+footer.f{padding:28px 0 90px;text-align:center;font-size:13px;color:var(--muted)}
+.sticky{position:fixed;left:16px;right:16px;bottom:14px;z-index:30;text-align:center}
+@media(min-width:760px){
+ nav{display:flex}.hero{padding:80px 0}
+ .g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+ .gal{grid-template-columns:repeat(4,1fr);max-width:1100px;margin-inline:auto}.gal figure:last-child:nth-child(odd){grid-column:auto;aspect-ratio:3/4}.sticky{display:none}footer.f{padding-bottom:28px}
+ .contact{padding:50px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версія сайту: фото та тексти взято з відкритих джерел салону</div>
+<header><div class="wrap bar">
+ <a class="logo" href="#top">АЛХІМІЯ</a>
+ <nav><a href="#perevagy">Переваги</a><a href="#poslugy">Послуги</a><a href="#roboty">Роботи</a><a href="#vidguky">Відгуки</a><a href="#faq">FAQ</a><a href="#kontakty">Контакти</a></nav>
+ <a class="btn" href="tel:+380955077769">Записатися</a>
+</div></header>
+<main id="top">
+<div class="wrap hero">
+ <div>
+  <div class="eyebrow">Салон краси · Чернівці</div>
+  <h1>Алхімія вашої краси</h1>
+  <p class="lead">Стрижки, фарбування, кератин і ботокс для волосся, манікюр, педикюр та брови в затишному салоні на проспекті Незалежності.</p>
+  <div class="actions">
+   <a class="btn" href="tel:+380955077769">Записатися</a>
+   <a class="btn ghost" href="https://www.instagram.com/alchimia_cv/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+ </div>
+ <div class="frame"><img src="img/work-1.jpg" alt="Укладка та макіяж, робота салону Алхімія" onerror="this.remove()"></div>
+</div>
+
+<section id="perevagy"><div class="wrap">
+ <h2 class="title">Чому обирають нас</h2>
+ <p class="sub">За відгуками клієнтів та інформацією з профілю салону.</p>
+ <div class="grid g3">
+  <div class="card"><div class="sym">I</div><h3>Затишна атмосфера</h3><p>Клієнти відзначають тихе, затишне місце та уважний персонал.</p></div>
+  <div class="card"><div class="sym">II</div><h3>Власниця-майстер</h3><p>Відгуки згадують Марію Михайлівну, власницю салону, як професіонала.</p></div>
+  <div class="card"><div class="sym">III</div><h3>Повний цикл послуг</h3><p>Волосся, нігті, брови та перманент в одному салоні.</p></div>
+ </div>
+</div></section>
+
+<section id="poslugy"><div class="wrap">
+ <h2 class="title">Послуги та ціни</h2>
+ <p class="sub">Прайс зі сторіс-хайлайту «Прайс» в Instagram салону (ціни «від»; для волосся три довжини). Остаточну вартість визначає майстер.</p>
+ <div class="grid g3">
+  <div class="card price"><div class="band"></div><h3>Стрижки</h3>
+   <div class="row"><span>Чубчик без миття</span><b>від 200-250 &#8372;</b></div>
+   <div class="row"><span>Жіноча з укладанням (довжина 1 / 2 / 3)</span><b>від 900 / 1100 / 1300 &#8372;</b></div>
+   <div class="row"><span>Каскад (довжина 1 / 2 / 3)</span><b>від 800 / 900 / 1000 &#8372;</b></div>
+   <div class="row"><span>Кінчики з миттям/укладанням (довжина 1 / 2 / 3)</span><b>від 800 / 1000 / 1000 &#8372;</b></div>
+   <div class="row"><span>Кінчики без миття</span><b>від 500 &#8372;</b></div>
+   <div class="row"><span>Полірування з укладанням (довжина 1 / 2 / 3)</span><b>від 1000 / 1200 / 1500 &#8372;</b></div>
+   <div class="row"><span>Захист від посічених кінчиків (гарячі ножиці)</span><b>від 1500 &#8372;</b></div>
+   <div class="row"><span>Гладке та здорове волосся (гарячі ножиці)</span><b>від 2500 &#8372;</b></div>
+   <div class="row"><span>Відновлення блиску по довжині</span><b>від 2500 &#8372;</b></div>
+   <div class="row"><span>Зачіска із запаюванням кінчиків</span><b>від 2000 &#8372;</b></div>
+   <div class="row"><span>Стрижка дитяча</span><b>від 600 &#8372;</b></div>
+  </div>
+  <div class="card price"><div class="band"></div><h3>Фарбування (залежить від довжини)</h3>
+   <div class="row"><span>Airtouch</span><b>від 3500 / 5000 / 6000 &#8372;</b></div>
+   <div class="row"><span>Shatush</span><b>від 3000 / 4000 / 4000 &#8372;</b></div>
+   <div class="row"><span>Балаяж</span><b>від 3500 &#8372;</b></div>
+   <div class="row"><span>Вихід з чорного</span><b>від 4000 / 5000 / 6000 &#8372;</b></div>
+   <div class="row"><span>Контурінг</span><b>від 2500 &#8372;</b></div>
+   <div class="row"><span>Мілірування</span><b>від 2500 / 2500 / 3000 &#8372;</b></div>
+   <div class="row"><span>Омбре</span><b>від 3500 &#8372;</b></div>
+   <div class="row"><span>Освітлення волосся</span><b>від 2000 / 2000 / 3000 &#8372;</b></div>
+   <div class="row"><span>Тонування</span><b>від 1500 / 1900 / 2500 &#8372;</b></div>
+   <div class="row"><span>Фарбування (довжина 1 / 2 / 3)</span><b>від 1900 / 2000 / 2400 &#8372;</b></div>
+   <div class="row"><span>Фарбування коренів (довжина 1 / 2 / 3)</span><b>від 1500 / 1600 / 1800 &#8372;</b></div>
+  </div>
+  <div class="card price"><div class="band"></div><h3>Догляд за волоссям</h3>
+   <div class="row"><span>Ритуал для росту (від випадіння)</span><b>від 1000 &#8372;</b></div>
+   <div class="row"><span>Нано кератинізація</span><b>від 1200 &#8372;</b></div>
+   <div class="row"><span>Відновлення Lanza</span><b>від 2000 &#8372;</b></div>
+   <div class="row"><span>Відновлення moreto</span><b>від 2000 &#8372;</b></div>
+   <div class="row"><span>Холодне відновлення</span><b>від 2500 &#8372;</b></div>
+   <div class="row"><span>Холодне відновлення + нано кератинізація</span><b>від 3000 &#8372;</b></div>
+   <div class="row"><span>Лазерна кристалізація волосся</span><b>5000-12000 &#8372;</b></div>
+   <div class="row"><span>Лазерна кристалізація шкіри голови</span><b>2000 &#8372;</b></div>
+   <div class="row"><span>Пілінг шкіри голови</span><b>від 1100 &#8372;</b></div>
+   <div class="row"><span>Гарячий ботокс</span><b>від 3000 &#8372;</b></div>
+   <div class="row"><span>Кератинове вирівнювання</span><b>від 4000 &#8372;</b></div>
+   <div class="row"><span>Нанопластика</span><b>від 4000 &#8372;</b></div>
+   <div class="row"><span>Холодний ботокс</span><b>від 2000 &#8372;</b></div>
+   <div class="row"><span>Біозавивка (довжина 1 / 2 / 3)</span><b>від 3000 / 4500 / 6000 &#8372;</b></div>
+  </div>
+  <div class="card price"><div class="band"></div><h3>Зачіски та укладання</h3>
+   <div class="row"><span>Зачіска весільна</span><b>від 1600 &#8372;</b></div>
+   <div class="row"><span>Зачіска вечірня</span><b>від 1000 &#8372;</b></div>
+   <div class="row"><span>Зачіска нареченої</span><b>від 2000 &#8372;</b></div>
+   <div class="row"><span>Пробна зачіска нареченої</span><b>від 1500 &#8372;</b></div>
+   <div class="row"><span>Укладання довжина 1 / 2 / 3</span><b>від 800 / 1000 / 1200 &#8372;</b></div>
+   <div class="row"><span>Укладання на коротке волосся</span><b>від 800 &#8372;</b></div>
+   <div class="row"><span>Накрутка</span><b>від 1000 &#8372;</b></div>
+   <div class="row"><span>Афронакрутка</span><b>від 1000 &#8372;</b></div>
+   <div class="row"><span>Миття голови до укладки</span><b>від 200 &#8372;</b></div>
+  </div>
+  <div class="card price"><div class="band"></div><h3>Манікюр</h3>
+   <div class="row"><span>Зняття покриття гель-лак без манікюру</span><b>від 200 &#8372;</b></div>
+   <div class="row"><span>Манікюр + гель-лак однотонний S / M / L / XL</span><b>від 650 / 750 / 850 / 1000 &#8372;</b></div>
+   <div class="row"><span>Класичний комбінований манікюр</span><b>від 400 &#8372;</b></div>
+   <div class="row"><span>Покриття звичайним лаком</span><b>від 100 &#8372;</b></div>
+   <div class="row"><span>Манікюр + гель, корекція S / M / L / XL</span><b>від 750 / 800 / 950 / 1100 &#8372;</b></div>
+   <div class="row"><span>Зняття покриття без манікюру</span><b>від 550 &#8372;</b></div>
+   <div class="row"><span>Зняття нарощених нігтів / + манікюр</span><b>від 400 / 600 &#8372;</b></div>
+   <div class="row"><span>Нарощування S / M / L / XL</span><b>від 900 / 1000 / 1100 / 1500 &#8372;</b></div>
+  </div>
+  <div class="card price"><div class="band"></div><h3>Педикюр</h3>
+   <div class="row"><span>Пальці + однофазне покриття гель-лаком</span><b>від 850 &#8372;</b></div>
+   <div class="row"><span>Пальці + стопи + покриття гель-лаком</span><b>від 900 &#8372;</b></div>
+   <div class="row"><span>Апаратний/комбінований, пальці</span><b>від 650 &#8372;</b></div>
+   <div class="row"><span>Апаратний/комбінований, пальці + стопи</span><b>від 700 &#8372;</b></div>
+   <div class="row"><span>Пальці + стопи + зняття матеріалу</span><b>від 750 &#8372;</b></div>
+   <div class="row"><span>Чистка пальчиків</span><b>від 400 &#8372;</b></div>
+   <div class="row"><span>Зняття матеріалу</span><b>від 300 &#8372;</b></div>
+  </div>
+  <div class="card price"><div class="band"></div><h3>Брови та вії</h3>
+   <div class="row"><span>Воскова епіляція обличчя</span><b>від 200 &#8372;</b></div>
+   <div class="row"><span>Корекція брів воском / пінцетом</span><b>від 250 / 200 &#8372;</b></div>
+   <div class="row"><span>Фарбування брів + корекція воском / пінцетом</span><b>від 450 &#8372;</b></div>
+   <div class="row"><span>Фарбування брів без корекції</span><b>від 300 &#8372;</b></div>
+   <div class="row"><span>Фарбування вій</span><b>від 150 &#8372;</b></div>
+   <div class="row"><span>«Щастя для брів»</span><b>від 250 &#8372;</b></div>
+   <div class="row"><span>Ламінування брів / + фарбування</span><b>від 700 / 750 &#8372;</b></div>
+   <div class="row"><span>Ламінування вій / з ботоксом / нижніх</span><b>від 750 / 800 / 400 &#8372;</b></div>
+  </div>
+  <div class="card price"><div class="band"></div><h3>Чоловічі послуги</h3>
+   <div class="row"><span>Стрижка чоловіча</span><b>від 600 &#8372;</b></div>
+   <div class="row"><span>Стрижка бороди та вусів</span><b>від 300 &#8372;</b></div>
+   <div class="row"><span>Стрижка чоловіча подовжена</span><b>від 800 &#8372;</b></div>
+   <div class="row"><span>Камуфляж бороди / волосся</span><b>від 300 / 400 &#8372;</b></div>
+   <div class="row"><span>Чоловічий манікюр / чистка</span><b>від 500 / 350 &#8372;</b></div>
+   <div class="row"><span>Чоловічий педикюр пальці + стопи</span><b>від 1000 &#8372;</b></div>
+   <div class="row"><span>Корекція брів пінцетом та віск</span><b>від 350 &#8372;</b></div>
+   <div class="row"><span>Корекція воском (брови, вуха, ніс)</span><b>150 &#8372;</b></div>
+   <div class="row"><span>Ритуал для росту волосся</span><b>від 800 &#8372;</b></div>
+   <div class="row"><span>Пілінг шкіри голови</span><b>від 800 &#8372;</b></div>
+  </div>
+ </div>
+ <div class="actions"><a class="btn" href="tel:+380955077769">Записатися</a><a class="btn ghost" href="https://bookon.ua/s/alchimia_cv" target="_blank" rel="noopener">Онлайн-запис</a></div>
+ <p class="sub" style="margin-top:20px">Перманентний макіяж брів (майстер Аля Ланко) та макіяж: вартість уточнюйте за телефоном або в Direct. У прайсі вказані мінімальні ціни «від», у фарбуванні й укладанні ціна залежить від довжини волосся (1 / 2 / 3).</p>
+</div></section>
+
+<section><div class="wrap">
+ <h2 class="title">Як це працює</h2>
+ <div class="grid g3 steps" style="margin-top:28px">
+  <div class="card"><div class="sym">1</div><h3>Запис</h3><p>За телефоном або онлайн через bookon.</p></div>
+  <div class="card"><div class="sym">2</div><h3>Консультація</h3><p>Майстер підбере процедуру та уточнить вартість.</p></div>
+  <div class="card"><div class="sym">3</div><h3>Візит</h3><p>Проспект Незалежності, 106А.</p></div>
+ </div>
+</div></section>
+
+<section id="roboty"><div class="wrap">
+ <h2 class="title">Наші роботи</h2>
+ <div class="gal" style="margin-top:24px">
+  <figure><img src="img/work-1.jpg" alt="Макіяж та зачіска, робота майстрів салону Алхімія" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-2.jpg" alt="Природний макіяж та локони біля вивіски Алхімія" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-3.jpg" alt="Макіяж та хвилі на світлому волоссі, салон Алхімія" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-4.jpg" alt="Укладка хвилями та макіяж, робота майстра салону Алхімія" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-5.jpg" alt="Весільна зачіска з локонами та макіяж, салон Алхімія" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-6.jpg" alt="Голлівудські хвилі та вечірній макіяж, салон Алхімія" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-7.jpg" alt="Гладка зачіска та макіяж, робота салону Алхімія" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-8.jpg" alt="Крупний план: макіяж губ, салон Алхімія" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+ </div>
+</div></section>
+
+<section id="vidguky"><div class="wrap">
+ <h2 class="title">Відгуки</h2>
+ <div class="rate"><strong>4.7</strong><span>з 5 · 14 відгуків на top20.ua</span></div>
+ <div class="grid g3">
+  <div class="card"><blockquote>«Вперше відвідала салон для отримання послуги біозавивка волосся! Професійно отримала послугу, дуже задоволена результатом, чудовий салон, затишна атмосфера.»<footer>Nataliia Hirchak · 08.04.2026</footer></blockquote></div>
+  <div class="card"><blockquote>«Відвідую салон «Alchimia» на постійній основі і дуже задоволена. У салоні затишна атмосфера, привітний та уважний персонал.»<footer>Daria Crețu · 15.02.2026</footer></blockquote></div>
+  <div class="card"><blockquote>«Майстер Марія чудовий перукар. Тихе затишне місце з приємною атмосферою та смачним чаєм. Постригли і пофарбували чарівно.»<footer>Lena Penzikova · 17.10.2025</footer></blockquote></div>
+ </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+ <h2 class="title">Часті питання</h2>
+ <div style="margin-top:24px">
+  <details><summary>Як записатися?</summary><p>За телефоном +38 (095) 507 77 69 або онлайн на bookon.ua.</p></details>
+  <details><summary>Чи є перманентний макіяж?</summary><p>Так, у профілі салону є розділ «Перманент» (перманентний макіяж брів). Вартість уточнюйте за телефоном.</p></details>
+  <details><summary>Чи є чоловічі послуги?</summary><p>Так: чоловічі стрижки, стрижка бороди, чоловічий манікюр і педикюр (див. прайс).</p></details>
+  <details><summary>Ціни фіксовані?</summary><p>У прайсі вказано «від»: остаточна вартість залежить від довжини та складності, її називає майстер.</p></details>
+  <details><summary>Коли ви працюєте?</summary><p>За даними каталогу top20.ua: 9:00-20:00. Уточнюйте за телефоном.</p></details>
+ </div>
+</div></section>
+
+<section id="kontakty"><div class="wrap">
+ <div class="contact">
+  <h2 class="title">Запишіться в Алхімію</h2>
+  <ul class="clist">
+   <li>Проспект Незалежності, 106А, Чернівці</li>
+   <li>Графік: 9:00-20:00</li>
+   <li>Телефон: <a href="tel:+380955077769">+38 (095) 507 77 69</a></li>
+   <li>Instagram: <a href="https://www.instagram.com/alchimia_cv/" target="_blank" rel="noopener">@alchimia_cv</a></li>
+  </ul>
+  <div class="actions">
+   <a class="btn" href="tel:+380955077769">Записатися</a>
+   <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%9D%D0%B5%D0%B7%D0%B0%D0%BB%D0%B5%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%96+106%D0%B0+%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96" target="_blank" rel="noopener">Відкрити на карті</a>
+  </div>
+ </div>
+</div></section>
+</main>
+<footer class="f"><div class="wrap">© Алхімія, Чернівці. Демо-версія сайту.</div></footer>
+<a class="btn sticky" href="tel:+380955077769">Записатися</a>
+</body>
+</html>

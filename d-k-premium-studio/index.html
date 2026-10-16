@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>D&amp;K Premium Studio, Чернівці</title>
+<meta name="description" content="D&K Premium Studio в Чернівцях: трихологія, відновлення та фарбування волосся, макіяж. Шевченка, 1.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#14100f;--bg2:#1d1715;--card:#231b19;--ink:#f5ece4;--mut:#bfb2a7;--gold:#d4aa72;--gold2:#b98b4e;--line:rgba(212,170,114,.22);--d:'Cormorant Garamond',Georgia,serif;--b:'Jost',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--b);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+.demo{background:var(--gold);color:#1a120c;text-align:center;font-size:.8rem;font-weight:500;padding:8px 16px;letter-spacing:.02em}
+header{position:sticky;top:0;z-index:20;background:rgba(20,16,15,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.logo{font-family:var(--d);font-size:1.5rem;font-weight:700;text-decoration:none;letter-spacing:.02em}
+.logo b{color:var(--gold)}
+nav{display:flex;gap:28px}
+nav a{text-decoration:none;font-size:.92rem;color:var(--mut);transition:color .2s}
+nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 28px;border-radius:2px;font:600 .95rem var(--b);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gold);transition:.25s;cursor:pointer}
+.btn.p{background:var(--gold);color:#1a120c}
+.btn.p:hover{background:#e6c08c;transform:translateY(-2px)}
+.btn.g{color:var(--gold);background:transparent}
+.btn.g:hover{background:rgba(212,170,114,.12)}
+.btn.s{min-height:42px;padding:0 20px;font-size:.8rem}
+h1,h2,h3{font-family:var(--d);font-weight:600;line-height:1.08;text-wrap:balance}
+.eyebrow{font-size:.76rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:block}
+.hero{padding:clamp(40px,7vw,96px) 0}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,6vw,80px);align-items:center}
+.hero h1{font-size:clamp(2.6rem,6vw,4.8rem);margin-bottom:22px}
+.hero h1 em{color:var(--gold);font-style:italic}
+.lead{color:var(--mut);font-size:1.15rem;max-width:46ch;margin-bottom:34px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;list-style:none;font-size:.92rem;color:var(--mut)}
+.facts li::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--gold);margin-right:9px;vertical-align:middle}
+.arch{position:relative;aspect-ratio:4/5;max-height:640px;width:100%;border-radius:999px 999px 18px 18px;overflow:hidden;background:linear-gradient(160deg,#4a3326,#1d1715 70%);border:1px solid var(--line)}
+.arch img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.arch::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(20,16,15,.55))}
+.badge{position:absolute;z-index:2;left:50%;bottom:20px;transform:translateX(-50%);background:var(--bg);border:1px solid var(--gold);padding:8px 18px;border-radius:999px;font-size:.82rem;white-space:nowrap}
+section{padding:clamp(56px,8vw,104px) 0}
+.alt{background:var(--bg2)}
+h2{font-size:clamp(2rem,4.4vw,3.2rem);margin-bottom:clamp(28px,4vw,48px)}
+.adv{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.adv div{border:1px solid var(--line);padding:28px 24px;background:var(--card)}
+.adv .n{font-family:var(--d);font-size:2.4rem;color:var(--gold);line-height:1;margin-bottom:12px}
+.adv h3{font-size:1.4rem;margin-bottom:8px}
+.adv p{color:var(--mut);font-size:.97rem}
+.cat{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px}
+.pc{background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;transition:.3s}
+.pc:hover{transform:translateY(-4px);border-color:var(--gold)}
+.pic{aspect-ratio:16/8;background:linear-gradient(135deg,#3a2a21,#1d1715);position:relative;overflow:hidden}
+.pic::before{content:"";position:absolute;width:140px;height:140px;border-radius:50%;border:1px solid var(--gold);right:-30px;top:-40px;opacity:.5}
+.pic::after{content:"";position:absolute;width:90px;height:90px;border-radius:50%;border:1px solid var(--gold);left:20px;bottom:-44px;opacity:.35}
+.pc .body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.pc h3{font-size:1.55rem}
+.pc p{color:var(--mut);font-size:.96rem;flex:1}
+.pc .price{border-top:1px solid var(--line);padding-top:14px;display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:.88rem;color:var(--gold)}
+.hint{display:none;font-size:.85rem;color:var(--mut);margin:-26px 0 16px}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:16px}
+.gal figure{aspect-ratio:3/4;overflow:hidden;background:linear-gradient(160deg,#4a3326,#1d1715);border:1px solid var(--line)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gal figure:hover img{transform:scale(1.04)}
+.trust{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px}
+.score{border:1px solid var(--gold);padding:32px;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:6px}
+.score b{font-family:var(--d);font-size:5rem;line-height:1;color:var(--gold)}
+.score span{color:var(--mut)}
+.stars{color:var(--gold);letter-spacing:4px;font-size:1.2rem}
+.rev{display:grid;gap:16px}
+.rev blockquote{border-left:2px solid var(--gold);padding:6px 0 6px 20px}
+.rev blockquote p{font-size:1.05rem}
+.rev cite{display:block;margin-top:6px;font-style:normal;font-size:.85rem;color:var(--mut)}
+.src{font-size:.8rem;color:var(--mut);margin-top:18px}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s}
+.steps li{counter-increment:s;border-top:1px solid var(--gold);padding-top:18px}
+.steps li::before{content:"0" counter(s);font-family:var(--d);font-size:2.2rem;color:var(--gold);display:block;line-height:1;margin-bottom:8px}
+.steps b{display:block;font-size:1.05rem;margin-bottom:4px}
+.steps span{color:var(--mut);font-size:.95rem}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;font-weight:500;font-size:1.08rem;list-style:none;display:flex;justify-content:space-between;gap:14px}
+summary::after{content:"+";color:var(--gold);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"\2212"}
+details p{color:var(--mut);margin-top:10px}
+.contact{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+.cbox{border:1px solid var(--gold);padding:clamp(24px,4vw,44px);display:flex;flex-direction:column;gap:20px;background:var(--card)}
+.tel{font-family:var(--d);font-size:clamp(2rem,5vw,3rem);text-decoration:none;color:var(--gold);line-height:1}
+dl{display:grid;gap:14px}
+dt{font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mut)}
+dd{font-size:1.05rem}
+.links{display:flex;flex-direction:column;gap:12px;justify-content:center}
+footer{border-top:1px solid var(--line);padding:26px 0;font-size:.85rem;color:var(--mut)}
+.dock{display:none}
+@media(max-width:860px){nav,.hdr-cta{display:none}.hero .wrap,.trust,.contact{grid-template-columns:1fr}.arch{max-height:440px;aspect-ratio:1/1;border-radius:999px 999px 18px 18px;max-width:380px;margin:0 auto}.steps{grid-template-columns:1fr}.cta .btn{flex:1 1 100%}.hint{display:block}
+.cat{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-inline:-16px;padding:4px 16px 14px;scrollbar-width:none}.cat::-webkit-scrollbar{display:none}.pc{flex:0 0 80%;scroll-snap-align:start}
+.dock{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(20,16,15,.94);border-top:1px solid var(--line)}.dock .btn{width:100%}body{padding-bottom:76px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версія сайту: фото та тексти взято з відкритих джерел салону</div>
+<header><div class="wrap bar">
+<a class="logo" href="#top">D&amp;K <b>Premium</b> Studio</a>
+<nav aria-label="Меню"><a href="#about">Переваги</a><a href="#services">Послуги</a><a href="#gallery">Роботи</a><a href="#reviews">Відгуки</a><a href="#faq">FAQ</a><a href="#contacts">Контакти</a></nav>
+<a class="btn p s hdr-cta" href="tel:+380950640533">Записатися</a>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+<div>
+<span class="eyebrow">Трихологія · Відновлення · Фарбування</span>
+<h1>Здорове волосся, яким <em>пишаються</em></h1>
+<p class="lead">Салон із рекордом України у сфері волосся. Індивідуальний підхід, відновлення, фарбування та макіяж у центрі Чернівців.</p>
+<div class="cta"><a class="btn p" href="tel:+380950640533">Записатися</a><a class="btn g" href="https://www.instagram.com/d_k_premium_studio/" target="_blank" rel="noopener">Instagram</a></div>
+<ul class="facts"><li>Шевченка, 1</li><li>Щодня 09:00–19:00</li><li>★ 4.7 · 17 відгуків</li></ul>
+</div>
+<div class="arch"><img src="img/work-1.jpg" alt="Результат відновлення волосся в D&amp;K Premium Studio" onerror="this.remove()"><span class="badge">Відновлення волосся</span></div>
+</div></section>
+
+<section id="about" class="alt"><div class="wrap">
+<span class="eyebrow">Чому ми</span><h2>Салон, де волосся лікують і доглядають</h2>
+<div class="adv">
+<div><div class="n">01</div><h3>Рекорд України</h3><p>Салон із рекордом України у сфері волосся, як зазначено в профілі салону.</p></div>
+<div><div class="n">02</div><h3>Трихологія та відновлення</h3><p>Робота з волоссям і шкірою голови: від діагностики до відновлювальних процедур.</p></div>
+<div><div class="n">03</div><h3>Індивідуальний підхід</h3><p>Підбір догляду та кольору під ваші задачі, а не за шаблоном.</p></div>
+<div><div class="n">04</div><h3>Зручне розташування</h3><p>Вул. Шевченка, 1, Чернівці. Працюємо щодня з 09:00 до 19:00.</p></div>
+</div></div></section>
+
+<section id="services"><div class="wrap">
+<span class="eyebrow">Послуги</span><h2>Що ми робимо</h2>
+<p class="hint">Гортайте картки вбік →</p>
+<div class="cat">
+<article class="pc"><div class="pic"></div><div class="body"><h3>Трихологія</h3><p>Консультація та підбір програми для здоров'я волосся і шкіри голови.</p><div class="price"><span>Вартість: уточнюйте за телефоном</span></div><a class="btn g s" href="tel:+380950640533">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Відновлення волосся</h3><p>Авторські методики відновлення, ламінування та догляд за довжиною.</p><div class="price"><span>Вартість: уточнюйте за телефоном</span></div><a class="btn g s" href="tel:+380950640533">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Фарбування</h3><p>Підбір відтінку, фарбування та тонування з урахуванням стану волосся.</p><div class="price"><span>Вартість: уточнюйте за телефоном</span></div><a class="btn g s" href="tel:+380950640533">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Стрижки та зачіски</h3><p>Стрижки, укладки та зачіски для будь-яких подій.</p><div class="price"><span>Вартість: уточнюйте за телефоном</span></div><a class="btn g s" href="tel:+380950640533">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Макіяж</h3><p>Денний і вечірній макіяж для особливих випадків.</p><div class="price"><span>Вартість: уточнюйте за телефоном</span></div><a class="btn g s" href="tel:+380950640533">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Нігті та брови</h3><p>Манікюр, педикюр, оформлення й ламінування брів, нарощення вій.</p><div class="price"><span>Вартість: уточнюйте за телефоном</span></div><a class="btn g s" href="tel:+380950640533">Записатися</a></div></article>
+</div></div></section>
+
+<section id="gallery" class="alt"><div class="wrap">
+<span class="eyebrow">Портфоліо</span><h2>Наші роботи</h2>
+<div class="gal">
+<figure><img src="img/work-1.jpg" alt="Робота майстра D&amp;K: відновлене волосся" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+<figure><img src="img/work-2.jpg" alt="Робота D&amp;K: вечірній макіяж" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+<figure><img src="img/work-3.jpg" alt="Робота D&amp;K: зачіска з косами та макіяж" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+</div>
+<p class="src" style="margin-top:22px"><a href="https://www.instagram.com/d_k_premium_studio/" target="_blank" rel="noopener">Більше робіт в Instagram</a></p>
+</div></section>
+
+<section id="how"><div class="wrap">
+<span class="eyebrow">Запис</span><h2>Як записатися</h2>
+<ol class="steps">
+<li><b>Зателефонуйте</b><span>095 064 05 33 або напишіть у Direct в Instagram.</span></li>
+<li><b>Оберіть послугу</b><span>Розкажіть про запит, ми підберемо майстра й час.</span></li>
+<li><b>Приходьте</b><span>Шевченка, 1, Чернівці. Щодня 09:00–19:00.</span></li>
+</ol></div></section>
+
+<section id="reviews" class="alt"><div class="wrap">
+<span class="eyebrow">Довіра</span><h2>Що кажуть клієнти</h2>
+<div class="trust">
+<div class="score"><b>4.7</b><span class="stars">★★★★★</span><span>17 відгуків</span><span>за даними каталогу top20.ua</span></div>
+<div class="rev">
+<blockquote><p>Найкращий салон, в якому я була. Персонал дуже привітний. Майстри просто професіонали.</p><cite>Каріна Іродюк, 18 серпня 2025</cite></blockquote>
+<blockquote><p>Дуже гарний та затишний салон. Майстри привітні та вмілі, дуже задоволена, тут обслуговується уся моя родина.</p><cite>Оля Сливка, 13 травня 2023</cite></blockquote>
+<blockquote><p>Щиро рекомендую топ майстра-перукаря Льолю. Професіонал своєї справи. Дуже сподобався підхід: виділили час без поспіху, щоб обрати стрижку.</p><cite>Оксана Гаврада, 20 лютого 2025</cite></blockquote>
+<blockquote><p>Мені подобається професіоналізм, атмосфера і сервіс у цьому салоні. Рекомендую усім.</p><cite>Сусанна Осауленко, 13 травня 2023</cite></blockquote>
+</div></div>
+<p class="src">Відгуки з відкритої сторінки салону на top20.ua.</p>
+</div></section>
+
+<section id="faq"><div class="wrap">
+<span class="eyebrow">FAQ</span><h2>Часті питання</h2>
+<details><summary>Як дізнатися вартість послуг?</summary><p>Ціни залежать від довжини, стану волосся та обраної методики. Уточніть за телефоном 095 064 05 33 або в Direct.</p></details>
+<details><summary>Де знаходиться салон?</summary><p>Чернівці, вул. Шевченка, 1. Маршрут можна відкрити в Google Maps у розділі «Контакти».</p></details>
+<details><summary>Коли ви працюєте?</summary><p>Щодня з 09:00 до 19:00.</p></details>
+<details><summary>Чи є консультація з відновлення волосся?</summary><p>Так, трихологія та відновлення — напрям салону. Деталі та запис за телефоном.</p></details>
+</div></section>
+
+<section id="contacts" class="alt"><div class="wrap">
+<span class="eyebrow">Контакти</span><h2>Чекаємо у D&amp;K Premium Studio</h2>
+<div class="contact">
+<div class="cbox">
+<a class="tel" href="tel:+380950640533">095 064 05 33</a>
+<dl><div><dt>Адреса</dt><dd>м. Чернівці, вул. Шевченка, 1</dd></div><div><dt>Графік</dt><dd>Щодня, 09:00–19:00</dd></div><div><dt>Instagram</dt><dd><a href="https://www.instagram.com/d_k_premium_studio/" target="_blank" rel="noopener">@d_k_premium_studio</a></dd></div></dl>
+</div>
+<div class="links">
+<a class="btn p" href="tel:+380950640533">Записатися</a>
+<a class="btn g" href="https://www.google.com/maps/search/?api=1&query=%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0+1+%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96" target="_blank" rel="noopener">Відкрити на Google Maps</a>
+<a class="btn g" href="https://www.instagram.com/d_k_premium_studio/" target="_blank" rel="noopener">Написати в Instagram</a>
+</div></div></div></section>
+</main>
+<footer><div class="wrap">© D&amp;K Premium Studio, Чернівці · Демо-версія сайту</div></footer>
+<div class="dock"><a class="btn p" href="tel:+380950640533">Записатися: 095 064 05 33</a></div>
+</body>
+</html>

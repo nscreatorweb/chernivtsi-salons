@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Анна-Марія, Чернівці</title>
+<meta name="description" content="Салон краси Анна-Марія в Чернівцях: волосся, нігті, брови, вії, татуаж, косметологія, масаж, солярій. Франка, 26.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f1e6;--teal:#0f3b3a;--teal2:#16524f;--cu:#d6935a;--cu2:#9c5a28;--ink:#1c2a29;--mut:#5b6a68;--card:#fffaf1;--line:#e2d6c0;--d:'Lora',Georgia,serif;--b:'Montserrat',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--ink);font:400 1rem/1.7 var(--b);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+.demo{background:var(--cu2);color:#fff;text-align:center;font-size:.78rem;font-weight:500;padding:8px 16px}
+header{position:sticky;top:0;z-index:20;background:var(--teal);color:#fff}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:66px}
+.logo{font-family:var(--d);font-weight:600;font-size:1.35rem;text-decoration:none}
+.logo span{color:var(--cu);font-style:italic}
+nav{display:flex;gap:26px}nav a{text-decoration:none;font-size:.88rem;color:#d3e0dd;transition:color .2s}nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 28px;border-radius:6px;font:600 .9rem var(--b);letter-spacing:.04em;text-decoration:none;border:1.5px solid var(--cu);transition:.25s;cursor:pointer}
+.btn.p{background:var(--cu2);border-color:var(--cu2);color:#fff}.btn.p:hover{background:#7f4719;border-color:#7f4719;transform:translateY(-2px)}
+.btn.g{background:transparent;color:var(--cu2)}.btn.g:hover{background:var(--cu2);color:#fff}
+.btn.s{min-height:40px;padding:0 18px;font-size:.82rem}
+h1,h2,h3{font-family:var(--d);font-weight:600;line-height:1.15;text-wrap:balance}
+.eyebrow{font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cu);font-weight:600;margin-bottom:14px;display:block}
+.hero{background:var(--teal);color:#fff;padding:clamp(40px,7vw,96px) 0}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,5vw,72px);align-items:center}
+.hero h1{font-size:clamp(2.3rem,5.4vw,4.2rem);margin-bottom:20px}
+.hero h1 em{color:var(--cu);font-weight:500}
+.hero p.lead{color:#cfdcd9;font-size:1.08rem;max-width:46ch;margin-bottom:30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px}
+.hero .btn.g{color:#fff;border-color:rgba(255,255,255,.5)}.hero .btn.g:hover{background:#fff;color:var(--teal)}
+.facts{list-style:none;display:flex;flex-wrap:wrap;gap:8px 24px;font-size:.88rem;color:#cfdcd9}
+.facts li::before{content:"";display:inline-block;width:6px;height:6px;background:var(--cu);margin-right:9px;transform:rotate(45deg)}
+.frame{position:relative;aspect-ratio:4/5;max-height:580px;background:linear-gradient(160deg,var(--teal2),#0a2b2a);border:1px solid rgba(255,255,255,.18);overflow:hidden}
+.frame::before{content:"";position:absolute;inset:14px;border:1px solid rgba(192,118,60,.6);z-index:2;pointer-events:none}
+.frame img{width:100%;height:100%;object-fit:cover}
+section{padding:clamp(52px,7vw,96px) 0}
+.alt{background:#efe6d3}
+h2{font-size:clamp(1.8rem,3.8vw,2.8rem);margin-bottom:clamp(24px,4vw,44px)}
+.adv{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;border:1px solid var(--line);background:var(--card)}
+.adv div{padding:28px 24px;border-right:1px solid var(--line)}
+.adv div:last-child{border-right:0}
+.adv h3{font-size:1.2rem;margin-bottom:8px;color:var(--teal)}.adv p{color:var(--mut);font-size:.94rem}
+.cat{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:18px}
+.pc{background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;transition:.3s}
+.pc:hover{transform:translateY(-4px);border-color:var(--cu)}
+.pic{height:90px;background:var(--teal);position:relative;overflow:hidden}
+.pic::before,.pic::after{content:"";position:absolute;border:1px solid var(--cu);transform:rotate(45deg)}
+.pic::before{width:70px;height:70px;right:30px;top:10px}.pic::after{width:40px;height:40px;right:90px;top:-8px;opacity:.6}
+.pc:nth-child(even) .pic{background:var(--teal2)}
+.pc .body{padding:20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pc h3{font-size:1.25rem}.pc p{color:var(--mut);font-size:.93rem;flex:1}
+.pc .pr{font-size:.82rem;color:var(--cu2);font-weight:600}
+.hint{display:none;font-size:.85rem;color:var(--mut);margin:-24px 0 14px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:700px){.gal{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:-16px;padding:0 16px 8px;scrollbar-width:none}.gal::-webkit-scrollbar{display:none}.gal figure{flex:0 0 72%;scroll-snap-align:start}}
+.gal figure{aspect-ratio:4/5;overflow:hidden;background:linear-gradient(160deg,var(--teal2),var(--teal));border:1px solid var(--line)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.gal figure:hover img{transform:scale(1.04)}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);padding:24px}
+.steps li::before{content:"0" counter(s);font-family:var(--d);font-size:2rem;color:var(--cu);display:block;line-height:1;margin-bottom:10px}
+.steps b{display:block}.steps span{color:var(--mut);font-size:.94rem}
+.trust{display:grid;grid-template-columns:.7fr 1.3fr;gap:24px;align-items:start}
+.score{background:var(--teal);color:#fff;padding:32px;text-align:center}
+.score b{font-family:var(--d);font-size:4.4rem;line-height:1;display:block;color:var(--cu)}
+.score .st{color:var(--cu);letter-spacing:3px}.score small{display:block;margin-top:8px;color:#cfdcd9}
+.revs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rv{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--cu);padding:20px}
+.rv cite{display:block;margin-top:8px;font-style:normal;font-size:.8rem;color:var(--mut)}
+.src{font-size:.82rem;color:var(--mut);margin-top:16px}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";color:var(--cu);font-size:1.4rem;line-height:1}details[open] summary::after{content:"\2212"}
+details p{color:var(--mut);margin-top:8px}
+.contact{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+.cbox{background:var(--teal);color:#fff;padding:clamp(26px,4vw,48px)}
+.tel{font-family:var(--d);font-size:clamp(1.9rem,4.6vw,2.7rem);text-decoration:none;color:#fff;display:inline-block;margin:6px 0 18px}
+.cbox .alt-tel{font-size:.9rem;color:#cfdcd9;margin:-10px 0 18px}.cbox .alt-tel a{color:#fff}
+dl{display:grid;gap:14px}dt{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:#a9bfba}
+.links{display:flex;flex-direction:column;gap:12px;justify-content:center}
+footer{background:var(--teal);color:#cfdcd9;padding:24px 0;font-size:.84rem}
+.dock{display:none}
+@media(max-width:860px){nav,.hdr-cta{display:none}.hero .wrap,.trust,.contact,.revs,.steps{grid-template-columns:1fr}.frame{max-height:420px;aspect-ratio:5/4}.cta .btn{flex:1 1 100%}.adv div{border-right:0;border-bottom:1px solid var(--line)}.adv div:last-child{border-bottom:0}
+.hint{display:block}.cat{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-inline:-16px;padding:4px 16px 14px;scrollbar-width:none}.cat::-webkit-scrollbar{display:none}.pc{flex:0 0 78%;scroll-snap-align:start}
+.dock{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--teal);border-top:1px solid var(--cu)}.dock .btn{width:100%}body{padding-bottom:74px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.eyebrow{color:var(--cu2)}.hero .eyebrow,.dark .eyebrow{color:var(--cu)}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версія сайту: фото та тексти взято з відкритих джерел салону</div>
+<header><div class="wrap bar">
+<a class="logo" href="#top">Анна-<span>Марія</span></a>
+<nav aria-label="Меню"><a href="#about">Про нас</a><a href="#services">Послуги</a><a href="#gallery">Роботи</a><a href="#reviews">Відгуки</a><a href="#faq">FAQ</a><a href="#contacts">Контакти</a></nav>
+<a class="btn p s hdr-cta" href="tel:+380506604026">Записатися</a>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+<div>
+<span class="eyebrow">Салон краси · Чернівці</span>
+<h1>Всі види б'юті послуг <em>в одному місці</em></h1>
+<p class="lead">Волосся, нігті, брови, вії, макіяж, татуаж, косметологія, масаж і солярій у центрі Чернівців, на вул. Франка.</p>
+<div class="cta"><a class="btn p" href="tel:+380506604026">Записатися</a><a class="btn g" href="https://www.instagram.com/annamaria.salon/" target="_blank" rel="noopener">Instagram</a></div>
+<ul class="facts"><li>Франка, 26</li><li>09:00–20:00</li><li>★ 4.5 · 27 відгуків</li></ul>
+</div>
+<div class="frame"><img src="img/work-1.jpg" alt="Робота майстрів салону Анна-Марія" onerror="this.remove()"></div>
+</div></section>
+
+<section id="about"><div class="wrap">
+<span class="eyebrow">Про салон</span><h2>Чому Анна-Марія</h2>
+<div class="adv">
+<div><h3>Все в одному місці</h3><p>Перукарські послуги, манікюр і педикюр, брови, вії, макіяж, косметологія та масаж.</p></div>
+<div><h3>Досвід понад 10 років</h3><p>За описом у каталозі top20.ua, салон працює понад десять років.</p></div>
+<div><h3>Масаж і солярій</h3><p>Антицелюлітний та роликовий масаж, послуги солярію та пірсингу.</p></div>
+<div><h3>Є паркінг</h3><p>У каталозі вказано автостоянку біля салону.</p></div>
+</div></div></section>
+
+<section id="services" class="alt"><div class="wrap">
+<span class="eyebrow">Послуги</span><h2>Що ми пропонуємо</h2>
+<p class="hint">Гортайте картки вбік →</p>
+<div class="cat">
+<article class="pc"><div class="pic"></div><div class="body"><h3>Волосся</h3><p>Всі види перукарських послуг: стрижки, фарбування, укладки.</p><span class="pr">Жіноча стрижка 450–600 ₴ · чоловіча від 300 ₴<br>Фарбування від 450 ₴ · мелірування від 1000 ₴<br>Укладка 300–700 ₴</span><a class="btn g s" href="tel:+380506604026">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Нігті</h3><p>Манікюр і педикюр.</p><span class="pr">Манікюр 350 ₴ · гель-лак 600 ₴<br>Нарощування від 900 ₴<br>Педикюр 550 ₴ · з гель-лаком 700 ₴</span><a class="btn g s" href="tel:+380506604026">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Брови та вії</h3><p>Оформлення, фарбування та корекція брів, вії.</p><span class="pr">Фарбування брів 200 ₴<br>Фарбування + корекція брів 350 ₴<br>Корекція форми брів 200 ₴</span><a class="btn g s" href="tel:+380506604026">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Макіяж і татуаж</h3><p>Макіяж для будь-якої події та перманентний макіяж.</p><span class="pr">Пудрове напилення брів 3000 ₴<br>Стрілка класична 2500 ₴<br>Міжвійка 2500 ₴</span><a class="btn g s" href="tel:+380506604026">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Депіляція та косметологія</h3><p>Воскова депіляція, догляд за шкірою обличчя й тіла, апаратні процедури.</p><span class="pr">Воскова депіляція: ноги 350 ₴, руки 300 ₴, бікіні 500 ₴<br>Косметологія: уточнюйте за телефоном</span><a class="btn g s" href="tel:+380506604026">Записатися</a></div></article>
+<article class="pc"><div class="pic"></div><div class="body"><h3>Пірсинг і солярій</h3><p>Пірсинг вух, пупка, брови, губи, язика та солярій у салоні.</p><span class="pr">Пірсинг 1-го вуха 500 ₴ (анестетик входить)<br>Солярій 22 ₴/хв</span><a class="btn g s" href="tel:+380506604026">Записатися</a></div></article>
+</div>
+<p class="src">Ціни з допису «Ціни 2025» в Instagram салону (листопад 2025), можуть змінюватися. Деякі позиції подано «від». Актуальне уточнюйте за телефоном.</p>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+<span class="eyebrow">Портфоліо</span><h2>Наші роботи</h2>
+<div class="gal">
+<figure><img src="img/work-1.jpg" alt="Робота салону Анна-Марія: манікюр з дизайном і стразами" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+<figure><img src="img/work-2.jpg" alt="Стрижка боб у салоні Анна-Марія" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+<figure><img src="img/work-3.jpg" alt="Корекція брів у салоні Анна-Марія: до та після" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+</div>
+<p class="src"><a href="https://www.instagram.com/annamaria.salon/" target="_blank" rel="noopener">Більше робіт в Instagram</a></p>
+</div></section>
+
+<section class="alt"><div class="wrap">
+<span class="eyebrow">Запис</span><h2>Як записатися</h2>
+<ol class="steps">
+<li><b>Зателефонуйте</b><span>050 660 40 26 або напишіть у Direct в Instagram.</span></li>
+<li><b>Оберіть послугу</b><span>Назвіть послугу та зручний час.</span></li>
+<li><b>Приходьте</b><span>Вул. І. Франка, 26. Щодня 09:00–20:00.</span></li>
+</ol></div></section>
+
+<section id="reviews"><div class="wrap">
+<span class="eyebrow">Відгуки</span><h2>Що кажуть клієнти</h2>
+<div class="trust">
+<div class="score"><b>4.5</b><span class="st">★★★★★</span><small>27 відгуків на top20.ua</small></div>
+<div class="revs">
+<div class="rv"><p>Приємний персонал і дуже хороший майстер Альона, виправила мої рукотворчі справи з моїм волоссям.</p><cite>Alisa Feliz, 10 липня 2024</cite></div>
+<div class="rv"><p>Дуже класний салон, класний персонал, обслуговування супер. Чисто, зручно, недорого в порівнянні з барбершопами. Рекомендую.</p><cite>Sania___ Moto_G9, 5 вересня 2021</cite></div>
+<div class="rv"><p>Обслуговування якісне й оперативне.</p><cite>Василь Томаш, 5 вересня 2021</cite></div>
+<div class="rv"><p>Очень понравилось, особенно бровист Кристина!</p><cite>Ludmila K, 16 вересня 2021</cite></div>
+</div></div>
+<p class="src">Відгуки з відкритої сторінки салону на top20.ua.</p>
+</div></section>
+
+<section id="faq" class="alt"><div class="wrap">
+<span class="eyebrow">FAQ</span><h2>Часті питання</h2>
+<details><summary>Як записатися?</summary><p>Зателефонуйте за номером 050 660 40 26 або напишіть у Direct в Instagram.</p></details>
+<details><summary>Де знаходиться салон?</summary><p>Чернівці, вул. І. Франка, 26.</p></details>
+<details><summary>Який графік роботи?</summary><p>Щодня з 09:00 до 20:00.</p></details>
+<details><summary>Скільки коштують послуги?</summary><p>За прайсом салону в Instagram (2025): жіноча стрижка 450–600 ₴, манікюр 350 ₴, гель-лак 600 ₴, педикюр з гель-лаком 700 ₴, фарбування брів 200 ₴. Актуальні ціни уточнюйте за телефоном.</p></details>
+<details><summary>Чи є послуга пірсингу?</summary><p>Так, у прайсі: проколювання вуха 500 ₴ (анестетик входить у вартість), пупка 2000 ₴, брови або губи 2000 ₴, язика 2000 ₴; сережки з медичного сплаву 400–700 ₴ окремо.</p></details>
+</div></section>
+
+<section id="contacts"><div class="wrap">
+<span class="eyebrow">Контакти</span><h2>Чекаємо в салоні Анна-Марія</h2>
+<div class="contact">
+<div class="cbox"><a class="tel" href="tel:+380506604026">050 660 40 26</a>
+<p class="alt-tel">Також: <a href="tel:+380372526743">(037) 252-67-43</a></p>
+<dl><div><dt>Адреса</dt><dd>м. Чернівці, вул. І. Франка, 26</dd></div><div><dt>Графік</dt><dd>Щодня, 09:00–20:00</dd></div><div><dt>Instagram</dt><dd><a href="https://www.instagram.com/annamaria.salon/" target="_blank" rel="noopener">@annamaria.salon</a></dd></div></dl></div>
+<div class="links"><a class="btn p" href="tel:+380506604026">Записатися</a><a class="btn g" href="https://www.google.com/maps/search/?api=1&query=%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D0%B0+26+%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96" target="_blank" rel="noopener">Відкрити на Google Maps</a><a class="btn g" href="https://www.instagram.com/annamaria.salon/" target="_blank" rel="noopener">Написати в Instagram</a></div>
+</div></div></section>
+</main>
+<footer><div class="wrap">© Анна-Марія, Чернівці · Демо-версія сайту</div></footer>
+<div class="dock"><a class="btn p" href="tel:+380506604026">Записатися: 050 660 40 26</a></div>
+</body>
+</html>
