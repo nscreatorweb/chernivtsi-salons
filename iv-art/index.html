@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Iv.Art: простір краси в Чернівцях</title>
+<meta name="description" content="Iv.Art: манікюр, педикюр, брови, вії, LED нарощення. Героїв Майдану, 2А, Чернівці. Графік 09:00-20:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f5f1;--ink:#16213e;--mut:#6a6f7d;--line:#dcd8cf;--acc:#2b3a67;--soft:#ece8e0;--serif:'Fraunces',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--ink);font:400 1.0625rem/1.7 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.w{max-width:1120px;margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+.demo{background:var(--ink);color:#d8dbe6;text-align:center;font-size:.78rem;padding:8px 14px}
+header{position:sticky;top:0;z-index:50;background:rgba(247,245,241,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{font:500 1.5rem/1 var(--serif);letter-spacing:.02em;text-decoration:none}
+.logo i{font-style:normal;color:var(--mut)}
+nav{display:flex;gap:30px}
+nav a{font-size:.92rem;text-decoration:none;color:var(--mut);transition:color .2s}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 30px;border-radius:999px;font:500 .98rem var(--sans);text-decoration:none;border:1px solid var(--ink);transition:.25s;cursor:pointer}
+.btn.p{background:var(--ink);color:#fff}
+.btn.p:hover{background:var(--acc);transform:translateY(-1px)}
+.btn.g:hover{background:var(--ink);color:#fff}
+.btn.s{min-height:42px;padding:0 22px;font-size:.9rem}
+.hero{padding:clamp(40px,7vw,100px) 0 clamp(48px,7vw,100px)}
+.hg{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,6vw,90px);align-items:end}
+.hg>*{min-width:0}
+.eb{display:block;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);margin-bottom:22px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.05;letter-spacing:-.02em}
+h1{font-size:clamp(2.8rem,7.4vw,5.6rem);margin-bottom:26px}
+h1 em{font-style:italic;color:var(--acc)}
+.lead{color:var(--mut);font-size:1.12rem;max-width:44ch;margin-bottom:34px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.meta{margin-top:34px;display:flex;gap:10px 30px;flex-wrap:wrap;color:var(--mut);font-size:.92rem;border-top:1px solid var(--line);padding-top:18px}
+.meta b{color:var(--ink);font-weight:500}
+.ph{aspect-ratio:4/5;overflow:hidden;background:var(--soft)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.cap{font-size:.8rem;color:var(--mut);margin-top:10px}
+section{padding:clamp(56px,8vw,104px) 0;border-top:1px solid var(--line)}
+.sh{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;margin-bottom:clamp(30px,5vw,56px)}
+h2{font-size:clamp(2rem,4.4vw,3.2rem)}
+.sh p{color:var(--mut);max-width:50ch}
+.adv{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.adv div{border-top:1px solid var(--ink);padding-top:16px}
+.adv b{display:block;font:500 1.3rem/1.2 var(--serif);margin-bottom:8px}
+.adv span{color:var(--mut);font-size:.95rem}
+.sv{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;gap:12px;transition:.3s}
+.card:hover{border-color:var(--ink);transform:translateY(-3px)}
+.ic{height:92px;background:linear-gradient(135deg,var(--soft),#dde2f0);display:flex;align-items:flex-end;justify-content:flex-start;padding:14px;position:relative;overflow:hidden}
+.ic::after{content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;border-radius:50%;border:1px solid rgba(22,33,62,.25)}
+.ic svg{width:34px;height:34px;stroke:var(--ink);fill:none;stroke-width:1.3}
+.card h3{font-size:1.5rem}
+.card p{color:var(--mut);font-size:.96rem;flex:1}
+.pr{display:flex;justify-content:space-between;align-items:baseline;padding-top:12px;border-top:1px solid var(--line)}
+.pr small{color:var(--mut);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}
+.pr b{font:500 1.35rem var(--serif);white-space:nowrap}
+.tbl{margin-top:34px;border-top:1px solid var(--ink)}
+.tbl details{border-bottom:1px solid var(--line)}
+.tbl summary{cursor:pointer;padding:18px 0;font:500 1.35rem var(--serif);list-style:none;display:flex;justify-content:space-between}
+.tbl summary::-webkit-details-marker{display:none}
+.tbl summary::after{content:"+";font-size:1.5rem;color:var(--mut)}
+.tbl details[open] summary::after{content:"−"}
+.row{display:grid;grid-template-columns:1.6fr repeat(3,.6fr);gap:12px;padding:10px 0;border-top:1px solid var(--soft);font-size:.96rem}
+.row.h{color:var(--mut);font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;border-top:0}
+.row span:not(:first-child){text-align:right;white-space:nowrap}
+.row>*{min-width:0}
+.tn{font-size:.88rem;color:var(--mut);margin-top:20px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;border-top:1px solid var(--ink);padding-top:16px}
+.steps li::before{content:"0" counter(s);font:italic 400 2rem var(--serif);color:var(--acc)}
+.steps b{display:block;font:500 1.3rem var(--serif);margin:4px 0}
+.steps span{color:var(--mut)}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.nophoto{background:linear-gradient(135deg,var(--soft),#dde2f0)}
+.gal figure{aspect-ratio:3/4;overflow:hidden;background:var(--soft)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gal figure:hover img{transform:scale(1.04)}
+.tr{display:grid;grid-template-columns:.7fr 1.3fr;gap:36px;align-items:start}
+.tr>*{min-width:0}
+.score b{font:400 5.5rem/1 var(--serif)}
+.score p{color:var(--mut)}
+.rv{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.rv blockquote{border-top:1px solid var(--ink);padding-top:16px}
+.rv p{font-family:var(--serif);font-size:1.15rem;line-height:1.45;margin-bottom:10px}
+.rv cite{font-style:normal;font-size:.88rem;color:var(--mut)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;padding:18px 0;font:500 1.3rem var(--serif);list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--mut);font-size:1.5rem}
+.faq details[open] summary::after{content:"−"}
+.faq p{color:var(--mut);padding-bottom:18px;max-width:68ch}
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.ct>*{min-width:0}
+.tel{display:inline-block;font:400 clamp(2.2rem,6vw,3.6rem)/1.1 var(--serif);text-decoration:none;margin-bottom:24px}
+dl{display:grid;gap:16px;margin-bottom:28px}
+dt{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mut)}
+dd a{text-decoration-color:var(--line)}
+.map{background:var(--soft);padding:30px;display:flex;flex-direction:column;justify-content:space-between;gap:24px;min-height:260px;background-image:linear-gradient(rgba(22,33,62,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(22,33,62,.07) 1px,transparent 1px);background-size:36px 36px}
+.map h3{font-size:1.8rem;background:var(--soft);align-self:flex-start;padding:2px 10px 2px 0}
+.map .btn{align-self:flex-start;background:var(--bg)}
+footer{border-top:1px solid var(--line);padding:26px 0;font-size:.88rem;color:var(--mut)}
+footer .w{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.dock{display:none}
+@media(max-width:860px){
+ nav,.hc{display:none}.hg,.sh,.tr,.ct{grid-template-columns:1fr}
+ .ph{max-width:360px;order:-1;width:100%}
+ .adv,.steps{grid-template-columns:1fr 1fr}.rv{grid-template-columns:1fr}
+ .gal{grid-template-columns:1fr 1fr}
+ .sv{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 16px;gap:14px;margin:0 -16px;padding:0 16px 12px;scrollbar-width:none}
+ .sv::-webkit-scrollbar{display:none}
+ .card{flex:0 0 80%;scroll-snap-align:start}
+ .row{grid-template-columns:1fr auto auto auto;font-size:.88rem;gap:8px}
+ .cta .btn{flex:1 1 100%}
+ .dock{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(247,245,241,.96);border-top:1px solid var(--line)}
+ .dock .btn{width:100%}
+ body{padding-bottom:78px}
+}
+@media(max-width:520px){.adv,.steps{grid-template-columns:1fr}.row{grid-template-columns:minmax(0,1fr) 56px 56px 56px;font-size:.78rem;gap:4px}.row.h{font-size:.75rem;letter-spacing:0}.row span:not(:first-child){white-space:normal;line-height:1.3}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версія сайту: фото та тексти взято з відкритих джерел салону</div>
+<header><div class="w bar">
+<a class="logo" href="#top">Iv<i>.</i>Art</a>
+<nav aria-label="Меню"><a href="#services">Послуги</a><a href="#works">Роботи</a><a href="#reviews">Відгуки</a><a href="#faq">Питання</a><a href="#contacts">Контакти</a></nav>
+<a class="btn p s hc" href="tel:+380660166977">Записатися</a>
+</div></header>
+<main id="top">
+<div class="hero"><div class="w hg">
+<div>
+<span class="eb">Автентичний простір краси · Чернівці</span>
+<h1>Манікюр і педикюр у <em>спокійному</em> просторі</h1>
+<p class="lead">Манікюр, педикюр, брови, вії та LED нарощення. Майстри трьох рівнів, прозорі ціни, зручний онлайн-запис.</p>
+<div class="cta"><a class="btn p" href="tel:+380660166977">Записатися</a><a class="btn g" href="https://www.instagram.com/iv.art_beauty/" target="_blank" rel="noopener">Instagram @iv.art_beauty</a></div>
+<div class="meta"><span><b>4,4</b> · 46 відгуків (top20.ua)</span><span>Графік 09:00–20:00</span><span>Героїв Майдану, 2А</span></div>
+</div>
+<div><div class="ph"><img src="img/work-3.jpg" alt="Чорний манікюр, робота майстра Iv.Art" width="1030" height="1370" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></div></div>
+</div></div>
+
+<section><div class="w">
+<div class="sh"><h2>Чому обирають нас</h2><p>Що говорять клієнти та що видно з прайсу салону.</p></div>
+<div class="adv">
+<div><b>Три рівні майстрів</b><span>Майстер, ТОП майстер і майстер PRO: ви обираєте рівень і ціну.</span></div>
+<div><b>Комплексні послуги</b><span>Манікюр, педикюр, брови, вії, ламінування, LED нарощення.</span></div>
+<div><b>Онлайн-запис</b><span>Вільний час і майстра можна обрати онлайн або за телефоном.</span></div>
+<div><b>Курси</b><span>Beauty-курси: візаж для себе та художнє моделювання брів (top20.ua).</span></div>
+</div></div></section>
+
+<section id="services"><div class="w">
+<div class="sh"><h2>Послуги та ціни</h2><p>Ціни з онлайн-прайсу салону. Вартість залежить від рівня майстра: майстер, ТОП або PRO.</p></div>
+<div class="sv">
+<article class="card"><div class="ic"><svg viewBox="0 0 32 32"><path d="M10 28V12a3 3 0 0 1 6 0v16M16 28V8a3 3 0 0 1 6 0v20"/></svg></div><h3>Манікюр</h3><p>Класичний, комбінований або апаратний, зняття покриття, комплексний догляд.</p><div class="pr"><small>Вартість</small><b>від 600 ₴</b></div><a class="btn g s" href="tel:+380660166977">Записатися</a></article>
+<article class="card"><div class="ic"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="9"/><path d="M16 7v18"/></svg></div><h3>Манікюр з гель-лаком</h3><p>Покриття гель-лаком, укріплення гелем, френч.</p><div class="pr"><small>Вартість</small><b>від 1 100 ₴</b></div><a class="btn g s" href="tel:+380660166977">Записатися</a></article>
+<article class="card"><div class="ic"><svg viewBox="0 0 32 32"><path d="M6 24l20-16M6 24h8M20 8h6v6"/></svg></div><h3>Нарощування нігтів</h3><p>Нарощування до 2 см, кожен наступний сантиметр +50 ₴.</p><div class="pr"><small>Вартість</small><b>від 1 800 ₴</b></div><a class="btn g s" href="tel:+380660166977">Записатися</a></article>
+<article class="card"><div class="ic"><svg viewBox="0 0 32 32"><path d="M8 26c0-10 6-16 16-16-2 8-6 14-16 16z"/></svg></div><h3>Педикюр</h3><p>Апаратний, частковий (пальці або стопа), повний з покриттям, комплексний догляд.</p><div class="pr"><small>Вартість</small><b>від 500 ₴</b></div><a class="btn g s" href="tel:+380660166977">Записатися</a></article>
+<article class="card"><div class="ic"><svg viewBox="0 0 32 32"><path d="M4 18c6-8 18-8 24 0M4 18c6 6 18 6 24 0"/><circle cx="16" cy="18" r="3"/></svg></div><h3>Брови та вії</h3><p>Ламінування, фарбування, моделювання брів, нарощення вій.</p><div class="pr"><small>Вартість</small><b>уточнюйте</b></div><a class="btn g s" href="tel:+380660166977">Записатися</a></article>
+<article class="card"><div class="ic"><svg viewBox="0 0 32 32"><path d="M6 10h20M9 10l2 16h10l2-16"/></svg></div><h3>Макіяж і курси</h3><p>Професійний макіяж, курси «Візаж для себе» та «Художнє моделювання брів».</p><div class="pr"><small>Вартість</small><b>за запитом</b></div><a class="btn g s" href="tel:+380660166977">Записатися</a></article>
+</div>
+
+<div class="tbl">
+<details open><summary>Манікюр</summary>
+<div class="row h"><span>Послуга</span><span>Майстер</span><span>ТОП</span><span>PRO</span></div>
+<div class="row"><span>Манікюр + зняття нашого покриття</span><span>600 ₴</span><span>650 ₴</span><span>700 ₴</span></div>
+<div class="row"><span>Манікюр + зняття не нашого покриття</span><span>650 ₴</span><span>700 ₴</span><span>750 ₴</span></div>
+<div class="row"><span>Комплексний догляд для натуральних нігтів</span><span>650 ₴</span><span>700 ₴</span><span>750 ₴</span></div>
+<div class="row"><span>Манікюр + покриття гель-лаком</span><span>1 100 ₴</span><span>1 200 ₴</span><span>1 300 ₴</span></div>
+<div class="row"><span>Манікюр + укріплення + покриття</span><span>1 300 ₴</span><span>1 400 ₴</span><span>1 500 ₴</span></div>
+<div class="row"><span>Манікюр + покриття + френч</span><span>1 300 ₴</span><span>1 450 ₴</span><span>1 600 ₴</span></div>
+</details>
+<details><summary>Педикюр</summary>
+<div class="row h"><span>Послуга</span><span>Майстер</span><span>ТОП</span><span>PRO</span></div>
+<div class="row"><span>Педикюр апаратний</span><span>750 ₴</span><span>800 ₴</span><span>850 ₴</span></div>
+<div class="row"><span>Частковий педикюр «обробка пальців»</span><span>600 ₴</span><span>650 ₴</span><span>700 ₴</span></div>
+<div class="row"><span>Частковий педикюр «обробка стопи»</span><span>500 ₴</span><span>550 ₴</span><span>600 ₴</span></div>
+<div class="row"><span>Повний педикюр + однотонне покриття</span><span>1 300 ₴</span><span>1 400 ₴</span><span>1 500 ₴</span></div>
+<div class="row"><span>Комплексний догляд для ніг</span><span>850 ₴</span><span>900 ₴</span><span>950 ₴</span></div>
+</details>
+</div>
+<p class="tn">«ТОП» і «PRO» означають рівень майстра. Нарощування нігтів до 2 см: 1 800 ₴ (майстер) або 1 900 ₴ (ТОП). Актуальний прайс і дизайни уточнюйте під час запису.</p>
+</div></section>
+
+<section id="how"><div class="w">
+<div class="sh"><h2>Як записатися</h2><p>Три простих кроки.</p></div>
+<ol class="steps">
+<li><b>Оберіть послугу</b><span>Манікюр, педикюр, брови чи вії. Підкажемо за телефоном.</span></li>
+<li><b>Оберіть майстра й час</b><span>Телефоном або через онлайн-запис салону.</span></li>
+<li><b>Приходьте</b><span>Героїв Майдану, 2А, Чернівці.</span></li>
+</ol>
+<div class="cta" style="margin-top:34px"><a class="btn p" href="tel:+380660166977">Зателефонувати</a><a class="btn g" href="https://n799404.alteg.io" target="_blank" rel="noopener">Онлайн-запис</a></div>
+</div></section>
+
+<section id="works"><div class="w">
+<div class="sh"><h2>Наші роботи</h2><p>З Instagram салону @iv.art_beauty.</p></div>
+<div class="gal">
+<figure><img src="img/work-1.jpg" alt="Рожевий манікюр" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-2.jpg" alt="Червоний манікюр, подовжена форма" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-3.jpg" alt="Чорний манікюр, короткі нігті" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-4.jpg" alt="Ніжний рожевий манікюр мигдалеподібної форми" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-5.jpg" alt="Синій манікюр з краплями" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-6.jpg" alt="Педикюр, насичений бордовий колір" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+</div>
+</div></section>
+
+<section id="reviews"><div class="w">
+<div class="sh"><h2>Відгуки клієнтів</h2><p>Реальні відгуки з top20.ua.</p></div>
+<div class="tr">
+<div class="score"><b>4,4</b><p>46 відгуків на top20.ua<br>85% оцінок «відмінно»</p></div>
+<div class="rv">
+<blockquote><p>«Відвідала салон вперше, залишилась дуже задоволеною. Манікюр та педикюр без покриття зроблено ідеально, жодної подряпини чи подразнення.»</p><cite>Піцул Тетяна · 7 березня 2026</cite></blockquote>
+<blockquote><p>«Дуже задоволена роботою майстра Яни! Форма брів вийшла ідеальною, дуже натурально, колір підібраний бездоганно.»</p><cite>Анна Маловичко · 7 грудня 2025</cite></blockquote>
+<blockquote><p>«Єдиний салон у місті, після відвідування якого мій манікюр не відпадав на наступний день.»</p><cite>Mariana Danyliuk · 17 жовтня 2025</cite></blockquote>
+<blockquote><p>«Мій улюблений салон. В салоні дуже приємна атмосфера та кава. Все чудово, ще ніколи не підвели.»</p><cite>Євгенія Цемерова · 24 липня 2025</cite></blockquote>
+</div></div>
+</div></section>
+
+<section id="faq"><div class="w">
+<div class="sh"><h2>Часті питання</h2><p>Коротко про головне.</p></div>
+<div class="faq">
+<details><summary>Як записатися?</summary><p>За телефоном 066 016 69 77, в Instagram @iv.art_beauty або через онлайн-запис салону.</p></details>
+<details><summary>Чим відрізняються майстер, ТОП і PRO?</summary><p>Це рівні майстрів у прайсі салону: ціна на одну й ту саму послугу залежить від рівня майстра.</p></details>
+<details><summary>Чи є брови, вії та макіяж?</summary><p>Так: ламінування вій, фарбування та моделювання брів, нарощення вій і макіяж. Актуальні ціни уточнюйте за телефоном.</p></details>
+<details><summary>Де знаходиться салон і коли працює?</summary><p>Героїв Майдану, 2А, Чернівці. За даними top20.ua, графік 09:00–20:00.</p></details>
+</div>
+</div></section>
+
+<section id="contacts"><div class="w">
+<div class="sh"><h2>Контакти</h2><p>Запишіться на зручний час.</p></div>
+<div class="ct">
+<div><a class="tel" href="tel:+380660166977">066 016 69 77</a>
+<dl><div><dt>Адреса</dt><dd>м. Чернівці, вул. Героїв Майдану, 2А</dd></div><div><dt>Графік</dt><dd>09:00–20:00 (за даними top20.ua)</dd></div><div><dt>Instagram</dt><dd><a href="https://www.instagram.com/iv.art_beauty/" target="_blank" rel="noopener">@iv.art_beauty</a></dd></div></dl>
+<div class="cta"><a class="btn p" href="tel:+380660166977">Записатися</a><a class="btn g" href="https://n799404.alteg.io" target="_blank" rel="noopener">Онлайн-запис</a></div></div>
+<div class="map"><h3>Як нас знайти</h3><a class="btn" href="https://www.google.com/maps/search/?api=1&query=%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96+%D0%93%D0%B5%D1%80%D0%BE%D1%97%D0%B2+%D0%9C%D0%B0%D0%B9%D0%B4%D0%B0%D0%BD%D1%83+2%D0%90" target="_blank" rel="noopener">Відкрити на Google Maps</a></div>
+</div>
+</div></section>
+</main>
+<footer><div class="w"><span>© Iv.Art, Чернівці</span><span>Демо-сайт</span></div></footer>
+<div class="dock"><a class="btn p" href="tel:+380660166977">Записатися</a></div>
+</body>
+</html>

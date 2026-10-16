@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Монро — салон краси в Чернівцях</title>
+<meta name="description" content="Монро: салон краси в Чернівцях. Волосся, нарощування, нігті, брови, вії, косметологія, масаж. ТЦ «Проспект», 3 поверх, кабінет 336.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1e6d3;--paper:#faf4ea;--ink:#3b2e24;--brown:#7a5a3c;--gold:#b08a52;--line:#d9c7aa;--muted:#7d6c5b}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Lato,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:'Bodoni Moda',serif;font-weight:500;line-height:1.12;overflow-wrap:anywhere}
+.wrap{width:min(1100px,100% - 32px);margin-inline:auto}
+.demo{background:var(--ink);color:var(--paper);font-size:13px;text-align:center;padding:8px 12px}
+header{position:sticky;top:0;z-index:20;background:rgba(241,230,211,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+.logo{font-family:'Bodoni Moda',serif;font-size:28px;text-decoration:none;letter-spacing:.2em;font-weight:700}
+nav{display:none;gap:22px;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--brown)}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);padding:14px 26px;text-decoration:none;font-weight:700;letter-spacing:.1em;font-size:13px;text-transform:uppercase;transition:background .25s,transform .2s}
+.btn:hover{background:var(--brown);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.hero{padding:44px 0 64px;display:grid;gap:34px}
+.eyebrow{letter-spacing:.24em;text-transform:uppercase;font-size:12px;color:var(--brown);font-weight:700}
+.hero h1{font-size:clamp(42px,9vw,84px);margin:14px 0 18px}
+.hero h1 em{font-style:italic;color:var(--brown)}
+.lead{font-size:18px;color:var(--muted);max-width:500px;font-weight:300}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.portrait{aspect-ratio:3/4;width:min(400px,100%);justify-self:center;background:linear-gradient(170deg,#e7d3b0,#b08a52 60%,#5d4328);position:relative;overflow:hidden;border-radius:300px 300px 0 0}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+section{padding:60px 0;border-top:1px solid var(--line)}
+.title{font-size:clamp(30px,5vw,46px);margin-bottom:10px}
+.sub{color:var(--muted);max-width:600px;margin-bottom:30px}
+.grid{display:grid;gap:18px}
+.card{background:var(--paper);border:1px solid var(--line);padding:26px;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(59,46,36,.1)}
+.card h3{font-size:24px;margin-bottom:6px}
+.card p{color:var(--muted)}
+.mark{font:italic 500 30px 'Bodoni Moda',serif;color:var(--brown);margin-bottom:6px}
+.band{height:50px;margin-bottom:16px;background:repeating-linear-gradient(90deg,#e7d3b0 0 14px,var(--paper) 14px 28px);border-bottom:2px solid var(--gold)}
+.row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dotted var(--line);font-size:15px}
+.row:last-of-type{border:0}
+.row b{white-space:nowrap;color:var(--brown)}
+.note{margin-top:20px;font-size:14px;color:var(--muted)}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.gal figure{aspect-ratio:3/4;overflow:hidden;background:linear-gradient(160deg,#e7d3b0,#b08a52)}
+.gal figure:nth-child(2n){background:linear-gradient(160deg,#b08a52,#5d4328)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal figure:hover img{transform:scale(1.05)}
+.rate{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.rate strong{font:500 64px 'Bodoni Moda',serif;color:var(--brown)}
+blockquote footer{margin-top:12px;font-size:13px;color:var(--muted)}
+details{background:var(--paper);border:1px solid var(--line);padding:16px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700;list-style:none}
+summary::-webkit-details-marker{display:none}
+details p{margin-top:8px;color:var(--muted)}
+.contact{background:var(--ink);color:var(--paper);padding:34px 22px}
+.contact .title{color:var(--paper)}
+.contact a{overflow-wrap:anywhere}
+.contact .btn{background:var(--gold);color:var(--ink)}
+.contact .btn.ghost{background:transparent;color:var(--paper);border-color:var(--paper)}
+.clist{list-style:none;display:grid;gap:8px;margin:18px 0 8px}
+footer.f{padding:28px 0 90px;text-align:center;font-size:13px;color:var(--muted)}
+.sticky{position:fixed;left:16px;right:16px;bottom:14px;z-index:30;text-align:center}
+@media(min-width:760px){
+ nav{display:flex}.hero{grid-template-columns:1.15fr .85fr;align-items:center;padding:76px 0}
+ .g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+ .gal{grid-template-columns:repeat(3,1fr)}.sticky{display:none}footer.f{padding-bottom:28px}
+ .contact{padding:50px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+.gal figure:last-child:nth-child(odd){grid-column:1/-1;aspect-ratio:1/1}@media(min-width:760px){.gal{grid-template-columns:repeat(6,1fr)}.gal figure{grid-column:span 2}.gal figure:nth-child(n+4),.gal figure:last-child:nth-child(odd){grid-column:span 3;aspect-ratio:1/1}}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версія сайту: фото та тексти взято з відкритих джерел салону</div>
+<header><div class="wrap bar">
+ <a class="logo" href="#top">МОНРО</a>
+ <nav><a href="#perevagy">Переваги</a><a href="#poslugy">Ціни</a><a href="#roboty">Роботи</a><a href="#vidguky">Відгуки</a><a href="#faq">FAQ</a><a href="#kontakty">Контакти</a></nav>
+ <a class="btn" href="tel:+380505371437">Записатися</a>
+</div></header>
+<main id="top">
+<div class="wrap hero">
+ <div>
+  <div class="eyebrow">Салон краси · Чернівці</div>
+  <h1>Весь спектр <em>жіночих послуг</em></h1>
+  <p class="lead">Волосся, нарощування, нігті, брови та вії, косметологія і масаж: усе для вашого образу в салоні «Монро».</p>
+  <div class="actions">
+   <a class="btn" href="tel:+380505371437">Записатися</a>
+   <a class="btn ghost" href="https://www.instagram.com/salon_monro_cv/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+ </div>
+ <div class="portrait"><img src="img/work-1.jpg" alt="Боб-каре, робота майстра салону Монро" onerror="this.remove()"></div>
+</div>
+
+<section id="perevagy"><div class="wrap">
+ <h2 class="title">Чому «Монро»</h2>
+ <div class="grid g3" style="margin-top:26px">
+  <div class="card"><div class="mark">i.</div><h3>Усе в одному місці</h3><p>Салон позиціонує себе як весь спектр жіночих послуг.</p></div>
+  <div class="card"><div class="mark">ii.</div><h3>Колористи та нарощування</h3><p>Клієнти відзначають роботу колористів, стрижки та нарощування волосся.</p></div>
+  <div class="card"><div class="mark">iii.</div><h3>Професійний догляд</h3><p>У салоні можна придбати професійний догляд італійських брендів, а майстри освоюють нові техніки.</p></div>
+ </div>
+</div></section>
+
+<section id="poslugy"><div class="wrap">
+ <h2 class="title">Послуги та ціни</h2>
+ <p class="sub">Ціни зі сторіс-хайлайту «Прайс лист» в Instagram салону (в гривнях, нарощування у доларах). Остаточну вартість визначає майстер.</p>
+ <div class="grid g3">
+  <div class="card"><div class="band"></div><h3>Фарбування волосся</h3>
+   <div class="row"><span>Airtouch класичний (4-7 год.)</span><b>6000-8500 &#8372;</b></div>
+   <div class="row"><span>Airtouch топ зона (3-5 год.)</span><b>5000-6500 &#8372;</b></div>
+   <div class="row"><span>Контуринг (до 2 год.)</span><b>2500-3500 &#8372;</b></div>
+   <div class="row"><span>Мілірування класичне (4-6 год.)</span><b>5000-6500 &#8372;</b></div>
+   <div class="row"><span>Мілірування топ зона</span><b>4000-5500 &#8372;</b></div>
+   <div class="row"><span>Тотал блонд + тон (до 2 см)</span><b>3000-3500 &#8372;</b></div>
+   <div class="row"><span>Корекція спецблонд коренів</span><b>1500-1800 &#8372;</b></div>
+   <div class="row"><span>Корекція спецблонд + тон</span><b>2500 &#8372;</b></div>
+   <div class="row"><span>Корінь</span><b>1500-1800 &#8372;</b></div>
+   <div class="row"><span>Корінь + тонування</span><b>2500-3000 &#8372;</b></div>
+   <div class="row"><span>Тонування</span><b>1500-2000 &#8372;</b></div>
+  </div>
+  <div class="card"><div class="band"></div><h3>Відновлення волосся</h3>
+   <div class="row"><span>Nashi Filler Therapy</span><b>1800-2600 &#8372;</b></div>
+   <div class="row"><span>Nashi Filler Keratin</span><b>3500-6000 &#8372;</b></div>
+   <div class="row"><span>Nashi Filler Therapy Lifting Express</span><b>1500 &#8372;</b></div>
+   <div class="row"><span>Nashi Argan Essential Energy</span><b>1600-1900 &#8372;</b></div>
+   <div class="row"><span>Davines Tailoring</span><b>1500-2000 &#8372;</b></div>
+   <div class="row"><span>Біксіпластія</span><b>3500-6000 &#8372;</b></div>
+   <div class="row"><span>Кератин</span><b>3500-6000 &#8372;</b></div>
+  </div>
+  <div class="card"><div class="band"></div><h3>Стрижки</h3>
+   <div class="row"><span>Стрижка кінців без миття</span><b>500 &#8372;</b></div>
+   <div class="row"><span>Лінія</span><b>700 &#8372;</b></div>
+   <div class="row"><span>Стрижка чілки</span><b>400 &#8372;</b></div>
+   <div class="row"><span>Шари</span><b>1000 &#8372;</b></div>
+   <div class="row"><span>Каре / боб-каре / піксі</span><b>1000 &#8372;</b></div>
+  </div>
+  <div class="card"><div class="band"></div><h3>Брови та вії</h3>
+   <div class="row"><span>Корекція (віск / пінцет)</span><b>200 &#8372;</b></div>
+   <div class="row"><span>Корекція + фарбування</span><b>500 &#8372;</b></div>
+   <div class="row"><span>Ламінування + корекція</span><b>600 &#8372;</b></div>
+   <div class="row"><span>Ламінування + корекція + фарбування</span><b>800 &#8372;</b></div>
+   <div class="row"><span>Фарбування вій</span><b>200 &#8372;</b></div>
+   <div class="row"><span>Депіляція обличчя</span><b>250 &#8372;</b></div>
+  </div>
+  <div class="card"><div class="band"></div><h3>Нігті та масаж</h3>
+   <div class="row"><span>Манікюр гігієнічний</span><b>500 &#8372;</b></div>
+   <div class="row"><span>Манікюр + покриття</span><b>800 &#8372;</b></div>
+   <div class="row"><span>Педикюр</span><b>900 &#8372;</b></div>
+   <div class="row"><span>Манікюр + педикюр</span><b>1500 &#8372;</b></div>
+   <div class="row"><span>Масаж спини</span><b>300 &#8372;</b></div>
+   <div class="row"><span>Лімфодренажний масаж</span><b>600 &#8372;</b></div>
+  </div>
+  <div class="card"><div class="band"></div><h3>Косметологія</h3>
+   <div class="row"><span>Чистка обличчя + маска</span><b>1300 &#8372;</b></div>
+   <div class="row"><span>Чистка обличчя + пілінг</span><b>1500 &#8372;</b></div>
+   <div class="row"><span>Чистка спини + пілінг</span><b>від 2000 &#8372;</b></div>
+   <div class="row"><span>Пілінги Simildiet (азелаїновий, саліциловий, феруловий, аргініновий, мигдальний, освітлюючий)</span><b>1000 &#8372;</b></div>
+   <div class="row"><span>Dermo 28 AHA пілінг / Hyalual пілінг</span><b>1000 &#8372;</b></div>
+   <div class="row"><span>PRX-T33 2 ml / Jalupro Glow Peel / Retix C Eye+</span><b>2000 &#8372;</b></div>
+   <div class="row"><span>Retix Eye + Dermapen</span><b>2500 &#8372;</b></div>
+  </div>
+  <div class="card"><div class="band"></div><h3>Нарощування волосся</h3>
+   <div class="row"><span>Нарощування волосся</span><b>від 300 $</b></div>
+   <div class="row"><span>Нарощування скронь</span><b>від 100 $</b></div>
+  </div>
+ </div>
+ <div class="actions"><a class="btn" href="tel:+380505371437">Записатися</a></div>
+</div></section>
+
+<section><div class="wrap">
+ <h2 class="title">Як записатися</h2>
+ <div class="grid g3" style="margin-top:26px">
+  <div class="card"><div class="mark">1</div><h3>Зателефонуйте</h3><p>Уточніть, чи є вільний майстер на потрібний час.</p></div>
+  <div class="card"><div class="mark">2</div><h3>Оберіть послугу</h3><p>За прайсом або порадою майстра.</p></div>
+  <div class="card"><div class="mark">3</div><h3>Приходьте</h3><p>ТЦ «Проспект», 3 поверх, кабінет 336.</p></div>
+ </div>
+</div></section>
+
+<section id="roboty"><div class="wrap">
+ <h2 class="title">Наші роботи</h2>
+ <div class="gal" style="margin-top:24px">
+  <figure><img src="img/work-1.jpg" alt="Гладке світле волосся біля вивіски салону Монро" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-2.jpg" alt="Темне блискуче волосся, робота майстра салону Монро" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-3.jpg" alt="Пряме волосся з м&#8217;яким переходом кольору, салон Монро" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-4.jpg" alt="Довге світле волосся, робота салону Монро" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+  <figure><img src="img/work-5.jpg" alt="Французький манікюр, робота салону Монро" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+ </div>
+</div></section>
+
+<section id="vidguky"><div class="wrap">
+ <h2 class="title">Відгуки</h2>
+ <div class="rate"><strong>5.0</strong><span>з 5 · 8 відгуків на top20.ua</span></div>
+ <div class="grid g3">
+  <div class="card"><blockquote>«Професіонали своєї справи! Ламінування брів, вій, стрижки та найкраще нарощення волосся у моєму житті. Майстри завжди привітні.»<footer>Ксения Корчак · 18.05.2025</footer></blockquote></div>
+  <div class="card"><blockquote>«Обожнюю цей салон. Якісно, приємно і доступно. Своє волосся довіряю тільки їм.»<footer>Роксолана Гузак · 18.05.2025</footer></blockquote></div>
+  <div class="card"><blockquote>«Дівчата все роблять, треба лише подзвонити дізнатись чи буде ваш спеціаліст. Колористи — професіонали своєї справи.»<footer>olko dolko · 21.04.2026</footer></blockquote></div>
+ </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+ <h2 class="title">Часті питання</h2>
+ <div style="margin-top:22px">
+  <details><summary>Чи потрібно записуватися наперед?</summary><p>Так, рекомендуємо зателефонувати та уточнити, чи є потрібний спеціаліст. Іноді трапляються вільні вікна в день звернення.</p></details>
+  <details><summary>Де вас знайти?</summary><p>За даними Instagram: ТЦ «Проспект», 3 поверх, кабінет 336 (вул. Шухевича, 1). У каталозі top20.ua вказано проспект Незалежності, 131.</p></details>
+  <details><summary>Чи є стрижки та фарбування?</summary><p>Так: стрижки (шари, каре, піксі), фарбування (airtouch, контуринг, мілірування, тонування) та відновлення волосся Nashi, Davines, кератин. Ціни в розділі «Послуги та ціни».</p></details>
+  <details><summary>Чи проводите навчання?</summary><p>У профілі салону є розділ «Навчання». Деталі уточнюйте за телефоном.</p></details>
+ </div>
+</div></section>
+
+<section id="kontakty"><div class="wrap">
+ <div class="contact">
+  <h2 class="title">Запишіться в «Монро»</h2>
+  <ul class="clist">
+   <li>ТЦ «Проспект», 3 поверх, кабінет 336, Шухевича, 1, Чернівці</li>
+   <li>Графік: 10:00-20:00 (за каталогом, уточнюйте за телефоном)</li>
+   <li>Телефон: <a href="tel:+380505371437">+38 (050) 537 14 37</a></li>
+   <li>Instagram: <a href="https://www.instagram.com/salon_monro_cv/" target="_blank" rel="noopener">@salon_monro_cv</a></li>
+  </ul>
+  <div class="actions">
+   <a class="btn" href="tel:+380505371437">Записатися</a>
+   <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=%D0%A2%D0%A6+%D0%9F%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%A8%D1%83%D1%85%D0%B5%D0%B2%D0%B8%D1%87%D0%B0+1+%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96" target="_blank" rel="noopener">Відкрити на карті</a>
+  </div>
+ </div>
+</div></section>
+</main>
+<footer class="f"><div class="wrap">© Монро, Чернівці. Демо-версія сайту.</div></footer>
+<a class="btn sticky" href="tel:+380505371437">Записатися</a>
+</body>
+</html>
