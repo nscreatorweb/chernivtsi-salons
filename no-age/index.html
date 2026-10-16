@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>No Age — prostir of beauty у Чернівцях</title>
+<meta name="description" content="No Age: простір краси у Чернівцях. Манікюр, педикюр, вії, волосся, макіяж, косметолог, масаж. Героїв Майдану, 190В.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff3f8;--ink:#14101a;--pink:#ee2a7b;--pink2:#c21862;--soft:#ffd6e8;--lav:#e9dcff;--white:#fff;--mut:#6d6177;--line:#f0cfe0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:Syne,system-ui,sans-serif;font-weight:800;line-height:1.05;letter-spacing:-.02em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.demo{background:var(--ink);color:var(--soft);text-align:center;font-size:12.5px;padding:7px 12px}
+header{position:sticky;top:0;z-index:30;background:rgba(255,243,248,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{height:66px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-family:Syne,sans-serif;font-weight:800;font-size:24px}
+.logo b{color:var(--pink)}
+.logo small{display:block;font:500 12px 'DM Sans';letter-spacing:.1em;color:var(--mut);margin-top:-3px;text-transform:uppercase}
+nav ul{display:flex;gap:24px;list-style:none;font-size:14px;font-weight:500;color:var(--mut)}
+nav a:hover{color:var(--pink)}
+.btn{display:inline-block;padding:15px 28px;border-radius:99px;font-weight:700;font-size:15px;transition:.25s;border:2px solid var(--ink);cursor:pointer;background:none}
+.btn.fill{background:var(--pink);border-color:var(--pink);color:#fff}
+.btn.fill:hover{background:var(--pink2);border-color:var(--pink2);transform:translateY(-2px);box-shadow:0 12px 24px rgba(238,42,123,.3)}
+.btn.out:hover{background:var(--ink);color:#fff}
+.nav .btn{padding:10px 18px;font-size:14px}
+.hero{padding:48px 0 70px;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.tag{display:inline-block;background:var(--ink);color:#fff;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:7px 14px;border-radius:99px;margin-bottom:20px}
+.hero h1{font-size:clamp(44px,6.4vw,84px);margin-bottom:20px}
+.hero h1 span{color:var(--pink)}
+.hero p.lead{color:var(--mut);font-size:18px;max-width:480px;margin-bottom:28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.hv{position:relative}
+.hv figure{aspect-ratio:4/5;border-radius:36px;overflow:hidden;background:linear-gradient(150deg,var(--soft),var(--lav) 60%,var(--pink));box-shadow:14px 14px 0 var(--ink)}
+.hv img{width:100%;height:100%;object-fit:cover}
+.sticker{position:absolute;left:-14px;bottom:30px;background:var(--pink);color:#fff;font-family:Syne;font-weight:800;padding:12px 18px;border-radius:18px;transform:rotate(-5deg);font-size:15px;box-shadow:4px 4px 0 var(--ink)}
+section{padding:80px 0}
+.sec-h{margin-bottom:38px;max-width:680px}
+.sec-h h2{font-size:clamp(34px,4.6vw,56px)}
+.sec-h p{color:var(--mut);margin-top:12px}
+.perks{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.perk{padding:26px 22px;border-radius:26px;background:var(--white);border:2px solid var(--ink);transition:.25s}
+.perk:nth-child(2){background:var(--soft)}
+.perk:nth-child(3){background:var(--lav)}
+.perk:hover{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--ink)}
+.perk h3{font-size:20px;margin-bottom:8px}
+.perk p{font-size:14.5px;color:#4a3f55}
+.dark{background:var(--ink);color:#fff}
+.dark .sec-h p{color:#c9bdd3}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.tab{background:none;border:2px solid #4a3f55;color:#fff;padding:10px 20px;font:700 14.5px 'DM Sans';border-radius:99px;cursor:pointer;transition:.2s}
+.tab:hover{border-color:var(--pink)}
+.tab.on{background:var(--pink);border-color:var(--pink)}
+.panel{display:none}
+.panel.on{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grp{background:#1f1928;border-radius:24px;padding:24px 24px 12px}
+.grp h3{font-size:24px;color:var(--soft);margin-bottom:6px}
+.grp .sub{font-size:13px;color:#a99bb6;margin-bottom:10px}
+.pr{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px dashed #3d3349;font-size:15px}
+.pr:last-child{border:none}
+.pr b{white-space:nowrap;color:var(--pink);font-weight:700;text-align:right}
+.pnote{margin-top:22px;font-size:13.5px;color:#a99bb6}
+.pcta{margin-top:24px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gal figure{aspect-ratio:4/5;border-radius:28px;overflow:hidden;background:linear-gradient(150deg,var(--soft),var(--lav) 60%,var(--pink));border:2px solid var(--ink);transition:.3s}
+.gal figure:nth-child(2){transform:translateY(20px)}
+.gal figure:hover{transform:translateY(-6px) rotate(-1deg)}
+.gal img{width:100%;height:100%;object-fit:cover}
+.loy{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center;background:var(--pink);color:#fff;border-radius:36px;padding:44px}
+.loy h2{font-size:clamp(30px,4vw,48px)}
+.loy p{font-size:17px;opacity:.95}
+.loy .btn{border-color:#fff;color:#fff;margin-top:20px}
+.loy .btn:hover{background:#fff;color:var(--pink2)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.step{background:var(--white);border:2px solid var(--ink);border-radius:26px;padding:28px}
+.step b{font-family:Syne;font-size:56px;color:var(--pink);line-height:1}
+.step h3{font-size:22px;margin:8px 0 6px}
+.step p{color:var(--mut);font-size:15px}
+.score{display:flex;gap:18px;align-items:center;margin-bottom:28px;flex-wrap:wrap}
+.score b{font-family:Syne;font-size:70px;color:var(--pink);line-height:1}
+.score span{color:var(--pink);letter-spacing:3px}
+.score p{color:var(--mut);font-size:14px}
+.rev{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rev blockquote{background:var(--white);border:2px solid var(--ink);border-radius:26px;padding:26px;font-size:15.5px}
+.rev blockquote:nth-child(2){background:var(--lav)}
+.rev cite{display:block;margin-top:14px;font-style:normal;font-weight:700;font-size:13.5px}
+.rev cite span{font-weight:400;color:var(--mut)}
+details{background:var(--white);border:2px solid var(--ink);border-radius:20px;padding:18px 22px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--pink);font-size:24px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--mut);margin-top:10px;font-size:15px}
+.contact{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.box{background:var(--ink);color:#fff;border-radius:34px;padding:40px}
+.box h2{font-size:clamp(32px,4.2vw,50px);margin-bottom:22px}
+.box ul{list-style:none;display:grid;gap:16px;margin-bottom:28px}
+.box small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#a99bb6}
+.box a:hover{color:var(--soft)}
+.map{border:2px solid var(--ink);border-radius:34px;background:linear-gradient(150deg,var(--soft),var(--lav));display:grid;place-items:center;text-align:center;padding:28px;min-height:260px}
+.map b{font-family:Syne;font-size:30px;display:block}
+.map p{color:var(--mut);margin-bottom:18px}
+footer{text-align:center;padding:26px 16px;font-size:13px;color:var(--mut)}
+.fab{display:none}
+.rv{opacity:0;transform:translateY(18px);transition:.7s}
+.rv.in{opacity:1;transform:none}
+@media(max-width:960px){
+ nav ul{display:none}
+ .hero .wrap,.contact,.loy{grid-template-columns:1fr}
+ .hv{max-width:420px}
+ .perks{grid-template-columns:1fr 1fr}
+ .steps,.rev{grid-template-columns:1fr}
+ .panel.on{grid-template-columns:1fr}
+ section{padding:58px 0}
+}
+@media(max-width:600px){
+ .perks{grid-template-columns:1fr}
+ .gal{grid-template-columns:1fr 1fr}
+ .gal figure:nth-child(2){transform:none}
+ .hv figure{box-shadow:8px 8px 0 var(--ink)}
+ .btn{width:100%;text-align:center}
+ .nav .btn{width:auto}
+ .box,.loy{padding:28px 22px}
+ .tab{flex:1 1 40%;text-align:center;padding:10px 8px}
+ .grp{padding:20px 18px 10px}
+ .fab{display:block;position:fixed;left:14px;right:14px;bottom:12px;z-index:40;text-align:center;background:var(--pink);color:#fff;font-weight:700;padding:15px;border-radius:99px;border:2px solid var(--ink);box-shadow:0 10px 26px rgba(0,0,0,.25)}
+ body{padding-bottom:74px}
+}
+@media(max-width:600px){.pr{flex-direction:column;gap:2px}.pr b{white-space:normal;text-align:left}}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версія сайту: фото та тексти взято з відкритих джерел салону</div>
+<header>
+<div class="wrap nav">
+ <a href="#top" class="logo">no a<b>G</b>e<small>prostir of beauty</small></a>
+ <nav><ul><li><a href="#why">Про нас</a></li><li><a href="#prices">Ціни</a></li><li><a href="#works">Роботи</a></li><li><a href="#reviews">Відгуки</a></li><li><a href="#contacts">Контакти</a></li></ul></nav>
+ <a class="btn fill" href="tel:+380990104409">Записатися</a>
+</div>
+</header>
+<main id="top">
+<section class="hero">
+<div class="wrap">
+ <div>
+  <span class="tag">Салон краси · Чернівці</span>
+  <h1>Простір краси, де <span>все</span> в одному місці</h1>
+  <p class="lead">Манікюр, педикюр, вії, волосся, макіяж, косметолог і масаж. Працюють тільки професійні майстри, а ціни відкриті.</p>
+  <div class="cta">
+   <a class="btn fill" href="tel:+380990104409">Записатися: 099 010 44 09</a>
+   <a class="btn out" href="#prices">Дивитися ціни</a>
+  </div>
+ </div>
+ <div class="hv">
+  <figure><img src="img/work-1.jpg" alt="Манікюр із сердечками, робота салону No Age" width="1250" height="1100" fetchpriority="high" onerror="this.remove()"></figure>
+  <div class="sticker">9:00 – 19:00</div>
+ </div>
+</div>
+</section>
+
+<section id="why" style="padding-top:10px">
+<div class="wrap">
+ <div class="perks">
+  <div class="perk rv"><h3>Великий вибір</h3><p>Нігті, вії, волосся, макіяж, косметологія й масаж під одним дахом.</p></div>
+  <div class="perk rv"><h3>Тільки професіонали</h3><p>У салоні працюють професійні майстри, кожен у своєму напрямі.</p></div>
+  <div class="perk rv"><h3>Знижки для своїх</h3><p>Програма лояльності: знижки на 5 та 10 процедур.</p></div>
+  <div class="perk rv"><h3>Ціни на виду</h3><p>Прайс опубліковано в Instagram, тож без сюрпризів.</p></div>
+ </div>
+</div>
+</section>
+
+<section id="prices" class="dark">
+<div class="wrap">
+ <div class="sec-h rv"><h2>Ціни, грн</h2><p>З прайсу салону в Instagram. Актуальність і точну вартість підтвердить адміністратор.</p></div>
+ <div class="tabs" role="tablist">
+  <button class="tab on" data-t="nails" role="tab">Нігті</button>
+  <button class="tab" data-t="lash" role="tab">Вії та макіяж</button>
+  <button class="tab" data-t="hair" role="tab">Волосся</button>
+  <button class="tab" data-t="face" role="tab">Косметолог і масаж</button>
+ </div>
+
+ <div class="panel on" id="p-nails">
+  <div class="grp"><h3>Манікюр</h3><p class="sub">Майстер / топ майстер. До 2 довжини, від 2 довжини +50 грн</p>
+   <div class="pr"><span>Чистка без покриття</span><b>350 / 450</b></div>
+   <div class="pr"><span>Зняття + чистка без покриття</span><b>500</b></div>
+   <div class="pr"><span>Чистка + покриття гель-лак</span><b>750 / 850</b></div>
+   <div class="pr"><span>Чистка + покриття з укріпленням гелем</span><b>800 / 900</b></div>
+   <div class="pr"><span>Корекція архітектури або нарощення + покриття (топ майстер)</span><b>від 1000</b></div>
+  </div>
+  <div class="grp"><h3>Педикюр</h3>
+   <div class="pr"><span>Зняття матеріалу без покриття</span><b>350</b></div>
+   <div class="pr"><span>Чистка пальчиків без покриття</span><b>650</b></div>
+   <div class="pr"><span>Чистка пальчиків + стоп без покриття</span><b>750</b></div>
+   <div class="pr"><span>Чистка пальчиків з гель-лаком</span><b>850</b></div>
+   <div class="pr"><span>Повний комплекс з гель-лаком</span><b>950</b></div>
+  </div>
+ </div>
+
+ <div class="panel" id="p-lash">
+  <div class="grp"><h3>Нарощування вій</h3><p class="sub">Нарощення / корекція (до 3 тижнів)</p>
+   <div class="pr"><span>Класика</span><b>900 / 850</b></div>
+   <div class="pr"><span>Мікронарощення</span><b>950</b></div>
+   <div class="pr"><span>2D</span><b>950 / 850</b></div>
+   <div class="pr"><span>3D</span><b>1000 / 950</b></div>
+   <div class="pr"><span>4D-5D</span><b>1100 / 1000</b></div>
+   <div class="pr"><span>Нарощення нижніх вій</span><b>500</b></div>
+   <div class="pr"><span>Зняття без нарощування</span><b>350</b></div>
+  </div>
+  <div class="grp"><h3>Make up</h3>
+   <div class="pr"><span>Макіяж</span><b>850–1300</b></div>
+   <div class="pr"><span>Весільний макіяж</span><b>1500</b></div>
+   <div class="pr"><span>Ранній вихід 7:00–8:00</span><b>+200</b></div>
+   <div class="pr"><span>Ранній вихід о 6:00</span><b>+300</b></div>
+  </div>
+ </div>
+
+ <div class="panel" id="p-hair">
+  <div class="grp"><h3>Волосся</h3><p class="sub">Каре / по плечі / середня / довга / дуже довга. У процедуру входить SPA-пілінг і чистка волосся</p>
+   <div class="pr"><span>Відновлення</span><b>2700 / 2900 / 3200 / 3800 / від 4700</b></div>
+   <div class="pr"><span>Вирівнювання (BixyPlastia, кератин, ботокс)</span><b>2900 / 3300 / 3600 / 4200 / від 5200</b></div>
+   <div class="pr"><span>Відновлення + вирівнювання</span><b>3700 / 4200 / 4400 / 5200 / від 6000</b></div>
+   <div class="pr"><span>Густина</span><b>+250–450</b></div>
+   <div class="pr"><span>Нарощене волосся</span><b>+500</b></div>
+  </div>
+ </div>
+
+ <div class="panel" id="p-face">
+  <div class="grp"><h3>Косметолог</h3>
+   <div class="pr"><span>Консультація (окремо)</span><b>350</b></div>
+   <div class="pr"><span>Атравматична чистка обличчя (3D)</span><b>1500</b></div>
+   <div class="pr"><span>Комбінована чистка обличчя</span><b>1450</b></div>
+   <div class="pr"><span>Ультразвукова / механічна чистка</span><b>1300</b></div>
+   <div class="pr"><span>Чистка + пілінг мигдалевий</span><b>1700</b></div>
+   <div class="pr"><span>Чистка + пілінг трав'яний</span><b>1800</b></div>
+  </div>
+  <div class="grp"><h3>Апаратний масаж</h3>
+   <div class="pr"><span>Повний комплекс, 60 хв</span><b>1050</b></div>
+   <div class="pr"><span>Лімфодренажний масаж, 60 хв</span><b>1000</b></div>
+   <div class="pr"><span>Вакуумно-роликовий масаж</span><b>950</b></div>
+   <div class="pr"><span>Антицелюлітні обгортання</span><b>1000</b></div>
+  </div>
+ </div>
+ <p class="pnote">Показано вибірку з повного прайсу в Instagram салону.</p>
+ <div class="pcta"><a class="btn fill" href="tel:+380990104409">Записатися</a> <a class="btn" href="https://www.instagram.com/noage.beauty.cv/" target="_blank" rel="noopener" style="color:#fff;border-color:#fff;margin-left:8px">Усі ціни в Instagram</a></div>
+</div>
+</section>
+
+<section id="works">
+<div class="wrap">
+ <div class="sec-h rv"><h2>Наші роботи</h2><p>Кадри з Instagram салону.</p></div>
+ <div class="gal">
+  <figure class="rv"><img src="img/work-1.jpg" alt="Манікюр із червоними сердечками" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+  <figure class="rv"><img src="img/work-6.jpg" alt="Червоно-білий дизайн нігтів" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+  <figure class="rv"><img src="img/work-3.jpg" alt="Святковий манікюр з бантиками" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+  <figure class="rv"><img src="img/work-2.jpg" alt="Блакитний манікюр з білим френчем" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+  <figure class="rv"><img src="img/work-5.jpg" alt="Французький манікюр" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+  <figure class="rv"><img src="img/work-4.jpg" alt="Педикюр з червоним покриттям" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+ </div>
+</div>
+</section>
+
+<section style="padding-top:0">
+<div class="wrap">
+ <div class="loy rv">
+  <div><h2>Програма лояльності</h2></div>
+  <div><p>Знижки на 5 та 10 процедур. Діє на манікюр, педикюр, брови та ламінування.</p><a class="btn" href="tel:+380990104409">Дізнатися деталі</a></div>
+ </div>
+</div>
+</section>
+
+<section id="how" style="background:var(--soft)">
+<div class="wrap">
+ <div class="sec-h rv"><h2>Як записатися</h2></div>
+ <div class="steps">
+  <div class="step rv"><b>1</b><h3>Дзвінок або Direct</h3><p>099 010 44 09 або повідомлення в Instagram.</p></div>
+  <div class="step rv"><b>2</b><h3>Майстер і час</h3><p>Підберемо майстра й зручний день.</p></div>
+  <div class="step rv"><b>3</b><h3>Візит</h3><p>Героїв Майдану, 190В. Працюємо з 9:00 до 19:00.</p></div>
+ </div>
+</div>
+</section>
+
+<section id="reviews">
+<div class="wrap">
+ <div class="sec-h rv"><h2>Нас хвалять</h2></div>
+ <div class="score rv"><b>5.0</b><div><span>★★★★★</span><p>3 відгуки на top20.ua</p></div></div>
+ <div class="rev">
+  <blockquote class="rv">«Сьогодні сходила до вас на макіяж, все дуже сподобалось) візажист - чудо. Дуже дякую, обов'язково прийду до вас знову)»<cite>Оля Мудрак <span>· 25.12.2023, top20.ua</span></cite></blockquote>
+  <blockquote class="rv">«Привітні дівчатка. Гарне обслуговування. Хороші майстри»<cite>Олена New <span>· 10.07.2023, top20.ua</span></cite></blockquote>
+  <blockquote class="rv">«Дуже класний майстер манікюру Віка, просто чарівниця»<cite>Екатерина Скрипник <span>· 31.07.2022, top20.ua</span></cite></blockquote>
+ </div>
+</div>
+</section>
+
+<section id="faq" style="background:var(--white)">
+<div class="wrap" style="max-width:800px">
+ <div class="sec-h rv"><h2>Питання</h2></div>
+ <details><summary>Як записатися?</summary><p>Зателефонуйте +38 (099) 010-44-09 або напишіть у Direct Instagram @noage.beauty.cv.</p></details>
+ <details><summary>Де знаходиться салон?</summary><p>Чернівці, вул. Героїв Майдану, 190В.</p></details>
+ <details><summary>У який час ви працюєте?</summary><p>Щодня з 9:00 до 19:00 (за даними прайсу в Instagram).</p></details>
+ <details><summary>Чи є знижки?</summary><p>Так, діє програма лояльності: знижки на 5 та 10 процедур на манікюр, педикюр, брови й ламінування.</p></details>
+ <details><summary>Чи можна орендувати робоче місце?</summary><p>Салон здає робочі місця та кабінети. Деталі уточнюйте в Direct.</p></details>
+</div>
+</section>
+
+<section id="contacts">
+<div class="wrap contact">
+ <div class="box">
+  <h2>Чекаємо в No Age</h2>
+  <ul>
+   <li><small>Телефон</small><a href="tel:+380990104409">+38 (099) 010-44-09</a></li>
+   <li><small>Адреса</small>Чернівці, вул. Героїв Майдану, 190В</li>
+   <li><small>Графік</small>Щодня 9:00 – 19:00</li>
+   <li><small>Instagram</small><a href="https://www.instagram.com/noage.beauty.cv/" target="_blank" rel="noopener">@noage.beauty.cv</a></li>
+  </ul>
+  <a class="btn fill" href="tel:+380990104409">Записатися</a>
+ </div>
+ <div class="map"><div><b>Героїв Майдану, 190В</b><p>Чернівці</p><a class="btn out" href="https://www.google.com/maps/search/?api=1&amp;query=%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96%2C%20%D0%B2%D1%83%D0%BB.%20%D0%93%D0%B5%D1%80%D0%BE%D1%97%D0%B2%20%D0%9C%D0%B0%D0%B9%D0%B4%D0%B0%D0%BD%D1%83%2C%20190%D0%92" target="_blank" rel="noopener">Відкрити на карті</a></div></div>
+</div>
+</section>
+</main>
+<footer>© No Age, prostir of beauty, Чернівці · Демо-версія сайту</footer>
+<a class="fab" href="tel:+380990104409">Записатися</a>
+<script>
+document.querySelectorAll('.tab').forEach(function(b){b.addEventListener('click',function(){
+ document.querySelectorAll('.tab').forEach(function(x){x.classList.toggle('on',x===b)});
+ document.querySelectorAll('.panel').forEach(function(p){p.classList.toggle('on',p.id==='p-'+b.dataset.t)});
+});});
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.1});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>

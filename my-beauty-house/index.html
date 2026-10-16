@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>My Beauty House: салон краси у Чернівцях</title>
+<meta name="description" content="My Beauty House: перукарські послуги, кератин і ботокс, манікюр, педикюр, перманентний татуаж. Ентузіастів, 3 (ТЦ Фенікс), Чернівці.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf4ee;--bg2:#f3e5da;--ink:#3b231d;--mut:#7b625a;--brick:#a5472f;--gold:#b98a4b;--line:#e7d3c4;--serif:'Playfair Display',Georgia,serif;--sans:'Nunito Sans',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--ink);font:400 1.0625rem/1.7 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.w{max-width:1140px;margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+.demo{background:var(--brick);color:#fff;text-align:center;font-size:.78rem;padding:8px 14px}
+header{position:sticky;top:0;z-index:50;background:rgba(251,244,238,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{font:italic 600 1.55rem/1 var(--serif);text-decoration:none;color:var(--brick)}
+.logo b{font-style:normal;color:var(--ink)}
+nav{display:flex;gap:28px}
+nav a{font-size:.93rem;font-weight:600;text-decoration:none;color:var(--mut);transition:color .2s}
+nav a:hover{color:var(--brick)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;border-radius:14px;font:700 .98rem var(--sans);text-decoration:none;border:2px solid var(--brick);transition:.25s;cursor:pointer}
+.btn.p{background:var(--brick);color:#fff;box-shadow:0 12px 24px -14px var(--brick)}
+.btn.p:hover{transform:translateY(-2px);background:#8b3a25}
+.btn.g{color:var(--brick)}.btn.g:hover{background:var(--brick);color:#fff}
+.btn.s{min-height:42px;padding:0 20px;font-size:.9rem;border-radius:12px}
+.hero{text-align:center;padding:clamp(40px,6vw,84px) 0 0}
+.eb{display:inline-block;color:#8a6128;font-weight:700;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;margin-bottom:16px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1}
+h1{font-size:clamp(2.5rem,6.6vw,5rem);max-width:15ch;margin:0 auto 20px}
+h1 em{color:var(--brick)}
+.lead{color:var(--mut);max-width:52ch;margin:0 auto 30px;font-size:1.12rem}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.pills{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:26px;list-style:none}
+.pills li{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:5px 16px;font-size:.88rem;font-weight:600}
+.arch{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:clamp(10px,2vw,22px);align-items:end;margin-top:clamp(36px,6vw,64px)}
+.arch figure{overflow:hidden;background:var(--bg2)}
+.arch img{width:100%;height:100%;object-fit:cover}
+.arch figure:nth-child(1){aspect-ratio:3/4;border-radius:200px 200px 16px 16px}
+.arch figure:nth-child(2){aspect-ratio:3/4.1;border-radius:300px 300px 16px 16px}
+.arch figure:nth-child(3){aspect-ratio:3/4;border-radius:200px 200px 16px 16px}
+section{padding:clamp(56px,8vw,104px) 0}
+.c{text-align:center}
+h2{font-size:clamp(2rem,4.6vw,3.2rem);margin-bottom:12px}
+.sub{color:var(--mut);max-width:56ch;margin:0 auto clamp(30px,5vw,52px)}
+.adv{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.adv div{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px 20px;text-align:center}
+.adv b{display:block;font:600 1.25rem/1.2 var(--serif);margin-bottom:8px;color:var(--brick)}
+.adv span{color:var(--mut);font-size:.95rem}
+.band{background:var(--bg2)}
+.sv{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:left}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:26px;padding:12px;display:flex;flex-direction:column;transition:.3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 24px 40px -26px var(--ink)}
+.ic{aspect-ratio:16/8;border-radius:18px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 25% 20%,#fff,transparent 45%),linear-gradient(135deg,#ecc7b4,#d99a80)}
+.card:nth-child(3n+2) .ic{background:radial-gradient(circle at 70% 20%,#fff,transparent 45%),linear-gradient(135deg,#f0dcc2,#d5ad74)}
+.card:nth-child(3n) .ic{background:radial-gradient(circle at 30% 80%,#fff,transparent 45%),linear-gradient(135deg,#e6c2c0,#bf7a74)}
+.ic svg{width:46px;height:46px;stroke:#fff;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.cb{padding:20px 14px 12px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cb h3{font-size:1.5rem}
+.cb p{color:var(--mut);font-size:.96rem;flex:1}
+.pr{display:flex;justify-content:space-between;align-items:baseline;gap:10px;border-top:1px dashed var(--line);padding-top:12px}
+.pr small{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);font-weight:700}
+.pr b{font:600 1.3rem var(--serif);white-space:nowrap}
+.note{margin-top:22px;color:var(--mut);font-size:.9rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;list-style:none;counter-reset:s;text-align:left}
+.steps li{counter-increment:s;background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--brick);color:#fff;font:600 1.2rem var(--serif);margin-bottom:12px}
+.steps b{display:block;font:600 1.3rem var(--serif);margin-bottom:4px}
+.steps span{color:var(--mut)}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.nophoto{background:linear-gradient(135deg,#ecc7b4,#d99a80)}
+.gal figure{aspect-ratio:3/4;overflow:hidden;border-radius:20px;background:var(--bg2)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gal figure:hover img{transform:scale(1.05)}
+.tr{display:grid;grid-template-columns:.7fr 1.3fr;gap:22px;text-align:left;align-items:start}
+.tr>*{min-width:0}
+.score{background:var(--brick);color:#fff;border-radius:26px;padding:34px;text-align:center}
+.score b{display:block;font:600 5.2rem/1 var(--serif)}
+.score .st{color:#f3d9a8;letter-spacing:6px}
+.score p{opacity:.9;font-size:.92rem;margin-top:8px}
+.rv{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.rv blockquote{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px}
+.rv p{margin-bottom:10px;font-size:.98rem}
+.rv cite{font-style:normal;font-weight:700;font-size:.88rem;color:var(--brick)}
+.rv cite span{font-weight:400;color:var(--mut)}
+.faq{max-width:780px;margin:0 auto;text-align:left}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:18px;margin-bottom:12px;padding:6px 22px}
+.faq summary{cursor:pointer;padding:14px 0;font:600 1.2rem var(--serif);list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--brick);font-size:1.5rem;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq p{color:var(--mut);padding-bottom:16px}
+.ct{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;text-align:left}
+.ct>*{min-width:0}
+.box{background:var(--ink);color:#fff;border-radius:28px;padding:clamp(26px,4vw,46px)}
+.tel{display:inline-block;font:600 clamp(2rem,6vw,3.2rem)/1.1 var(--serif);color:#f3d9a8;text-decoration:none;margin-bottom:20px}
+dl{display:grid;gap:14px;margin-bottom:24px}
+dt{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;opacity:.7}
+dd a{text-decoration-color:rgba(255,255,255,.4)}
+.box .btn.p{background:#fff;color:var(--ink);border-color:#fff;box-shadow:none}
+.map{border-radius:28px;border:1px solid var(--line);padding:30px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;min-height:240px;background:#fff linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:36px 36px}
+.map h3{font-size:1.7rem;background:#fff;align-self:flex-start;padding:2px 10px 2px 0}
+.map .btn{align-self:flex-start;background:#fff}
+footer{border-top:1px solid var(--line);padding:26px 0;font-size:.88rem;color:var(--mut)}
+footer .w{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.dock{display:none}
+@media(max-width:860px){
+ nav,.hc{display:none}.tr,.ct{grid-template-columns:1fr}
+ .adv,.steps{grid-template-columns:1fr 1fr}.rv{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr}
+ .arch{grid-template-columns:1fr 1.2fr 1fr}
+ .sv{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 16px;gap:14px;margin:0 -16px;padding:0 16px 12px;scrollbar-width:none}
+ .sv::-webkit-scrollbar{display:none}
+ .card{flex:0 0 80%;scroll-snap-align:start}
+ .cta .btn{flex:1 1 100%}
+ .dock{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(251,244,238,.96);border-top:1px solid var(--line)}
+ .dock .btn{width:100%}
+ body{padding-bottom:80px}
+}
+@media(max-width:520px){.adv,.steps{grid-template-columns:1fr}.arch figure:nth-child(1),.arch figure:nth-child(3){border-radius:100px 100px 10px 10px}.arch figure:nth-child(2){border-radius:140px 140px 10px 10px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версія сайту: фото та тексти взято з відкритих джерел салону</div>
+<header><div class="w bar">
+<a class="logo" href="#top">My <b>Beauty House</b></a>
+<nav aria-label="Меню"><a href="#services">Послуги</a><a href="#works">Роботи</a><a href="#reviews">Відгуки</a><a href="#faq">Питання</a><a href="#contacts">Контакти</a></nav>
+<a class="btn p s hc" href="tel:+380955593177">Записатися</a>
+</div></header>
+<main id="top">
+<div class="hero"><div class="w">
+<span class="eb">Салон краси · Чернівці · Ентузіастів, 3</span>
+<h1>Все для краси <em>в одному місці</em></h1>
+<p class="lead">Перукарські послуги, кератин і ботокс, нарощування волосся, манікюр, педикюр та перманентний татуаж. Салон у ТЦ «Фенікс» з рейтингом 5,0 на top20.ua.</p>
+<div class="cta"><a class="btn p" href="tel:+380955593177">Записатися</a><a class="btn g" href="https://www.instagram.com/salon_my_beauty_house.nadya/" target="_blank" rel="noopener">Instagram салону</a></div>
+<ul class="pills"><li>★ 5,0 · 15 відгуків</li><li>08:00–20:00</li><li>Pet-friendly</li></ul>
+<div class="arch">
+<figure><img src="img/work-5.jpg" alt="Довге світле волосся, робота My Beauty House" width="1030" height="1370" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-6.jpg" alt="Хвилясте волосся, AirTouch, робота My Beauty House" width="1030" height="1370" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-2.jpg" alt="Перманентний татуаж брів, робота My Beauty House" width="1030" height="1370" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+</div>
+</div></div>
+
+<section><div class="w c">
+<span class="eb">Чому ми</span><h2>Повний спектр послуг</h2><p class="sub">Волосся, нігті, брови та губи у вас під рукою.</p>
+<div class="adv">
+<div><b>Волосся</b><span>Стрижки, фарбування, зачіски, лікування, кератин, ботокс, нарощування.</span></div>
+<div><b>Нігті</b><span>Манікюр, нарощування, гель, педикюр.</span></div>
+<div><b>Перманент</b><span>Татуаж брів, губ і стрілок, пігменти преміум-класу iColor.</span></div>
+<div><b>Навчання</b><span>Курси, зокрема з перманентного макіяжу, та професійна продукція.</span></div>
+</div></div></section>
+
+<section id="services" class="band"><div class="w c">
+<span class="eb">Послуги та ціни</span><h2>Що ми пропонуємо</h2><p class="sub">Ціни зі сторіз-прайсу салону в Instagram. Для перукарських послуг вартість залежить від довжини та складності, уточнюйте за телефоном.</p>
+<div class="sv">
+<article class="card"><div class="ic"><svg viewBox="0 0 48 48"><path d="M14 40V20a10 10 0 0 1 20 0v20M18 28c4 4 8 4 12 0"/></svg></div><div class="cb"><h3>Перукарські послуги</h3><p>Стрижки, фарбування, зачіски, лікування та реконструкція волосся.</p><div class="pr"><small>Вартість</small><b>за запитом</b></div><a class="btn g s" href="tel:+380955593177">Записатися</a></div></article>
+<article class="card"><div class="ic"><svg viewBox="0 0 48 48"><path d="M24 6c6 8 10 12 10 18a10 10 0 0 1-20 0c0-6 4-10 10-18z"/></svg></div><div class="cb"><h3>Кератин, ботокс, нарощування</h3><p>Кератинове вирівнювання, ботокс для волосся, нарощення та загущення.</p><div class="pr"><small>Вартість</small><b>за запитом</b></div><a class="btn g s" href="tel:+380955593177">Записатися</a></div></article>
+<article class="card"><div class="ic"><svg viewBox="0 0 48 48"><path d="M16 42V20a3 3 0 0 1 6 0v22M22 42V14a3 3 0 0 1 6 0v28M28 42V20a3 3 0 0 1 6 0v22"/></svg></div><div class="cb"><h3>Манікюр</h3><p>Корекція з гелем. Зламаний ніготь від 30 ₴, нарощування 850–950 ₴.</p><div class="pr"><small>Корекція + гель</small><b>650–700 ₴</b></div><a class="btn g s" href="tel:+380955593177">Записатися</a></div></article>
+<article class="card"><div class="ic"><svg viewBox="0 0 48 48"><path d="M12 38c0-10 4-18 14-22 4 6 4 14-2 22z"/></svg></div><div class="cb"><h3>Педикюр</h3><p>Пальчики з покриттям або повний педикюр.</p><div class="pr"><small>Повний</small><b>650–700 ₴</b></div><a class="btn g s" href="tel:+380955593177">Записатися</a></div></article>
+<article class="card"><div class="ic"><svg viewBox="0 0 48 48"><path d="M6 26c8-10 28-10 36 0M10 30c8-6 20-6 28 0"/></svg></div><div class="cb"><h3>Перманентний татуаж</h3><p>Брови, губи, стрілки. Корекція 1 200 ₴ через місяць, поновлення 2 400 ₴ через рік і більше.</p><div class="pr"><small>Процедура</small><b>2 400 ₴</b></div><a class="btn g s" href="tel:+380955593177">Записатися</a></div></article>
+<article class="card"><div class="ic"><svg viewBox="0 0 48 48"><path d="M8 34L34 8M30 8h6v6M10 38h8"/></svg></div><div class="cb"><h3>Барбершоп</h3><p>Чоловічі стрижки у барбера салону.</p><div class="pr"><small>Вартість</small><b>за запитом</b></div><a class="btn g s" href="tel:+380955593177">Записатися</a></div></article>
+</div>
+<p class="note">Актуальний прайс і вільний час уточнюйте за телефоном 095 559 31 77.</p>
+</div></section>
+
+<section id="how"><div class="w c">
+<span class="eb">Запис</span><h2>Як записатися</h2><p class="sub">Три простих кроки.</p>
+<ol class="steps">
+<li><b>Зателефонуйте</b><span>095 559 31 77 або напишіть в Instagram.</span></li>
+<li><b>Оберіть послугу та час</b><span>Підкажемо майстра і зручний час візиту.</span></li>
+<li><b>Приходьте</b><span>Ентузіастів, 3, ТЦ «Фенікс», 2-й поверх.</span></li>
+</ol>
+</div></section>
+
+<section id="works" class="band"><div class="w c">
+<span class="eb">Галерея</span><h2>Наші роботи</h2><p class="sub">Фото з Instagram салону.</p>
+<div class="gal">
+<figure><img src="img/work-5.jpg" alt="Довге світле волосся, фарбування" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-6.jpg" alt="AirTouch, хвилясте волосся" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-1.jpg" alt="Перманентний татуаж брів" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-2.jpg" alt="Татуаж брів, результат" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-3.jpg" alt="Пудрове напилення брів" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+<figure><img src="img/work-4.jpg" alt="Татуаж брів і стрілки" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.parentNode.classList.add('nophoto')"></figure>
+</div>
+</div></section>
+
+<section id="reviews"><div class="w c">
+<span class="eb">Відгуки клієнтів</span><h2>Нас люблять клієнти</h2><p class="sub">Реальні відгуки з top20.ua.</p>
+<div class="tr">
+<div class="score"><b>5,0</b><div class="st">★★★★★</div><p>15 відгуків на top20.ua<br>100% «відмінно»</p></div>
+<div class="rv">
+<blockquote><p>«Це саме те місце, куди приходиш не просто за красою, а за особливим ставленням і відчуттям турботи.»</p><cite>Людмила Исопенко <span>· 4 жовтня 2026</span></cite></blockquote>
+<blockquote><p>«Найкращі майстри в місті, я з вами вже 15 років.»</p><cite>Аня Іванічек <span>· 10 жовтня 2025</span></cite></blockquote>
+<blockquote><p>«Дуже приємний і ввічливий персонал, майстри завжди порекомендують щось нове. У закладі дуже приємна атмосфера.»</p><cite>Alena Arameleva <span>· 7 жовтня 2025</span></cite></blockquote>
+<blockquote><p>«Дуже гарне місце, затишний інтер'єр, привітні дівчата.»</p><cite>Julia Nechai <span>· 22 липня 2022</span></cite></blockquote>
+</div></div>
+</div></section>
+
+<section id="faq" class="band"><div class="w c">
+<span class="eb">FAQ</span><h2>Часті питання</h2><p class="sub">Коротко про головне.</p>
+<div class="faq">
+<details><summary>Як записатися?</summary><p>За телефоном 095 559 31 77 або в Instagram @salon_my_beauty_house.nadya.</p></details>
+<details><summary>Які послуги є в салоні?</summary><p>Усі види перукарських послуг, фарбування, лікування та відновлення волосся, нарощування волосся, зачіски та укладки, барберські послуги, манікюр і педикюр, нарощування нігтів, перманентний татуаж, ламінування та оформлення брів, навчання.</p></details>
+<details><summary>Скільки коштує перманентний татуаж?</summary><p>Процедура 2 400 ₴, корекція через місяць 1 200 ₴, поновлення через рік і більше 2 400 ₴ (за прайсом салону в Instagram).</p></details>
+<details><summary>Чи є навчання?</summary><p>Так, салон проводить навчання за напрямами: майстер-перукар-універсал, майстер з нарощування волосся, майстер манікюру-педикюру, майстер перманентного татуажу. Деталі та вартість уточнюйте за телефоном.</p></details>
+<details><summary>Де знаходиться салон і коли працює?</summary><p>Чернівці, вул. Ентузіастів, 3, ТЦ «Фенікс», 2-й поверх. За даними top20.ua, графік 08:00–20:00. Можна приходити з домашніми улюбленцями.</p></details>
+</div>
+</div></section>
+
+<section id="contacts"><div class="w c">
+<span class="eb">Контакти</span><h2>Чекаємо на вас</h2><p class="sub">Телефонуйте та обирайте зручний час.</p>
+<div class="ct">
+<div class="box"><a class="tel" href="tel:+380955593177">095 559 31 77</a>
+<dl><div><dt>Адреса</dt><dd>м. Чернівці, вул. Ентузіастів, 3, ТЦ «Фенікс», 2-й поверх</dd></div><div><dt>Графік</dt><dd>08:00–20:00 (за даними top20.ua)</dd></div><div><dt>Instagram</dt><dd><a href="https://www.instagram.com/salon_my_beauty_house.nadya/" target="_blank" rel="noopener">@salon_my_beauty_house.nadya</a></dd></div></dl>
+<a class="btn p" href="tel:+380955593177">Записатися за телефоном</a></div>
+<div class="map"><h3>Як нас знайти</h3><a class="btn g" href="https://www.google.com/maps/search/?api=1&query=%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96+%D0%B2%D1%83%D0%BB.+%D0%95%D0%BD%D1%82%D1%83%D0%B7%D1%96%D0%B0%D1%81%D1%82%D1%96%D0%B2+3" target="_blank" rel="noopener">Відкрити на Google Maps</a></div>
+</div>
+</div></section>
+</main>
+<footer><div class="w"><span>© My Beauty House, Чернівці</span><span>Демо-сайт</span></div></footer>
+<div class="dock"><a class="btn p" href="tel:+380955593177">Записатися</a></div>
+</body>
+</html>
